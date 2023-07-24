@@ -1,0 +1,4637 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "homeSplashBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "assistIcon.png",
+            "Alpha": 255,
+            "Name": "assistIcon",
+            "X": 111,
+            "Y": 54,
+            "Width": 50,
+            "Height": 80,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId112",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "assistTitle",
+            "X": 92,
+            "Y": 134,
+            "Width": 80,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "FadeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "assistIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "FadeTitle",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "assistTitle",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "ShowHomeScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "FadeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeScreen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 111,
+              "Y": 54,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "assistIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "HomeSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "homeSplashBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "assistIcon.png",
+            "Alpha": 255,
+            "Name": "assistIcon",
+            "X": -99,
+            "Y": 54,
+            "Width": 50,
+            "Height": 80,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId105",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "assistTitle",
+            "X": -108,
+            "Y": 134,
+            "Width": 80,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "FadeHomeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "assistIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "FadeHomeSplashText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "assistTitle",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "ShowHome",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "FadeHomeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeScreen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "SwipeToNavigation",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "NavigationEastSplash",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "SlideIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 111,
+              "Y": 54,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "assistIcon",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "SlideText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 92,
+              "Y": 134,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "assistTitle",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "SlideIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "X": 111,
+              "Y": 54,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "assistIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "HomeWestSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "homeScreenBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "SelectedItemOffset": 20,
+            "UseSelectedStyle": false,
+            "ExtraSizeBefore": 0,
+            "ExtraSizeAfter": 0,
+            "MarginBefore": 0,
+            "MarginAfter": 0,
+            "IsHorizontal": false,
+            "IsCircular": true,
+            "ItemTemplateName": "AssistIcon",
+            "NumberofItems": 7,
+            "InitialElement": 3,
+            "ItemMargin": 0,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "Name": "scrollWheel",
+            "X": 90,
+            "Y": 130,
+            "Width": 90,
+            "Height": 130,
+            "Type": "ScrollWheel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "assistGradientBottom.png",
+            "Alpha": 255,
+            "Name": "assistGradientBottom",
+            "X": 17,
+            "Y": 221,
+            "Width": 237,
+            "Height": 61,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "assistGardientTop.png",
+            "Alpha": 255,
+            "Name": "assistGardientTop",
+            "X": 17,
+            "Y": 90,
+            "Width": 239,
+            "Height": 61,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId3",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Wildcard2": {
+              "TextId": "SingleUseId4",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "textClock",
+            "X": 185,
+            "Y": 3,
+            "Width": 40,
+            "Height": 18,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "batterycase.png",
+            "Alpha": 255,
+            "Name": "batteryBackground",
+            "X": 32,
+            "Y": -16,
+            "Width": 60,
+            "Height": 60,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 1,
+              "Green": 177,
+              "Blue": 14
+            },
+            "Direction": "Right",
+            "Alpha": 255,
+            "IndicatorPositionX": 2,
+            "IndicatorPositionY": 2,
+            "IndicatorPositionWidth": 20,
+            "IndicatorPositionHeight": 12,
+            "ProgressRangeMin": 0,
+            "ProgressRangeMax": 100,
+            "ProgressRangeSteps": 0,
+            "ProgressRangeStepsMin": 0,
+            "ProgressInitialValue": 100,
+            "Name": "batteryPercentage",
+            "X": 50,
+            "Y": 5,
+            "Width": 20,
+            "Height": 12,
+            "Type": "BoxProgress",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId34",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId35",
+              "UseBuffer": true,
+              "BufferSize": 4
+            },
+            "Name": "textBatteryPercent",
+            "X": 51,
+            "Y": 7,
+            "Width": 24,
+            "Height": 12,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId106",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId107",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "textSpeed",
+            "X": 66,
+            "Y": -5,
+            "Width": 108,
+            "Height": 120,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId108",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 102,
+              "Green": 102,
+              "Blue": 102
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId110",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textSpeedLabel",
+            "X": 109,
+            "Y": 104,
+            "Width": 52,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "SwipeToNavigationEast",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "NavigationEastSplash",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "HomeScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "navSplashBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId43",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textNavigationSpashText",
+            "X": 256,
+            "Y": 136,
+            "Width": 144,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "navIcon.png",
+            "Alpha": 255,
+            "Name": "navIcon",
+            "X": 310,
+            "Y": 50,
+            "Width": 53,
+            "Height": 79,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "FadeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "navIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "FadeText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "textNavigationSpashText",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "ShowNavigationMenu",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "FadeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "NavigationMenu",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "SlideIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 110,
+              "Y": 50,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "navIcon",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "SlideText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 56,
+              "Y": 136,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "textNavigationSpashText",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "SlideIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "X": 110,
+              "Y": 50,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "navIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "NavigationEastSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "navSplashBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId111",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textNavigationSpashText",
+            "X": -144,
+            "Y": 129,
+            "Width": 144,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "navIcon.png",
+            "Alpha": 255,
+            "Name": "navIcon",
+            "X": -90,
+            "Y": 50,
+            "Width": 53,
+            "Height": 79,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "SlideIconEast",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 110,
+              "Y": 50,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "navIcon",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "FadeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "navIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "SlideTextEast",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 56,
+              "Y": 126,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "textNavigationSpashText",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "FadeText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "textNavigationSpashText",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "ShowNavigationMenu",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "FadeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "NavigationMenu",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "SlideIconEast",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "X": 110,
+              "Y": 50,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "navIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "NavigationWestSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "navMenuBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "SelectedItemOffset": 0,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "SelectedNavMenuItem",
+            "ExtraSizeBefore": 0,
+            "ExtraSizeAfter": 0,
+            "MarginBefore": 0,
+            "MarginAfter": 0,
+            "IsHorizontal": false,
+            "IsCircular": false,
+            "ItemTemplateName": "NavMenuItem",
+            "NumberofItems": 4,
+            "InitialElement": 0,
+            "ItemMargin": 1,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "Name": "navMenu",
+            "X": 36,
+            "Y": 0,
+            "Width": 200,
+            "Height": 260,
+            "Type": "ScrollWheel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "MoveToNavigation",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "NavigationScreen",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "NavigationMenu",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "navScreenBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "frameDirection.png",
+            "Alpha": 255,
+            "Name": "exampleNav",
+            "X": 91,
+            "Y": 53,
+            "Width": 127,
+            "Height": 196,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "navFadeTail.png",
+            "Alpha": 255,
+            "Name": "fadeGradient",
+            "X": 17,
+            "Y": 144,
+            "Width": 239,
+            "Height": 65,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 111,
+            "Y": 193,
+            "Width": 50,
+            "Height": 61,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 43,
+              "Green": 43,
+              "Blue": 43
+            },
+            "CenterX": 100,
+            "CenterY": 100,
+            "Radius": 90,
+            "LineWidth": 8,
+            "StartAngle": 0,
+            "EndAngle": 360,
+            "CapPrecision": "Butt",
+            "Alpha": 255,
+            "Name": "navBackgroundCircle",
+            "X": 36,
+            "Y": 9,
+            "Width": 200,
+            "Height": 200,
+            "Type": "Circle",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "moreNavigation.png",
+            "Alpha": 255,
+            "Name": "moreNavigation",
+            "X": 108,
+            "Y": 234,
+            "Width": 56,
+            "Height": 13,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "moveToFitnessScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "FitnessEastSplash",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "SlideToHomeWest",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "HomeWestSplash",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "MoveToNavOptions",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "NavigationOptions",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "NavigationScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "navOptionsBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "SelectedItemOffset": 0,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "SelectedNavOptionMenuItem",
+            "ExtraSizeBefore": 0,
+            "ExtraSizeAfter": 0,
+            "MarginBefore": 0,
+            "MarginAfter": 0,
+            "IsHorizontal": false,
+            "IsCircular": false,
+            "ItemTemplateName": "NavOptionMenuItem",
+            "NumberofItems": 2,
+            "InitialElement": 0,
+            "ItemMargin": 0,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "Name": "navOptionMenu",
+            "X": 36,
+            "Y": 0,
+            "Width": 200,
+            "Height": 250,
+            "Type": "ScrollWheel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "NavigationOptions",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "fitnessSplashBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "fitnessicon.png",
+            "Alpha": 255,
+            "Name": "fitnessIcon",
+            "X": 303,
+            "Y": 67,
+            "Width": 67,
+            "Height": 62,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId36",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textFitnessSpashText",
+            "X": 284,
+            "Y": 129,
+            "Width": 90,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "FadeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "textFitnessSpashText",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "FadeTitle",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "fitnessIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "ShowFitness",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "FadeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "FitnessScreen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "SlideIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 103,
+              "Y": 67,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "fitnessIcon",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "SlideText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 84,
+              "Y": 129,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "textFitnessSpashText",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "SlideIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "X": 103,
+              "Y": 67,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "fitnessIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "FitnessEastSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "fitnessSplashBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "fitnessicon.png",
+            "Alpha": 255,
+            "Name": "fitnessIcon",
+            "X": -97,
+            "Y": 67,
+            "Width": 67,
+            "Height": 62,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId113",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textFitnessSpashText",
+            "X": -116,
+            "Y": 129,
+            "Width": 90,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "SlideIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 103,
+              "Y": 67,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "fitnessIcon",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "SlideText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 84,
+              "Y": 129,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "textFitnessSpashText",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "FadeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "fitnessIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "FadeText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "textFitnessSpashText",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "SwitchToFitness",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "FadeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "FitnessScreen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "SlideIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "X": 103,
+              "Y": 67,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "fitnessIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "FitnessWestSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "fitnessScreenBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId15",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId16",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Wildcard2": {
+              "TextId": "SingleUseId17",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "textRideTime",
+            "X": 78,
+            "Y": 166,
+            "Width": 95,
+            "Height": 48,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId18",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 102,
+              "Green": 102,
+              "Blue": 102
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId19",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "textRideTimeSeconds",
+            "X": 205,
+            "Y": 184,
+            "Width": 26,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId20",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId21",
+              "UseBuffer": true,
+              "BufferSize": 6
+            },
+            "Name": "textDistance",
+            "X": 88,
+            "Y": 107,
+            "Width": 73,
+            "Height": 48,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId22",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 102,
+              "Green": 102,
+              "Blue": 102
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId23",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textDistanceLabel",
+            "X": 121,
+            "Y": 147,
+            "Width": 30,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId24",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId25",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textSpeed",
+            "X": 67,
+            "Y": -19,
+            "Width": 108,
+            "Height": 120,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId26",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 102,
+              "Green": 102,
+              "Blue": 102
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId27",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textSpeedUnits",
+            "X": 110,
+            "Y": 89,
+            "Width": 52,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId116",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 102,
+              "Green": 102,
+              "Blue": 102
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textTimeLabel",
+            "X": 112,
+            "Y": 208,
+            "Width": 44,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "moreFitness.png",
+            "Alpha": 255,
+            "Name": "image",
+            "X": 108,
+            "Y": 234,
+            "Width": 56,
+            "Height": 13,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "SwipeToLightEast",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "LightEastSplash",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "ShowNavigationWest",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "NavigationWestSplash",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "FitnessScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "lightSplashBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId56",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textLightSpashText",
+            "X": 299,
+            "Y": 136,
+            "Width": 66,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "lighticon.png",
+            "Alpha": 255,
+            "Name": "lightIcon",
+            "X": 297,
+            "Y": 80,
+            "Width": 78,
+            "Height": 56,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "FadeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "lightIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "FadeTitle",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "textLightSpashText",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "SwitchToLightScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "FadeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "LightScreen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "SlideIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 97,
+              "Y": 80,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "lightIcon",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "SlideText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 99,
+              "Y": 136,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "textLightSpashText",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "SlideIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "X": 97,
+              "Y": 80,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "lightIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "LightEastSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "lightSplashBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId114",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textLightSpashText",
+            "X": -101,
+            "Y": 136,
+            "Width": 66,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "lighticon.png",
+            "Alpha": 255,
+            "Name": "lightIcon",
+            "X": -103,
+            "Y": 80,
+            "Width": 78,
+            "Height": 56,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "SlideIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 97,
+              "Y": 80,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "lightIcon",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "SlideText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 99,
+              "Y": 136,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "textLightSpashText",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "FadeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "lightIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "FadeText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "textLightSpashText",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "SwitchToLightScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "FadeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "LightScreen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "SlideIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "X": 97,
+              "Y": 80,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "lightIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "LightWestSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "lightScreenBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "SelectedItemOffset": 0,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "SelectedLightMenuItem",
+            "ExtraSizeBefore": 0,
+            "ExtraSizeAfter": 0,
+            "MarginBefore": 0,
+            "MarginAfter": 0,
+            "IsHorizontal": false,
+            "IsCircular": false,
+            "ItemTemplateName": "LightMenuItem",
+            "NumberofItems": 2,
+            "InitialElement": 0,
+            "ItemMargin": 0,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "Name": "lightMenu",
+            "X": 36,
+            "Y": 0,
+            "Width": 200,
+            "Height": 250,
+            "Type": "ScrollWheel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "SwipeToFitnessWEst",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "FitnessWestSplash",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "SwipeToAlarmEast",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "AlarmEastSplash",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "LightScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "alarmSplashBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId69",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textAlarmSpashText",
+            "X": 292,
+            "Y": 136,
+            "Width": 78,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "alarmIcon.png",
+            "Alpha": 255,
+            "Name": "alarmIcon",
+            "X": 310,
+            "Y": 75,
+            "Width": 52,
+            "Height": 61,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "fadeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "alarmIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "fadeTitle",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 488,
+              "ActionComponent": "textAlarmSpashText",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "switchToScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "fadeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "AlarmScreen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "SlideIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 110,
+              "Y": 75,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "alarmIcon",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "SlideText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 92,
+              "Y": 136,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "textAlarmSpashText",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "SlideIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "X": 110,
+              "Y": 75,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "alarmIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "AlarmEastSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "alarmSplashBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId115",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textAlarmSpashText",
+            "X": -108,
+            "Y": 136,
+            "Width": 78,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "alarmIcon.png",
+            "Alpha": 255,
+            "Name": "alarmIcon",
+            "X": -90,
+            "Y": 75,
+            "Width": 52,
+            "Height": 61,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "SlideIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 110,
+              "Y": 75,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "alarmIcon",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "SlideText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 92,
+              "Y": 136,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "textAlarmSpashText",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "FadeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "alarmIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "FadeText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "textAlarmSpashText",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "SwitchToAlarm",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "FadeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "AlarmScreen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "SlideIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "X": 110,
+              "Y": 75,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "alarmIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "AlarmWestSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "alarmScreenBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "SelectedItemOffset": 0,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "SelectedAlarmMenuItem",
+            "ExtraSizeBefore": 0,
+            "ExtraSizeAfter": 0,
+            "MarginBefore": 0,
+            "MarginAfter": 0,
+            "IsHorizontal": false,
+            "IsCircular": false,
+            "ItemTemplateName": "AlarmMenuItem",
+            "NumberofItems": 2,
+            "InitialElement": 0,
+            "ItemMargin": 0,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "Name": "alarmMenu",
+            "X": 36,
+            "Y": 0,
+            "Width": 200,
+            "Height": 250,
+            "Type": "ScrollWheel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "SwipeToLightWest",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "LightWestSplash",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "SwipeToAssistantEast",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "AssistantEastSplash",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "AlarmScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "assistantSplaBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId82",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textAssistantSpashText",
+            "X": 268,
+            "Y": 137,
+            "Width": 117,
+            "Height": 36,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "assitantIcon.png",
+            "Alpha": 255,
+            "Name": "assistantIcon",
+            "X": 305,
+            "Y": 75,
+            "Width": 63,
+            "Height": 62,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "fadeIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "assistantIcon",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "fadeTitle",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "Idle",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "Alpha": 0,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 500,
+              "ActionComponent": "textAssistantSpashText",
+              "Type": "ActionFade"
+            }
+          },
+          {
+            "InteractionName": "switchToScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "InteractionToTriggerOn": "fadeIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "AssistantScreen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "SlideIcon",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 105,
+              "Y": 75,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "assistantIcon",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "SlideText",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "Type": "TriggerScreenEntered"
+            },
+            "Action": {
+              "X": 68,
+              "Y": 137,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 200,
+              "ActionComponent": "textAssistantSpashText",
+              "Type": "ActionMove"
+            }
+          },
+          {
+            "InteractionName": "Idle",
+            "HasCompletedTrigger": true,
+            "Trigger": {
+              "InteractionToTriggerOn": "SlideIcon",
+              "Type": "TriggerInteractionCompleted"
+            },
+            "Action": {
+              "X": 105,
+              "Y": 75,
+              "Easing": "Linear",
+              "EasingOption": "In",
+              "Duration": 300,
+              "ActionComponent": "assistantIcon",
+              "Type": "ActionMove"
+            }
+          }
+        ],
+        "Name": "AssistantEastSplash",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "assistantScreenBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "CustomContainerDefinitionName": "FeatureCarrosselDots",
+            "Name": "featureCarrosselDots",
+            "X": 106,
+            "Y": 260,
+            "Width": 60,
+            "Height": 10,
+            "Type": "CustomContainerInstance",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "SelectedItemOffset": 0,
+            "UseSelectedStyle": true,
+            "SelectedItemTemplateName": "SelectedAssistantMenuItem",
+            "ExtraSizeBefore": 0,
+            "ExtraSizeAfter": 0,
+            "MarginBefore": 0,
+            "MarginAfter": 0,
+            "IsHorizontal": false,
+            "IsCircular": false,
+            "ItemTemplateName": "AssistantMenuItem",
+            "NumberofItems": 2,
+            "InitialElement": 0,
+            "ItemMargin": 0,
+            "Easing": "Back",
+            "EasingOption": "Out",
+            "SwipeAcceleration": 1.0,
+            "DragAcceleration": 1.0,
+            "Name": "assistantMenu",
+            "X": 36,
+            "Y": 0,
+            "Width": 200,
+            "Height": 250,
+            "Type": "ScrollWheel",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "SwipeToAlarmWest",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "AlarmWestSplash",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "AssistantScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      }
+    ],
+    "CustomContainerDefinitions": [
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 50,
+              "Green": 50,
+              "Blue": 50
+            },
+            "Alpha": 255,
+            "Name": "statusBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 200,
+            "Height": 50,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\blue_check_buttons_check_re_mark_inactive.png",
+            "Released": "__designer\\blue_check_buttons_check_re_mark_inactive.png",
+            "Alpha": 255,
+            "Name": "assistButton",
+            "X": 155,
+            "Y": 3,
+            "Width": 44,
+            "Height": 44,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId95",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId96",
+              "UseBuffer": true,
+              "BufferSize": 2
+            },
+            "Name": "assistText",
+            "X": 165,
+            "Y": 0,
+            "Width": 22,
+            "Height": 48,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId97",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId98",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "speedText",
+            "X": 75,
+            "Y": -1,
+            "Width": 43,
+            "Height": 48,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "batterycase.png",
+            "Alpha": 255,
+            "Name": "battery",
+            "X": -10,
+            "Y": -5,
+            "Width": 60,
+            "Height": 60,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 40,
+              "Green": 189,
+              "Blue": 27
+            },
+            "Alpha": 255,
+            "Name": "batteryPercentageBox",
+            "X": 9,
+            "Y": 17,
+            "Width": 21,
+            "Height": 13,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "StatusBar",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 50,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 50,
+              "Green": 50,
+              "Blue": 50
+            },
+            "Alpha": 255,
+            "Name": "speedBackground",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 80,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId99",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId100",
+              "UseBuffer": true,
+              "BufferSize": 5
+            },
+            "Name": "textSpeed",
+            "X": 0,
+            "Y": 0,
+            "Width": 110,
+            "Height": 72,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId101",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 66,
+              "Green": 66,
+              "Blue": 66
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId102",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textSpeedLabel",
+            "X": 131,
+            "Y": 37,
+            "Width": 58,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\blue_check_buttons_check_re_mark_inactive.png",
+            "Released": "__designer\\blue_check_buttons_check_re_mark_inactive.png",
+            "Alpha": 255,
+            "Name": "assistButton",
+            "X": 219,
+            "Y": 15,
+            "Width": 44,
+            "Height": 44,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId103",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 50,
+              "Green": 50,
+              "Blue": 50
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId104",
+              "UseBuffer": true,
+              "BufferSize": 2
+            },
+            "Name": "textAssist",
+            "X": 229,
+            "Y": 12,
+            "Width": 22,
+            "Height": 48,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "LargeStatusBar",
+        "X": 0,
+        "Y": 0,
+        "Width": 272,
+        "Height": 75,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 53,
+              "Green": 53,
+              "Blue": 53
+            },
+            "CenterX": 5,
+            "CenterY": 5,
+            "Radius": 3,
+            "LineWidth": 0,
+            "StartAngle": 0,
+            "EndAngle": 360,
+            "CapPrecision": "Butt",
+            "Alpha": 255,
+            "Name": "homeDot",
+            "X": 0,
+            "Y": 0,
+            "Width": 10,
+            "Height": 10,
+            "Type": "Circle",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 53,
+              "Green": 53,
+              "Blue": 53
+            },
+            "CenterX": 5,
+            "CenterY": 5,
+            "Radius": 3,
+            "LineWidth": 0,
+            "StartAngle": 0,
+            "EndAngle": 360,
+            "CapPrecision": "Butt",
+            "Alpha": 255,
+            "Name": "navDot",
+            "X": 10,
+            "Y": 0,
+            "Width": 10,
+            "Height": 10,
+            "Type": "Circle",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 53,
+              "Green": 53,
+              "Blue": 53
+            },
+            "CenterX": 5,
+            "CenterY": 5,
+            "Radius": 3,
+            "LineWidth": 0,
+            "StartAngle": 0,
+            "EndAngle": 360,
+            "CapPrecision": "Butt",
+            "Alpha": 255,
+            "Name": "fitnessDot",
+            "X": 20,
+            "Y": 0,
+            "Width": 10,
+            "Height": 10,
+            "Type": "Circle",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 53,
+              "Green": 53,
+              "Blue": 53
+            },
+            "CenterX": 5,
+            "CenterY": 5,
+            "Radius": 3,
+            "LineWidth": 0,
+            "StartAngle": 0,
+            "EndAngle": 360,
+            "CapPrecision": "Butt",
+            "Alpha": 255,
+            "Name": "lightDot",
+            "X": 30,
+            "Y": 0,
+            "Width": 10,
+            "Height": 10,
+            "Type": "Circle",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 53,
+              "Green": 53,
+              "Blue": 53
+            },
+            "CenterX": 5,
+            "CenterY": 5,
+            "Radius": 3,
+            "LineWidth": 0,
+            "StartAngle": 0,
+            "EndAngle": 360,
+            "CapPrecision": "Butt",
+            "Alpha": 255,
+            "Name": "alarmDot",
+            "X": 40,
+            "Y": 0,
+            "Width": 10,
+            "Height": 10,
+            "Type": "Circle",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 53,
+              "Green": 53,
+              "Blue": 53
+            },
+            "CenterX": 5,
+            "CenterY": 5,
+            "Radius": 3,
+            "LineWidth": 0,
+            "StartAngle": 0,
+            "EndAngle": 360,
+            "CapPrecision": "Butt",
+            "Alpha": 255,
+            "Name": "assistantDot",
+            "X": 50,
+            "Y": 0,
+            "Width": 10,
+            "Height": 10,
+            "Type": "Circle",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "FeatureCarrosselDots",
+        "X": 0,
+        "Y": 0,
+        "Width": 60,
+        "Height": 10,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "assistLevelBackgound.png",
+            "Alpha": 255,
+            "Name": "assistIconBackground",
+            "X": 7,
+            "Y": 7,
+            "Width": 76,
+            "Height": 76,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId119",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId120",
+              "UseBuffer": true,
+              "BufferSize": 2
+            },
+            "Name": "assistText",
+            "X": 25,
+            "Y": 9,
+            "Width": 32,
+            "Height": 72,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "AssistIcon",
+        "X": 0,
+        "Y": 0,
+        "Width": 90,
+        "Height": 90,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "menuSelectedBackground.png",
+            "Alpha": 255,
+            "Name": "menuSelectedBackground",
+            "X": 5,
+            "Y": 7,
+            "Width": 190,
+            "Height": 46,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "navIcon00.png",
+            "Alpha": 255,
+            "Name": "menuIcon",
+            "X": 15,
+            "Y": 17,
+            "Width": 27,
+            "Height": 27,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId121",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 57,
+              "Green": 181,
+              "Blue": 74
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId122",
+              "UseBuffer": true,
+              "BufferSize": 11
+            },
+            "Name": "menuTitle",
+            "X": 50,
+            "Y": 18,
+            "Width": 54,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "SelectedNavMenuItem",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 60,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "menuBackground.png",
+            "Alpha": 255,
+            "Name": "menuBackground",
+            "X": 5,
+            "Y": 7,
+            "Width": 190,
+            "Height": 46,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "navIcon00.png",
+            "Alpha": 255,
+            "Name": "menuIcon",
+            "X": 15,
+            "Y": 17,
+            "Width": 27,
+            "Height": 27,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId123",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 178,
+              "Green": 178,
+              "Blue": 178
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId124",
+              "UseBuffer": true,
+              "BufferSize": 11
+            },
+            "Name": "menuTitle",
+            "X": 50,
+            "Y": 18,
+            "Width": 54,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "NavMenuItem",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 60,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "menuSelectedBackground.png",
+            "Alpha": 255,
+            "Name": "menuBackground",
+            "X": 6,
+            "Y": 7,
+            "Width": 190,
+            "Height": 46,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "lighticon00selected.png",
+            "Alpha": 255,
+            "Name": "menuIcon",
+            "X": 15,
+            "Y": 14,
+            "Width": 33,
+            "Height": 32,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId125",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId126",
+              "UseBuffer": true,
+              "BufferSize": 11
+            },
+            "Name": "menuTitle",
+            "X": 50,
+            "Y": 18,
+            "Width": 102,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "SelectedLightMenuItem",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 60,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "menuBackground.png",
+            "Alpha": 255,
+            "Name": "menuBackground",
+            "X": 5,
+            "Y": 7,
+            "Width": 190,
+            "Height": 46,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "lighticon00.png",
+            "Alpha": 255,
+            "Name": "menuIcon",
+            "X": 15,
+            "Y": 14,
+            "Width": 33,
+            "Height": 32,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId127",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId128",
+              "UseBuffer": true,
+              "BufferSize": 11
+            },
+            "Name": "menuTitle",
+            "X": 50,
+            "Y": 18,
+            "Width": 102,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "LightMenuItem",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 60,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "menuSelectedBackground.png",
+            "Alpha": 255,
+            "Name": "menuSelectedBackground",
+            "X": 5,
+            "Y": 7,
+            "Width": 190,
+            "Height": 46,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "alarmicon00selected.png",
+            "Alpha": 255,
+            "Name": "menuIcon",
+            "X": 15,
+            "Y": 17,
+            "Width": 26,
+            "Height": 27,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId129",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 229,
+              "Green": 107,
+              "Blue": 41
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId130",
+              "UseBuffer": true,
+              "BufferSize": 12
+            },
+            "Name": "menuTitle",
+            "X": 50,
+            "Y": 18,
+            "Width": 109,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "SelectedAlarmMenuItem",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 60,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "menuBackground.png",
+            "Alpha": 255,
+            "Name": "menuBackground",
+            "X": 5,
+            "Y": 7,
+            "Width": 190,
+            "Height": 46,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "alarmicon00.png",
+            "Alpha": 255,
+            "Name": "menuIcon",
+            "X": 15,
+            "Y": 17,
+            "Width": 26,
+            "Height": 27,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId131",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId132",
+              "UseBuffer": true,
+              "BufferSize": 12
+            },
+            "Name": "menuTitle",
+            "X": 50,
+            "Y": 18,
+            "Width": 109,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "AlarmMenuItem",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 60,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "menuSelectedBackground.png",
+            "Alpha": 255,
+            "Name": "menuSelectedBackground",
+            "X": 5,
+            "Y": 7,
+            "Width": 190,
+            "Height": 46,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "assistanticon00selected.png",
+            "Alpha": 255,
+            "Name": "menuIcon",
+            "X": 15,
+            "Y": 17,
+            "Width": 28,
+            "Height": 28,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId133",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 14,
+              "Green": 131,
+              "Blue": 203
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId134",
+              "UseBuffer": true,
+              "BufferSize": 13
+            },
+            "Name": "menuTitle",
+            "X": 50,
+            "Y": 18,
+            "Width": 112,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "SelectedAssistantMenuItem",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 60,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "menuBackground.png",
+            "Alpha": 255,
+            "Name": "menuBackground",
+            "X": 5,
+            "Y": 7,
+            "Width": 190,
+            "Height": 46,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "assistanticon00.png",
+            "Alpha": 255,
+            "Name": "menuIcon",
+            "X": 15,
+            "Y": 16,
+            "Width": 28,
+            "Height": 28,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId135",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId136",
+              "UseBuffer": true,
+              "BufferSize": 13
+            },
+            "Name": "menuTitle",
+            "X": 50,
+            "Y": 18,
+            "Width": 107,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "AssistantMenuItem",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 60,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "menuSelectedBackground.png",
+            "Alpha": 255,
+            "Name": "menuSelectedBackground",
+            "X": 5,
+            "Y": 7,
+            "Width": 190,
+            "Height": 46,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "navicon10selected.png",
+            "Alpha": 255,
+            "Name": "menuIcon",
+            "X": 15,
+            "Y": 11,
+            "Width": 38,
+            "Height": 39,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId137",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 57,
+              "Green": 181,
+              "Blue": 74
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId138",
+              "UseBuffer": true,
+              "BufferSize": 13
+            },
+            "Name": "menuTitle",
+            "X": 50,
+            "Y": 18,
+            "Width": 80,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "SelectedNavOptionMenuItem",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 60,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "menubackground.png",
+            "Alpha": 255,
+            "Name": "menuSelectedBackground",
+            "X": 5,
+            "Y": 7,
+            "Width": 190,
+            "Height": 46,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "navicon10.png",
+            "Alpha": 255,
+            "Name": "menuIcon",
+            "X": 15,
+            "Y": 11,
+            "Width": 38,
+            "Height": 39,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId139",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 153,
+              "Green": 153,
+              "Blue": 153
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId140",
+              "UseBuffer": true,
+              "BufferSize": 13
+            },
+            "Name": "menuTitle",
+            "X": 50,
+            "Y": 18,
+            "Width": 80,
+            "Height": 24,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [],
+        "Name": "NavOptionMenuItem",
+        "X": 0,
+        "Y": 0,
+        "Width": 200,
+        "Height": 60,
+        "Type": "CustomContainerDefinition",
+        "Visible": true,
+        "Draggable": false,
+        "Clickable": false,
+        "Fadeable": false,
+        "Moveable": false
+      }
+    ],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId4",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId5",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId6",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId7",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId8",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId15",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId16",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId17",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId18",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId19",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId20",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId21",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId22",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId24",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId25",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId26",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId27",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId34",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId35",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId36",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId43",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId56",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId69",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId82",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId95",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId96",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId97",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId98",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId99",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId100",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId101",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId102",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId103",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId104",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId105",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId106",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId107",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId108",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId110",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId111",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId112",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId113",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId114",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId115",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId116",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId119",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId120",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId121",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId122",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId123",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId124",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId125",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId126",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId127",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId128",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId129",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId130",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId131",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId132",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId133",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId134",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId135",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId136",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId137",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId138",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId139",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId140",
+        "IsResource": false
+      }
+    ],
+    "Name": "SmartHalo750",
+    "Resolution": {
+      "Width": 272,
+      "Height": 480
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "HomeSplash",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/TouchGFX/touchgfx",
+    "UIPath": ".",
+    "ApplicationTemplate": {
+      "Name": "Simulator",
+      "Version": "2.0.0",
+      "Description": "STM32CubeMX Generated Simulator Application Template",
+      "AvailableColorDepths": [
+        24
+      ],
+      "AvailableImageFormats": {
+        "24": {
+          "Opaque": "RGB888",
+          "NonOpaque": "ARGB8888"
+        }
+      },
+      "AvailableResolutions": [
+        {
+          "Width": 272,
+          "Height": 480
+        }
+      ],
+      "PhysicalButtons": [],
+      "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j10",
+      "PostGenerateCommand": "touchgfx update_project --project-file=../EWARM/SmartHalo750.ewp --gui-group-name=Application/User/TouchGFX/gui --generated-group-name=Application/User/TouchGFX/generated && touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+      "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j10",
+      "RunSimulatorCommand": "build\\bin\\simulator.exe",
+      "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+      "FlashTargetCommand": "make -f ../gcc/Makefile -j8 flash"
+    }
+  },
+  "Version": "4.10.0",
+  "CreatedBy": "4.10.0"
+}

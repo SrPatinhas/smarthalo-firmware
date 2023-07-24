@@ -1,0 +1,4 @@
+*.log
+TouchGFX/build
+TouchGFX/generated
+/Debug/
