@@ -1,0 +1,11 @@
+node_modules*
+junk
+keys/*
+public/*.dat
+public/index.js
+*.hex_
+npm-debug.log
+ascr.json
+.vscode/launch.json
+tmp/*
+build/
