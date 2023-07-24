@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\pca10028\s130\iar\direct_test_mode_s130_pca10028.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\s332\iar\direct_test_mode_s332_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\s332\iar\direct_test_mode_s332_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\s132\iar\direct_test_mode_s132_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\s132\iar\direct_test_mode_s132_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\blank\iar\direct_test_mode_blank_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10028\blank\iar\direct_test_mode_blank_pca10028.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\blank\iar\direct_test_mode_blank_pca10040.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>

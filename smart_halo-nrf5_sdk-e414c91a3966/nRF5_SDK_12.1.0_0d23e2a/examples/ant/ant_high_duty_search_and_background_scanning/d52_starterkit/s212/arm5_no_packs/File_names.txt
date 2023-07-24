@@ -1,0 +1,3 @@
+ant_high_duty_search_and_background_scanning_d52_starterkit_s212.uvoptx
+
+ant_high_duty_search_and_background_scanning_d52_starterkit_s212.uvprojx

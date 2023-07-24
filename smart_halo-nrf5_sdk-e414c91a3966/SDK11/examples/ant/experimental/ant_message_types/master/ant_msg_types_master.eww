@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\pca10040\s332\iar\ant_msg_types_master_s332_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\s332\iar\ant_msg_types_master_s332_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\s212\iar\ant_msg_types_master_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\s212\iar\ant_msg_types_master_s212_pca10036.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>

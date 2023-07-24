@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\pca10028\blank\iar\rng_pca10028.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10031\blank\iar\rng_pca10031.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\blank\iar\rng_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\blank\iar\rng_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10031\s130\iar\rng_s130_pca10031.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10036\s132\iar\rng_s132_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10028\s130\iar\rng_s130_pca10028.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\pca10040\s132\iar\rng_s132_pca10040.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>

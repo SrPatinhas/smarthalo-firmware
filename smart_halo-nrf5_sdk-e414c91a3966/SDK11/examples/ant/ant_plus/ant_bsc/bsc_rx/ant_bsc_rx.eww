@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\speed\pca10036\iar\ant_bsc_rx_speed_s212_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\speed\pca10040\iar\ant_bsc_rx_speed_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\cadence\pca10040\iar\ant_bsc_rx_cadence_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\cadence\pca10036\iar\ant_bsc_rx_cadence_s212_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\combined\pca10040\iar\ant_bsc_rx_combined_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\combined\pca10036\iar\ant_bsc_rx_combined_s212_pca10036.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>

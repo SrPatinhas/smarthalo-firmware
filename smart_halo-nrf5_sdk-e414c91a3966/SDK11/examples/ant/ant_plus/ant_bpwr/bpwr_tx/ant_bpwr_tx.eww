@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\power_only\auto\pca10040\iar\ant_bpwr_tx_power_only_auto_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\power_only\auto\pca10036\iar\ant_bpwr_tx_power_only_auto_s212_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\power_only\button\pca10036\iar\ant_bpwr_tx_power_only_button_s212_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\crank_torque\auto\pca10040\iar\ant_bpwr_tx_crank_torque_auto_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\power_only\button\pca10040\iar\ant_bpwr_tx_power_only_button_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\wheel_torque\auto\pca10040\iar\ant_bpwr_tx_wheel_torque_auto_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\crank_torque\auto\pca10036\iar\ant_bpwr_tx_crank_torque_auto_s212_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\wheel_torque\auto\pca10036\iar\ant_bpwr_tx_wheel_torque_auto_s212_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\crank_torque\button\pca10040\iar\ant_bpwr_tx_crank_torque_button_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\wheel_torque\button\pca10040\iar\ant_bpwr_tx_wheel_torque_button_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\wheel_torque\button\pca10036\iar\ant_bpwr_tx_wheel_torque_button_s212_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\crank_torque\button\pca10036\iar\ant_bpwr_tx_crank_torque_button_s212_pca10036.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>

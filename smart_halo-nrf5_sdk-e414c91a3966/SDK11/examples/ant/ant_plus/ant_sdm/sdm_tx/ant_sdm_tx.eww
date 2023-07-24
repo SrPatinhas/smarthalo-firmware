@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<workspace>
+  <project>
+    <path>$WS_DIR$\auto\pca10040\iar\ant_sdm_tx_auto_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\auto\pca10036\iar\ant_sdm_tx_auto_s212_pca10036.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\button\pca10040\iar\ant_sdm_tx_button_s212_pca10040.ewp</path>
+  </project>
+  <project>
+    <path>$WS_DIR$\button\pca10036\iar\ant_sdm_tx_button_s212_pca10036.ewp</path>
+  </project>
+  <batchBuild/>
+</workspace>

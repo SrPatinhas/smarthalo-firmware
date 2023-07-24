@@ -1,0 +1,10 @@
+diff a/examples/peripheral/low_power_pwm/pca10040/armgcc/Makefile b/examples/peripheral/low_power_pwm/pca10040/armgcc/Makefile	(rejected hunks)
+@@ -5,7 +5,7 @@
+ MAKEFILE_NAME := $(MAKEFILE_LIST)
+ MAKEFILE_DIR := $(dir $(MAKEFILE_NAME) ) 
+ 
+-TEMPLATE_PATH = ../../../../../components/toolchain/gcc
++TEMPLATE_PATH = C:\smarthalo\Code\Firmware\nRF5_SDK_11.0.0_89a8197\components\toolchain\gcc
+ ifeq ($(OS),Windows_NT)
+ include $(TEMPLATE_PATH)/Makefile.windows
+ else
