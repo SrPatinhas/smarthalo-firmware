@@ -1,0 +1,23 @@
+#######################################
+# Syntax Coloring Map For HaloPixel
+####################################### 
+# Class
+#######################################
+
+HaloPixel		KEYWORD1
+
+#######################################
+# Methods and Functions 
+#######################################	
+
+setPixelColor	KEYWORD2
+setBrightness	KEYWORD2
+numPixels		KEYWORD2
+getPixelColor	KEYWORD2
+Color			KEYWORD2
+
+#######################################
+# Constants
+#######################################
+ 
+

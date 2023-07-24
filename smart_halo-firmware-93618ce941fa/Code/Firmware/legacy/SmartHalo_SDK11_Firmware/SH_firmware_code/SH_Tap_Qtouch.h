@@ -1,0 +1,64 @@
+/*
+ * SH_Tap_Qtouch.h
+ *
+ *  Created on: 2016-04-15
+ *      Author: SmartHalo
+ */
+
+#ifndef SH_FIRMWARE_CODE_SH_TAP_QTOUCH_H_
+#define SH_FIRMWARE_CODE_SH_TAP_QTOUCH_H_
+
+#include "stdafx.h"
+#include "SH_pinMap.h"
+//PIN DEFITION
+#define TAPSENSOR_PIN		TOUCH_OUT_PIN
+#define TIMEOUT_VALUE_FOR_TAP_TIMER 1000
+#define TIMEOUT_VALUE_FOR_DOUBLE_TAP_TIMER 1500
+
+//CHECK TAP, TO CALL TO CHECK WHAT HAPPENS ON THE QTOUCH SENSOR
+void SH_check_tap(void);
+
+//CHECK TAP READY FLAG
+//IF THE QTOUCH BUTTON WAS PRESSED
+//OR RELEASED FUNCTION WILL RETURN TRUE
+bool SH_check_tap_ready_flag();
+
+//CHECK PIN_NO_TAP
+//RETURNS THE NUMBER OF THE PIN THAT CALLED THE INTERRUPT
+uint8_t SH_check_pin_no_tap();
+
+//CHECK BUTTON ACTION TAP
+//RETURNS THE ACTION THAT WAS DONE ON THE PIN THAT TRIGURRED THE INTERRUPT
+uint8_t SH_check_button_action_tap();
+
+//returns the heartbeat discriminant flag
+bool tap_is_not_heartbeat();
+
+//resets the heartbeat discriminant flag
+void reset_heartbeat_flag();
+
+//TAP QTOUCH INIT
+//INITIALIZE THE PIN FOR THE QTOUCH HAS A BUTTON
+//CREATES THE TIMER FOR THE TAP
+void SH_Tap_Qtouch_init();
+
+//GET NIGHT LIGHT FLAG
+//FUNCTION RETURNS TRUE IF THERE WAS ONE LONG TAP ON THE QTOUCH SENSOR
+bool get_night_light_flag();
+
+//GET GOAL COMPLETITION FLAG
+//FUNCTION RETURNS TRUE IF THERE WAS TWO TAP ON THE QTOUCH SENSOR
+bool get_goal_completition_flag();
+
+
+//GET SWITCH DISPLAY FLAG,
+//IF THE USER HAS PRESSED ONE SHORT TAP ON THE QTOUCH
+//THIS FUNCTION WILL RETURN TRUE
+bool get_switch_display_flag();
+
+//PUT DOWN TAP READY FLAG
+//PUTS TO FALSE THE TAP READY FLAG
+//TO SPECIFY THAT WE HAVE CHECKED WHAT WAS HAPPENING ON THE PIN
+void SH_put_down_tap_ready_flag();
+
+#endif /* SH_FIRMWARE_CODE_SH_TAP_QTOUCH_H_ */
