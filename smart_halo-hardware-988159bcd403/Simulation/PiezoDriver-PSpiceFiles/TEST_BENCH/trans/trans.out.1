@@ -1,0 +1,47 @@
+
+**** 10/20/15 17:38:31 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-trans"  [ C:\Users\Olivier\Documents\Orcad\PiezoDriver-PSpiceFiles\TEST_BENCH\trans.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2.5ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\TEST_BENCH.net" 
+
+
+
+**** INCLUDING TEST_BENCH.net ****
+* source PIEZODRIVER
+Q_U1_Q1         U1_N00440 U1_N00154 0 QbreakN 
+R_U1_R2         U1_N00154 N00140  {Rb} TC=0,0 
+C_U1_C1         U1_N00440 N00140  {Cp}  TC=0,0 
+R_U1_R3         U1_N00440 N00140  {Rp} TC=0,0 
+V_V1         N00140 0 DC 2.5Vdc 
++PULSE 0Vdc {VIN} 0 0 0 0.5*<PPERIOD> {PPERIOD}
+-----------------------------$
+ERROR -- Expecting keyword STIMULUS, saw PPERIOD.
+
+.PARAM  rb=1k vin=5vdc cp=10n pperiod=250u rp=1k
+
+**** RESUMING trans.cir ****
+.END
+

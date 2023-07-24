@@ -1,0 +1,409 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #E2F2F8;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\CS\Templates\CircuitStudio_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2015-12-11</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">17:45:44</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc" class="file"><acronym title="C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc">C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Errors:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">4</td></tr>
+</table>
+</td>
+</table><a name="IDFGASTVVEU34FIGXSYTJCQITWUK0UE2ZYTOBQ2LIMM0WDAZWH0FYP"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Errors</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3MRRMKJCYI2GKJZWRZLXE0HJ5DLSPQB41GTAZUPJL43JMSYAUIQN">Unpoured Polygon (Allow unpoured: False)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDG0RSF4TTB2BMFZBPFGLWVSCRGFSP4M5OW5P4ZYISQD4OULMXCL0N">Height Constraint (Min=0mm) (Max=3mm) (Prefered=3mm) (All)</a></td>
+<td class="column2">4</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDI4KNXEIKXYAFL13MNVDZOJMJXEDBRLHTCQWHDGFBHXOHQ52ECJBP">Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) </a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDK1RIAACSNXB1OQTXGMZHTEQ55KNXECGB1TMPVPKSPYWWKRLZZUWD">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKZCAEHTEOMZRLZ0MU0UTVFZHZOQ2OYZRQRGMEXKWLDY14UM5G2XL">Routing Layers(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID025UGDOU5GBYCYWUV3UXBFZEEBU51SOQQOHDPIL1JQPKAOQV3QKB">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUAV1LESKDNW1H2BA2WYXAHRDSLN4WNMAXUGRAHEPFBVMNFFQADYD">Width Constraint (Min=0.152mm) (Max=1.905mm) (Preferred=0.203mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDL1T5IOLLLIBBNR3NNV53Y1BDCVVCVQWBFGOHCHTYUK1AU2G4XEE">Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('GND'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMW4MSOBFEHVDKGFS4VDI3R3EEKE54DJLVAJLC2G4HGIGI0DSQSCD">Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('VBZ'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB1Q4ROSKPZXTF5BFVHNDTGFEEJOXWPBPXJN13HP2YOJGHL54JRYO">Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('+3.3'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1RIONOZMS4MRL24BRL145JGDCNYA3GMFBNSMICCSEZRKNZYXFQMP">Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('AVDD'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXKX3HEH3VNEPPNMDOFJ3JMDQGF0EGGZQJQ5GC0EIQJKGW1IARLZC">Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('+5'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXGDRZY0TNHHFFVW11O0JKHKQYJUJ5K1A0NHHGJDO5FPVMT5QDBKI">Width Constraint (Min=0.203mm) (Max=1.27mm) (Preferred=0.305mm) (InNet('VLED'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGA3KOEHW4MF5JKLYRKHT5HCSYELK52ELKFQ2XNBPQIHR4YFRQRWM">Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('VBAT'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJKZHZZR3B0KUJ13GLZS0OXDUGCZWBC2DFJ5Y5JPQNWSWVJT31TIL">Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('NetC47_2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID4HEUBBC0VWHCEFRDYQWMNXATVMQOSKXNDP2GITMX5JIWBONYJTKH">Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('ANT2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBNTPEQDXK02PY2SIQKT5GJL5CRC0PAIWIJQ24KEB4M5W03LIOKE">Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('ANT1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPCEF3DGHVH1SNLO11YQVWQSQSHZDNATC4XA5QLNDAPYWBZ4G3ETI">Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('NetANT1_1'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZL03MOWQDGH3BDVBD2GVQHPTVDC0OXZAJY5ICVKRWSU4FMZ4XVPF">Clearance Constraint (Gap=0.152mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNMYMRKLIHX3CCZAUKWVSLL5UPJRYJ4VTDEKFVDK4QEKGOYCVQOO">Clearance Constraint (Gap=0mm) (InNet('NetANT1_1')),(OnLayer('Keep-Out Layer'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUFE31HHZRJJKGE5FK1B3PGTJVD41LXDS1DP2QNLBBI4PEH4ETGJN">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDB253R54OY5P0DZATCHZYGGZLYOPMFIBQW5T2GPFXIADZNBC0VPAL">Silk primitive without silk layer</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDKTQ1YS2T1LVGDJOPXKVHPTCMEMPJDHE5JDHDMRN5PRDY23ATHM4G">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDNMEXIOF4YQ54D44LIHSOI5MUDLLI5YGC0AQSZCPSCTKIGX0Z2P2H">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAVS3G5L3MKB1FWZ10134KP3IQEMCVMU12LJ53BJ2YELJEQOKESXB">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDZKZUHGVNDC5VBMMORRQOMJUUJJVQKSSMG3J3HKA5DCNBQSQNEIJ">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXGGN1L5EWLS3D4EJAZQWPI3P2ID42ILQY20GIJGBPQ3W41BYE24F">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">4</td>
+</tr>
+</table><br><a name="IDG0RSF4TTB2BMFZBPFGLWVSCRGFSP4M5OW5P4ZYISQD4OULMXCL0N"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Height Constraint (Min=0mm) (Max=3mm) (Prefered=3mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2745.75mil|Location2.X=2774.25mil|Location1.Y=3700.74mil|Location2.Y=3709.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2745.75mil|Location2.X=2774.25mil|Location1.Y=3700.74mil|Location2.Y=3709.26mil|Absolute=True">Height Constraint: Component J5-TE-2106091-1 (0mm,21.463mm) on Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2745.75mil|Location2.X=2774.25mil|Location1.Y=1810.74mil|Location2.Y=1819.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2745.75mil|Location2.X=2774.25mil|Location1.Y=1810.74mil|Location2.Y=1819.26mil|Absolute=True">Height Constraint: SMT Small Component J4-BUZPADS (0mm,-26.543mm) on Bottom Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2940.75mil|Location2.X=2969.25mil|Location1.Y=2035.74mil|Location2.Y=2044.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2940.75mil|Location2.X=2969.25mil|Location1.Y=2035.74mil|Location2.Y=2044.26mil|Absolute=True">Height Constraint: SMT Small Component J2-TE-2213189-2 (4.953mm,-20.828mm) on Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2595.75mil|Location2.X=2624.25mil|Location1.Y=2020.74mil|Location2.Y=2029.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2595.75mil|Location2.X=2624.25mil|Location1.Y=2020.74mil|Location2.Y=2029.26mil|Absolute=True">Height Constraint: Component J1-TE-2106091-1 (-3.81mm,-21.209mm) on Top Layer</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

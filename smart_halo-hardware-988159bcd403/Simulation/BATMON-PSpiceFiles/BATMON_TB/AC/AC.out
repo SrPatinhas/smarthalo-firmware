@@ -1,0 +1,105 @@
+
+**** 01/12/16 16:34:24 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-AC"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\BATMON-PSpiceFiles\BATMON_TB\AC.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "AC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 100 1000k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\BATMON_TB.net" 
+
+
+
+**** INCLUDING BATMON_TB.net ****
+* source BATMON
+R_R1         N00124 0 1M
+R_R2         N00128 0 1M
+V_V1         N00162 0 DC {VBAT} AC {VBATNOISE} 
+I_I2         N00180 0 DC {ILOAD} AC {ILOADNOISE} 
+C_C1         N00180 0 {CLOAD}
+R_U1_R6         N00128 U1_N00517 {IGAIN*R}
+R_U1_R5         N00180 U1_N00517 {R}
+R_U1_R4         N01022 U1_N00493 {IGAIN*R}
+R_U1_R3         U1_N00493 N00162 {R}
+R_U1_R2         0 U1_N00268 {(VGAIN*R)/(1-VGAIN)}
+R_U1_R1         U1_N00268 N00162 {R}
+R_U1_RSENSE         N00162 N00180 {RSENSE}
+E_U1_U1         N00124 0 VALUE {LIMIT(V(U1_N00268,N00124)*1E6,-15V,+15V)}
+E_U1_U2         N00128 0 VALUE {LIMIT(V(U1_N00493,U1_N00517)*1E6,-15V,+15V)}
+V_V2         N01022 0 {VOFF}
+.PARAM  igain=220 cload=15.8u vbatnoise=1vac iload=0.5adc imin=-1.0adc
++  imax=1.5adc voff=1.5vdc vbatmin=3vdc vbatmax=4.3vdc r=100k rsense=0.01
++  vgain=0.75 iloadnoise=1aac vbat=3.9vdc
+
+**** RESUMING AC.cir ****
+.END
+
+**** 01/12/16 16:34:24 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-AC"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\BATMON-PSpiceFiles\BATMON_TB\AC.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00124)    2.9250 (N00128)    2.5994 (N00162)    3.9000 (N00180)    3.8950     
+
+(N01022)    1.5000 (U1_N00268)    2.9250                 (U1_N00493)    3.8891  
+
+(U1_N00517)    3.8891                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -5.000E-01
+    V_V2         1.086E-07
+
+    TOTAL POWER DISSIPATION   1.95E+00  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/12/16 16:34:24 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-AC"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\BATMON-PSpiceFiles\BATMON_TB\AC.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

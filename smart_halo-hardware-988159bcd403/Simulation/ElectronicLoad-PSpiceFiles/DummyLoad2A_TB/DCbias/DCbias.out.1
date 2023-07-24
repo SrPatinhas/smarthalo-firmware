@@ -1,0 +1,114 @@
+
+**** 02/05/16 14:58:26 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "DummyLoad2A_TB-DCbias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles\dumm
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DCbias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../electronicload-pspicefiles/electronicload.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\DummyLoad2A_TB.net" 
+
+
+
+**** INCLUDING DummyLoad2A_TB.net ****
+* source ELECTRONICLOAD
+E_U1_U1         U1_N00100 0 VALUE {LIMIT(V(N00109,U1_N00245)*1E6,-15V,+15V)}
+R_U1_R1         U1_N00245 0 {RSENSE}
+M_U1_M2         N00113 U1_N00100 U1_N00245 U1_N00245 IRF150
+V_VLOAD         N00113 0 {VLOAD}
+V_VREF         N00109 0 {VREF}
+.PARAM  vload=3.8vdc rsense=1 vref=1.5vdc
+
+**** RESUMING DCbias.cir ****
+.END
+
+**** 02/05/16 14:58:26 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "DummyLoad2A_TB-DCbias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles\dumm
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+ERROR -- Convergence problem in bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00109)     .3690 (N00113)     .9349 (U1_N00100)    3.6902                     
+
+(U1_N00245)     .3690                 
+
+
+  These supply currents failed to converge:
+
+    I(E_U1_U1)                =         0A  \   -5.080uA
+
+**** Interrupt ****

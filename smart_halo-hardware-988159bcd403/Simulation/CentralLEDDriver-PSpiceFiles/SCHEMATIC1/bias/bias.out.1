@@ -1,0 +1,46 @@
+
+**** 12/10/15 10:54:04 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-bias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver-pspicefiles\schemati
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../centralleddriver-pspicefiles/centralleddriver.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source CENTRALLEDDRIVER
+R_R1         N00169 N00173  9.1k TC=0,0 
+R_R2         N00705 N00169  0 TC=0,0 
+----------------------------$
+ERROR(ORPSIM-16144): Value may not be 0
+V_V1         N00169 0 5Vdc
+Q_Q1         N00701 N00173 0 Qbreakn 
+D_D1         N01009 N00701 Dbreak 
+D_D2         N00993 N01009 Dbreak 
+D_D3         N00705 N00993 Dbreak 
+
+**** RESUMING bias.cir ****
+.END
+

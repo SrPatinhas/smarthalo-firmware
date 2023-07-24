@@ -1,0 +1,55 @@
+Change Component Description : Designator=C6 Old Description=Chip Cap 0603 X7R 10% New Description=Chip Cap 0603 C0G best or X7R or X5R 10%
+Change Component Description : Designator=R9 Old Description=TBDR TBDW TBD% 0603 (1608 Metric)  SMD New Description=TBDR TBDW 10% <200ppm/C 0603 (1608 Metric)  SMD
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component C1 1.0uF
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component C2 100.0nF
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component C3 1.0uF
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component C4 100.0nF
+Added Member To Class: ClassName=TOUCH Member=Component C5 TBD nF
+Added Member To Class: ClassName=TOUCH Member=Component C6 TBD nF
+Added Member To Class: ClassName=TOUCH Member=Component C7 1.0uF
+Added Member To Class: ClassName=TOUCH Member=Component C8 100.0nF
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component D1 C503C-WAS
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component D2 C503C-WAS
+Added Member To Class: ClassName=CENTRALLEDS Member=Component LED1 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED2 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED3 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED4 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED5 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED6 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED7 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED8 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED9 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED10 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED11 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED12 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED13 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED14 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED15 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED16 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED17 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED18 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED19 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED20 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED21 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED22 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED23 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED24 LTSN-N213EGBW
+Added Member To Class: ClassName=LEDS Member=Component LED25 LTSN-N213EGBW
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component P1 MTLW-104-07-L-S-125
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component P2 MTLW-104-07-L-S-125
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component P3 MTLW-102-05-G-S-172
+Added Member To Class: ClassName=TOUCH Member=Component P4 MTLW-102-05-G-S-172
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component Q1 NX3020NAKV
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component Q2 NX3020NAKV
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R1 3.3 kOhm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R2 3.3 kOhm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R4 62 Ohm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R5 4.7 kOhm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R6 130 Ohm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R7 62 Ohm
+Added Member To Class: ClassName=TOUCH Member=Component R9 TBD Ohm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R11 100 kOhm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component U1 IS31FL3236-TQLS2
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component U2 IS31FL3236-TQLS2
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component U3 IS31LT3171
+Added Member To Class: ClassName=TOUCH Member=Component U4 AT42QT1010

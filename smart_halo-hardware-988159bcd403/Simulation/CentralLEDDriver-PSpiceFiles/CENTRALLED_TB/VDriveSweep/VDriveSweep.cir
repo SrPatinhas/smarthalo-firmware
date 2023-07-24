@@ -1,0 +1,20 @@
+** Profile: "CENTRALLED_TB-VDriveSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver-pspicefiles\centralled_tb\vdrivesweep.sim ] 
+
+** Creating circuit file "VDriveSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../centralleddriver-pspicefiles/centralleddriver.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM GBVDRIVE 0Vdc 3.3Vdc 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\CENTRALLED_TB.net" 
+
+
+.END

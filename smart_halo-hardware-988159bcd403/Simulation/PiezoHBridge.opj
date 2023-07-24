@@ -1,0 +1,224 @@
+(ExpressProject "PiezoHBridge"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\piezohbridge.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\piezohbridge-pspicefiles\piezohbridge_tb\piezohbridge_tb.net"
+      (Type "Report"))
+    (File ".\piezohbridge-pspicefiles\inv_tb\inv_tb.net"
+      (Type "Report"))
+    (File ".\piezohbridge-pspicefiles\delay_tb\delay_tb.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\piezohbridge-pspicefiles\piezohbridge_tb\trans.sim"
+        (DisplayName "PiezoHBridge_TB-trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\piezohbridge-pspicefiles\inv_tb\trans2.sim"
+        (DisplayName "INV_TB-trans2")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\piezohbridge-pspicefiles\inv_tb\dcsweep.sim"
+        (DisplayName "INV_TB-dcsweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\piezohbridge-pspicefiles\piezohbridge_tb\tata.sim"
+        (DisplayName "PiezoHBridge_TB-tata")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\piezohbridge-pspicefiles\delay_tb\test_delay.sim"
+        (DisplayName "Delay_TB-test_delay")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\piezohbridge-pspicefiles\piezohbridge_tb\trans2.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\piezohbridge-pspicefiles\piezohbridge_tb\trans2.sim"
+        (DisplayName "PiezoHBridge_TB-trans2")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\piezohbridge-pspicefiles\piezohbridge.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\piezohbridge-pspicefiles\piezohbridge.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (74HC04
+      (FullPartName "74HC04.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\74HC.OLB")
+      (DeviceIndex "0"))
+    (74HC14
+      (FullPartName "74HC14.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\74HC.OLB")
+      (DeviceIndex "0"))
+    (74LS14
+      (FullPartName "74LS14.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\74LS.OLB")
+      (DeviceIndex "0"))
+    (74LS04
+      (FullPartName "74LS04.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\74LS.OLB")
+      (DeviceIndex "0"))
+    (74HCT04
+      (FullPartName "74HCT04.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\74HCT.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (INV
+      (FullPartName "INV.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIG_PRIM.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (power_Mbreakn
+      (FullPartName "power_Mbreakn.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (MbreakN3
+      (FullPartName "MbreakN3.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (MbreakP3
+      (FullPartName "MbreakP3.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (74H04
+      (FullPartName "74H04.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\74H.OLB")
+      (DeviceIndex "0"))
+    (AND2
+      (FullPartName "AND2.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\DIG_PRIM.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "PiezoHBridge_TB")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "Delay_TB")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "FallingEdgeDelay")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "HalfHBridge")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "HBridge")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "HDriver")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "HighSideDriver")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "INV_TB")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "MyInverter")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "PiezoHBridge")
+      (Path "Design Resources"
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\piezohbridge.dsn"
+         "RisingEdgeDelay")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 421"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1447 104 564")
+        (Scroll "-225 0")
+        (Zoom "87")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PIEZOHBRIDGE.DSN")
+      (Schematic "PiezoHBridge_TB")
+      (Page "PiezoHBridge_TB"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 1636 0 460")
+        (Scroll "-309 0")
+        (Zoom "100")
+        (Occurrence "/U1"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PIEZOHBRIDGE.DSN")
+      (Schematic "PiezoHBridge")
+      (Page "PiezoHBridge"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1740 104 564")
+        (Scroll "-309 0")
+        (Zoom "100")
+        (Occurrence "/U1/U2"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PIEZOHBRIDGE.DSN")
+      (Schematic "HBridge")
+      (Page "HBridge")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_16.6\tools\capture\library\pspice")
+  (MPSSessionName "sgelinas"))

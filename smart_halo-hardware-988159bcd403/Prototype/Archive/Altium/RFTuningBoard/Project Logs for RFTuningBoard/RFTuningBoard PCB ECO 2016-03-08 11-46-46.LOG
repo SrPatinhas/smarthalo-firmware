@@ -1,0 +1,13 @@
+Added Component: Designator=ANT5(ANT7020LL05R2400A)
+Added Component: Designator=ANT6(2500AT44M0400)
+Added Pin To Net: NetName=NetANT5_1 Pin=ANT5-1
+Added Pin To Net: NetName=NetANT5_1 Pin=ANT6-1
+Added Pin To Net: NetName=NetANT5_1 Pin=C4-2
+Added Pin To Net: NetName=NetANT5_1 Pin=C7-1
+Added Net: Name=NetANT5_1
+Added Member To Class: ClassName=RFTuningBoard Member=Component ANT5 ANT7020LL05R2400A
+Added Member To Class: ClassName=RFTuningBoard Member=Component ANT6 2500AT44M0400
+Added Member To Class: ClassName=RFTuningBoard Member=Component C4 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C6 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C7 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component P2 TE 5-1814832-1

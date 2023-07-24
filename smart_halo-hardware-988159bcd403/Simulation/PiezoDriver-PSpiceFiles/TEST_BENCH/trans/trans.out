@@ -1,0 +1,163 @@
+
+**** 11/04/15 21:44:00 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\piezodriver-pspicefiles\test_bench\t
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2.5ms 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\TEST_BENCH.net" 
+
+
+
+**** INCLUDING TEST_BENCH.net ****
+* source PIEZODRIVER
+V_V1         N00140 0 DC {0.5*VIN} 
++PULSE 0Vdc {VIN} 0 0 0 {0.5/PFREQ} {1/PFREQ}
+V_V2         N01556 0 {VIN}
+D_U1_D1         N02373 N01556 Dbreak 
+Q_U1_Q1         N02373 U1_N00154 0 QbreakN 
+R_U1_R2         U1_N00154 N00140  {Rbm} TC=0,0 
+C_U1_C1         0 N01556  {Ccm}  TC=0,0 
+Q_U2_Q1         N01782 U2_N03914 0 QbreakN 
+R_U2_R3         N01782 N01775  {Rcp} TC=0,0 
+R_U2_R2         U2_N03914 N01941  {Rbp} TC=0,0 
+C_U2_C1         0 N01775  {Ccp}  TC=0,0 
+C_C1         N01782 N01775  {CP}  TC=0,0 
+V_V3         N01941 0 DC {0.5*VIN} 
++PULSE {-1*VIN} {VIN} 0 0 0 {0.5/PFREQ} {1/PFREQ}
+V_V4         N01775 0 {2*VIN}
+R_R1         N02373 N01556  {RM} TC=0,0 
+.PARAM  pfreq=4k vin=5vdc rbm=1200 ccm=100n rcp=1k rbp=1k ccp=100n rm=60 cp=16n
+
+**** RESUMING trans.cir ****
+.END
+
+**** 11/04/15 21:44:00 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\piezodriver-pspicefiles\test_bench\t
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          
+          IS   10.000000E-15 
+          RS     .1          
+         CJO  100.000000E-15 
+
+
+**** 11/04/15 21:44:00 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\piezodriver-pspicefiles\test_bench\t
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 11/04/15 21:44:00 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\piezodriver-pspicefiles\test_bench\t
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00140)    0.0000 (N01556)    5.0000 (N01775)   10.0000 (N01782)   10.0000     
+
+(N01941)   -5.0000 (N02373)    5.0000 (U1_N00154) 6.000E-09                     
+
+(U2_N03914)   -5.0000                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         5.000E-12
+    V_V2        -1.001E-11
+    V_V3         1.505E-11
+    V_V4        -2.500E-11
+
+    TOTAL POWER DISSIPATION   3.75E-10  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 11/04/15 21:44:00 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\piezodriver-pspicefiles\test_bench\t
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+

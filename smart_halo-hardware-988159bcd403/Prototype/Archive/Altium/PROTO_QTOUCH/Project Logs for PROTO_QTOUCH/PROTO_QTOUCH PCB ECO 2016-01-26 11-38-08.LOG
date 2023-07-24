@@ -1,0 +1,28 @@
+Removed Pin From Net: NetName=NetC6_2 Pin=R11-1
+Removed Pin From Net: NetName=CAPIN Pin=R11-2
+Removed Member From Class: ClassName=LEDS Member=LED1
+Removed Member From Class: ClassName=DRIVERS_CONNECTORS Member=R9
+Change Component Footprint: Designator=R9 Old Footprint=RESC0603(1608)_M New Footprint=RESC0603(1608)_M
+Change Component Comment : Designator=R9 Old Comment=100 kOhm New Comment=TBD Ohm
+Change Component Comment : Designator=R11 Old Comment=TBD Ohm New Comment=100 kOhm
+Change Component Description : Designator=R11 Old Description=TBDR TBDW TBD% 0603 (1608 Metric)  SMD New Description=100k 0.1W 5% 0603 (1608 Metric)  SMD
+Added Pin To Net: NetName=NetC6_2 Pin=R9-1
+Added Pin To Net: NetName=CAPIN Pin=R9-2
+Added Pin To Net: NetName=GND Pin=R11-1
+Added Pin To Net: NetName=SDB Pin=R11-2
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component C1 1.0uF
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component C2 100.0nF
+Added Member To Class: ClassName=TOUCH Member=Component C5 TBD nF
+Added Member To Class: ClassName=TOUCH Member=Component C6 TBD nF
+Added Member To Class: ClassName=LEDS Member=Component LED20 LTSN-N213EGBW
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component P3 MTLW-102-05-G-S-172
+Added Member To Class: ClassName=TOUCH Member=Component P4 MTLW-102-05-G-S-172
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R1 3.3 kOhm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R2 3.3 kOhm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R4 62 Ohm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R5 4.7 kOhm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R6 130 Ohm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R11 100 kOhm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component U1 IS31FL3236-TQLS2
+Added Member To Class: ClassName=TOUCH Member=Component U4 AT42QT1010
+Added Room: Name=TOUCH

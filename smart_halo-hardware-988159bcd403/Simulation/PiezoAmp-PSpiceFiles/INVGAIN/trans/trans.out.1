@@ -1,0 +1,48 @@
+
+**** 01/13/16 15:33:21 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "INVGAIN-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\INVGAIN\trans.sim 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2.5m 0 25u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\INVGAIN.net" 
+
+
+
+**** INCLUDING INVGAIN.net ****
+* source PIEZOAMP
+R_R1         N08519 N00207  {R} TC=0,0 
+R_R2         N00207 N00228  {R*VGAIN} TC=0,0 
+X_U2A         N00244 N00207 N00500 0 N00228 LM124
+V_V3         N00500 0 {VDD}
+R_R4         N00244 N00500  {R} TC=0,0 
+R_R5         0 N00244  0 TC=0,0 
+-----------------------$
+ERROR(ORPSIM-16144): Value may not be 0
+V_V7         N08519 0  
++PULSE {VIN+VCC/2} {-VIN+VCC/2} 0 0 0 {0.5/FREQ} {1/FREQ}
+.PARAM  vin=2.5vdc freq=4k r=10k vgain=4 vcc=5vdc vdd=20vdc
+
+**** RESUMING trans.cir ****
+.END
+

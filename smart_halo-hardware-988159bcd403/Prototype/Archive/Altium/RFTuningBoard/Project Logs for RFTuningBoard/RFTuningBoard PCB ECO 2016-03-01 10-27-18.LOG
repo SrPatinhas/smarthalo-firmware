@@ -1,0 +1,24 @@
+Added Component: Designator=ANT?(ANTENNA_PCB_2.4GHZ)
+Added Component: Designator=ANT?(ANTENNA_PCB_2.4GHZ)
+Added Component: Designator=ANT?(ANTENNA_PCB_2.4GHZ)
+Added Component: Designator=P?(TE_SMA_TH)
+Added Component: Designator=P?(TE_SMA_TH)
+Added Component: Designator=P?(TE_SMA_TH)
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=GND Pin=P?-2
+Added Pin To Net: NetName=NetANT?_1 Pin=ANT?-1
+Added Net: Name=NetANT?_1
+Added Pin To Net: NetName=NetC?_1 Pin=P?-1
+Added Net: Name=NetC?_1
+Added Class: Name=RFTuningBoard
+Added Room: Name=RFTuningBoard

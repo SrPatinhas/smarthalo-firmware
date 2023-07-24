@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 14:15:43 On 2015-12-10
+
+Output: Pick Place
+Type  : Pick Place
+From  : Variant [[No Variations]] of PCB Document [LEDBO_72LEDS.CSPcbDoc]
+   Generated File[[LEDBO_LRTBR98G_72.PrjPcb] Pick Place for LEDBO_72LEDS.txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 14:15:44 On 2015-12-10

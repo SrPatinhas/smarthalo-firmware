@@ -1,0 +1,75 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+U2         TQFP48            -559.056mil          0mil   -559.055mil          0mil   -724.056mil        110mil  T          0.00 IS31FL3236-TQLS2
+U1         TQFP48             559.056mil          0mil    559.055mil          0mil    724.056mil       -110mil  T        180.00 IS31FL3236-TQLS2
+R11        RESC0603(1608)_N       -100mil        465mil       -100mil        465mil   -131.496mil        465mil  T          0.00 100 kOhm       
+R10        RESC0603(1608)_N        -55mil        820mil        -55mil        820mil        -55mil    851.496mil  T        270.00 8.2 kOhm       
+R9         RESC0603(1608)_N         10mil        820mil         10mil        820mil         10mil    851.496mil  T        270.00 8.2 kOhm       
+R8         RESC0603(1608)_N        250mil        820mil        250mil        820mil        250mil    851.496mil  T        270.00 8.2 kOhm       
+R7         RESC0603(1608)_N          0mil       -300mil          0mil       -300mil          0mil   -268.504mil  T        270.00 8.2 Ohm        
+R6         RESC0603(1608)_N         80mil       -300mil         80mil       -300mil         80mil   -268.504mil  T        270.00 8.2 Ohm        
+R5         RESC0603(1608)_N        320mil        590mil        320mil        590mil        320mil    558.504mil  T         90.00 4.7 kOhm       
+R4         RESC0603(1608)_N        -95mil       -300mil        -95mil       -300mil        -95mil   -268.504mil  T        270.00 8.2 Ohm        
+R3         RESC0603(1608)_N        255mil        590mil        255mil        590mil        255mil    558.504mil  T         90.00 4.7 kOhm       
+R2         RESC0603(1608)_N       -635mil        360mil       -635mil        360mil       -635mil    328.504mil  T         90.00 2 kOhm         
+R1         RESC0603(1608)_N        615mil       -325mil        615mil       -325mil        615mil   -293.504mil  T        270.00 2 kOhm         
+Q2         NXP-SC74_M            -175mil        850mil       -175mil        850mil   -130.708mil    812.598mil  T        180.00 PBSS4160DS,115 
+Q1         NXP-SC74_M             130mil        850mil        130mil        850mil    174.292mil    812.598mil  T        180.00 PBSS4160DS,115 
+LED53      LRTB_R98G         -146.199mil   1110.497mil     -146.2mil   1110.496mil   -116.671mil   1136.087mil  T        180.00 LRTB_R98G      
+LED52      LRTB_R98G         -428.635mil   1034.818mil   -428.636mil   1034.818mil   -399.107mil   1060.408mil  T        180.00 LRTB_R98G      
+LED51      LRTB_R98G         -681.861mil    888.618mil   -681.861mil    888.618mil   -652.333mil    914.209mil  T        180.00 LRTB_R98G      
+LED50      LRTB_R98G         -888.618mil    681.861mil   -888.618mil    681.861mil    -914.21mil    711.389mil  T        270.00 LRTB_R98G      
+LED49      LRTB_R98G        -1034.818mil    428.635mil  -1034.818mil    428.636mil  -1060.408mil    458.163mil  T        270.00 LRTB_R98G      
+LED48      LRTB_R98G        -1110.497mil    146.199mil  -1110.496mil      146.2mil  -1136.087mil    175.726mil  T        270.00 LRTB_R98G      
+LED47      LRTB_R98G        -1110.497mil   -146.199mil  -1110.496mil     -146.2mil  -1139.722mil   -120.264mil  T        277.50 LRTB_R98G      
+LED46      LRTB_R98G        -1034.818mil   -428.635mil  -1034.818mil   -428.636mil   -1069.76mil   -411.148mil  T        292.50 LRTB_R98G      
+LED45      LRTB_R98G         -888.618mil   -681.861mil   -888.618mil   -681.861mil   -926.896mil   -674.014mil  T        307.50 LRTB_R98G      
+LED44      LRTB_R98G         -681.861mil   -888.618mil   -681.861mil   -888.618mil   -720.866mil   -890.946mil  T        322.50 LRTB_R98G      
+LED43      LRTB_R98G         -428.635mil  -1034.818mil   -428.636mil  -1034.818mil   -465.708mil   -1047.16mil  T        337.50 LRTB_R98G      
+LED42      LRTB_R98G         -146.199mil  -1110.497mil     -146.2mil  -1110.496mil   -178.814mil  -1132.014mil  T        352.50 LRTB_R98G      
+LED41      LRTB_R98G          146.199mil  -1110.497mil      146.2mil  -1110.496mil    120.264mil  -1139.722mil  T          7.50 LRTB_R98G      
+LED40      LRTB_R98G          428.635mil  -1034.818mil    428.636mil  -1034.818mil    411.148mil   -1069.76mil  T         22.50 LRTB_R98G      
+LED39      LRTB_R98G          681.861mil   -888.618mil    681.861mil   -888.618mil    674.014mil   -926.896mil  T         37.50 LRTB_R98G      
+LED38      LRTB_R98G          888.618mil   -681.861mil    888.618mil   -681.861mil    890.946mil   -720.866mil  T         52.50 LRTB_R98G      
+LED37      LRTB_R98G         1034.818mil   -428.635mil   1034.818mil   -428.636mil    1047.16mil   -465.708mil  T         67.50 LRTB_R98G      
+LED36      LRTB_R98G         1110.497mil   -146.199mil   1110.496mil     -146.2mil   1132.014mil   -178.814mil  T         82.50 LRTB_R98G      
+LED35      LRTB_R98G         1110.497mil    146.199mil   1110.496mil      146.2mil   1136.087mil    116.671mil  T         90.00 LRTB_R98G      
+LED34      LRTB_R98G         1034.818mil    428.635mil   1034.818mil    428.636mil   1060.408mil    399.107mil  T         90.00 LRTB_R98G      
+LED33      LRTB_R98G          888.618mil    681.861mil    888.618mil    681.861mil    914.209mil    652.333mil  T         90.00 LRTB_R98G      
+LED32      LRTB_R98G          681.861mil    888.618mil    681.861mil    888.618mil    711.389mil     914.21mil  T        180.00 LRTB_R98G      
+LED31      LRTB_R98G          428.635mil   1034.818mil    428.636mil   1034.818mil    458.163mil   1060.408mil  T        180.00 LRTB_R98G      
+LED30      LRTB_R98G          146.199mil   1110.497mil      146.2mil   1110.496mil    175.726mil   1136.087mil  T        180.00 LRTB_R98G      
+LED29      LRTB_R98G         -289.897mil   1081.913mil   -289.898mil   1081.913mil    -260.37mil   1107.504mil  T        180.00 LRTB_R98G      
+LED28      LRTB_R98G         -560.039mil    970.016mil   -560.039mil    970.017mil   -530.511mil    995.606mil  T        180.00 LRTB_R98G      
+LED27      LRTB_R98G         -792.015mil    792.015mil   -792.015mil    792.015mil   -762.488mil    817.606mil  T        180.00 LRTB_R98G      
+LED26      LRTB_R98G         -970.016mil     560.04mil   -970.017mil    560.039mil   -995.606mil    589.567mil  T        270.00 LRTB_R98G      
+LED25      LRTB_R98G        -1081.913mil    289.897mil  -1081.913mil    289.898mil  -1107.504mil    319.425mil  T        270.00 LRTB_R98G      
+LED24      LRTB_R98G        -1120.079mil          0mil  -1120.079mil          0mil   -1145.67mil     29.528mil  T        270.00 LRTB_R98G      
+LED23      LRTB_R98G        -1081.913mil   -289.897mil  -1081.913mil   -289.898mil  -1114.274mil       -268mil  T        285.00 LRTB_R98G      
+LED22      LRTB_R98G         -970.016mil   -560.039mil   -970.017mil   -560.039mil  -1006.942mil   -547.262mil  T        300.00 LRTB_R98G      
+LED21      LRTB_R98G         -792.015mil   -792.015mil   -792.015mil   -792.015mil    -830.99mil   -789.232mil  T        315.00 LRTB_R98G      
+LED20      LRTB_R98G         -560.039mil   -970.016mil   -560.039mil   -970.017mil   -598.406mil   -977.414mil  T        330.00 LRTB_R98G      
+LED19      LRTB_R98G         -289.897mil  -1081.913mil   -289.898mil  -1081.913mil   -325.042mil   -1098.99mil  T        345.00 LRTB_R98G      
+LED18      LRTB_R98G                0mil  -1120.079mil          0mil  -1120.079mil    -29.528mil   -1145.67mil  T        360.00 LRTB_R98G      
+LED17      LRTB_R98G          289.897mil  -1081.913mil    289.898mil  -1081.913mil        268mil  -1114.274mil  T         15.00 LRTB_R98G      
+LED16      LRTB_R98G          560.039mil   -970.016mil    560.039mil   -970.017mil    547.264mil  -1006.942mil  T         30.00 LRTB_R98G      
+LED15      LRTB_R98G          792.015mil   -792.015mil    792.015mil   -792.015mil    789.232mil    -830.99mil  T         45.00 LRTB_R98G      
+LED14      LRTB_R98G          970.016mil   -560.039mil    970.017mil   -560.039mil    977.414mil   -598.406mil  T         60.00 LRTB_R98G      
+LED13      LRTB_R98G         1081.913mil   -289.897mil   1081.913mil   -289.898mil    1098.99mil   -325.042mil  T         75.00 LRTB_R98G      
+LED12      LRTB_R98G         1120.079mil          0mil   1120.079mil          0mil    1145.67mil    -29.528mil  T         90.00 LRTB_R98G      
+LED11      LRTB_R98G         1081.913mil    289.897mil   1081.913mil    289.898mil   1107.504mil     260.37mil  T         90.00 LRTB_R98G      
+LED10      LRTB_R98G          970.016mil     560.04mil    970.017mil    560.039mil    995.607mil    530.513mil  T         90.00 LRTB_R98G      
+LED9       LRTB_R98G          792.015mil    792.015mil    792.015mil    792.015mil    821.543mil    817.606mil  T        180.00 LRTB_R98G      
+LED8       LRTB_R98G           560.04mil    970.016mil    560.039mil    970.017mil    589.567mil    995.606mil  T        180.00 LRTB_R98G      
+LED7       LRTB_R98G          289.897mil   1081.913mil    289.898mil   1081.913mil    319.425mil   1107.504mil  T        180.00 LRTB_R98G      
+LED6       LRTB_R98G                0mil   1120.079mil          0mil   1120.079mil     29.528mil    1145.67mil  T        180.00 LRTB_R98G      
+LED5       LRTB_R98G               95mil        -90mil         95mil        -90mil    124.528mil     -64.41mil  T        180.00 LRTB_R98G      
+LED4       LRTB_R98G              -95mil        -90mil        -95mil        -90mil    -65.472mil     -64.41mil  T        180.00 LRTB_R98G      
+LED3       LRTB_R98G                0mil          0mil          0mil          0mil    -29.528mil     -25.59mil  T          0.00 LRTB_R98G      
+LED2       LRTB_R98G               95mil         90mil         95mil         90mil     65.472mil      64.41mil  T          0.00 LRTB_R98G      
+LED1       LRTB_R98G              -95mil         90mil        -95mil         90mil   -124.528mil      64.41mil  T          0.00 LRTB_R98G      
+C4         CAPC0603(1608)100_N       -540mil        325mil       -540mil        325mil   -508.504mil        325mil  T        180.00 100.0nF        
+C3         CAPC0603(1608)100_N       -540mil        390mil       -540mil        390mil   -508.504mil        390mil  T        180.00 1.0uF          
+C2         CAPC0603(1608)100_N        520mil       -290mil        520mil       -290mil    551.496mil       -290mil  T        180.00 100.0nF        
+C1         CAPC0603(1608)100_N        520mil       -355mil        520mil       -355mil    551.496mil       -355mil  T        180.00 1.0uF          
+

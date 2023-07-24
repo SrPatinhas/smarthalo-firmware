@@ -1,0 +1,208 @@
+
+**** 01/08/16 15:24:16 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PiezoAmp-PSpiceFiles\SCHEMATIC1\tran
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 10ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PIEZOAMP
+R_R1         N00211 N00207  10k TC=0,0 
+R_R2         N00207 N00228  10k TC=0,0 
+X_R3         N00291 N00211 N00211 POT PARAMS: SET={POT} VALUE=200k
+X_U2A         N00244 N00207 N00500 0 N00228 LM124
+V_V3         N00500 0 {VCC}
+R_R4         N00244 N00500  10k TC=0,0 
+R_R5         0 N00244  10k TC=0,0 
+R_R6         N06995 N01562  10k TC=0,0 
+R_R7         N01562 N01584  31.2k TC=0,0 
+V_V6         N02334 0  
++SIN {VIN/2} {VIN/2} {FREQ} 0 0 0
+V_V5         N01716 0 {VCC}
+C_C2         N01562 N01584  100p  TC=0,0 
+X_U3A         N06632 N01562 N01716 0 N01584 OP-471F
+R_R8         N06632 N01716  10k TC=0,0 
+R_R9         0 N06632  10k TC=0,0 
+C_C3         N02334 N06995  1u  TC=0,0 
+V_V7         N00291 0  
++PULSE {VIN+VCC/2} {-VIN+VCC/2} 0 0 0 {0.5/FREQ} {1/FREQ}
+.PARAM  vin=2.5vdc freq=12k pot=0.95 vcc=5vdc
+
+**** RESUMING trans.cir ****
+.END
+
+**** 01/08/16 15:24:16 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PiezoAmp-PSpiceFiles\SCHEMATIC1\tran
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.dx        X_U2A.dy        X_U3A.dx        X_U3A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03                    1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 01/08/16 15:24:16 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PiezoAmp-PSpiceFiles\SCHEMATIC1\tran
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.qx        X_U3A.qx        
+               PNP             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF  166.7             8.000000E+03 
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.2             2.42         
+           D     .52             .87         
+
+
+**** 01/08/16 15:24:16 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PiezoAmp-PSpiceFiles\SCHEMATIC1\tran
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00207)    2.5002 (N00211)    3.7501 (N00228)    1.2499 (N00244)    2.5002     
+
+(N00291)    5.0000 (N00500)    5.0000 (N01562)    2.4999 (N01584)    2.5004     
+
+(N01716)    5.0000 (N02334)    1.2500 (N06632)    2.4999 (N06995)    2.4999     
+
+(X_U2A.6) 237.4E-06                   (X_U2A.7)    1.2436                       
+
+(X_U2A.8)    1.2436                   (X_U2A.9)    0.0000                       
+
+(X_U3A.6)-85.85E-09                   (X_U3A.7)    2.5004                       
+
+(X_U3A.8)    2.5004                   (X_U3A.9)    0.0000                       
+
+(X_U2A.10)    3.1079                  (X_U2A.11)     .0397                      
+
+(X_U2A.12)     .0397                  (X_U2A.13)    3.0940                      
+
+(X_U2A.14)    3.0940                  (X_U2A.53)    3.5000                      
+
+(X_U2A.54)     .6500                  (X_U2A.90)    -.1250                      
+
+(X_U2A.91)   40.0000                  (X_U2A.92)  -40.0000                      
+
+(X_U2A.99)    2.5000                  (X_U3A.10)    1.7626                      
+
+(X_U3A.11)    4.9024                  (X_U3A.12)    4.9024                      
+
+(X_U3A.13)    1.8344                  (X_U3A.14)    1.8344                      
+
+(X_U3A.53)    3.0000                  (X_U3A.54)    2.0000                      
+
+(X_U3A.90) 14.94E-06                  (X_U3A.91)   25.0000                      
+
+(X_U3A.92)  -25.0000                  (X_U3A.99)    2.5000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -8.156E-04
+    V_V6         0.000E+00
+    V_V5        -8.325E-04
+    V_V7        -1.250E-04
+    X_U2A.vb     2.374E-09
+    X_U2A.vc     2.251E-12
+    X_U2A.ve     6.814E-13
+    X_U2A.vlim  -1.250E-04
+    X_U2A.vlp   -4.013E-11
+    X_U2A.vln   -3.988E-11
+    X_U3A.vb    -8.585E-13
+    X_U3A.vc     5.004E-13
+    X_U3A.ve     4.540E-13
+    X_U3A.vlim   1.494E-08
+    X_U3A.vlp   -2.500E-11
+    X_U3A.vln   -2.500E-11
+
+    TOTAL POWER DISSIPATION   8.87E-03  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/08/16 15:24:16 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PiezoAmp-PSpiceFiles\SCHEMATIC1\tran
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .75
+

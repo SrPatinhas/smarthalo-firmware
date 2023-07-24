@@ -1,0 +1,22 @@
+Added Pin To Net: NetName=NetU4_13 Pin=U8-19
+Change Net Name : Old Net Name=AC1 New Net Name=AC_P
+Change Net Name : Old Net Name=AC2 New Net Name=AC_N
+Change Net Name : Old Net Name=ANT1 New Net Name=ANT_N
+Change Net Name : Old Net Name=ANT2 New Net Name=ANT_P
+Change Net Name : Old Net Name=BZ_OUT+ New Net Name=BZ_OUT_P
+Change Net Name : Old Net Name=BZ_OUT- New Net Name=BZ_OUT_N
+Change Net Name : Old Net Name=NetU4_7 New Net Name=OSC_P
+Change Net Name : Old Net Name=NetU4_8 New Net Name=OSC_N
+Change Net Name : Old Net Name=SP_OUT+ New Net Name=SP_OUT_P
+Change Net Name : Old Net Name=SP_OUT- New Net Name=SP_OUT_N
+Change Net Name : Old Net Name=XC1 New Net Name=XC_P
+Change Net Name : Old Net Name=XC2 New Net Name=XC_N
+Change Net Name : Old Net Name=XL1 New Net Name=XL_N
+Change Net Name : Old Net Name=XL2 New Net Name=XL_P
+Added Differential Pair: Name=AC
+Added Differential Pair: Name=ANT
+Added Differential Pair: Name=BZ_OUT
+Added Differential Pair: Name=OSC
+Added Differential Pair: Name=SP_OUT
+Added Differential Pair: Name=XC
+Added Differential Pair: Name=XL

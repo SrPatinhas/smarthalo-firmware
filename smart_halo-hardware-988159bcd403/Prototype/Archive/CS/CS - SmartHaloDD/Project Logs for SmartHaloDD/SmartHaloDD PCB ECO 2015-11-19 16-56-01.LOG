@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=GND Pin=LED21-2
+Removed Pin From Net: NetName=GND Pin=LED22-4
+Added Pin To Net: NetName=GND Pin=LED15-3
+Added Pin To Net: NetName=GND Pin=LED16-3
+Added Pin To Net: NetName=GND Pin=LED17-3
+Added Pin To Net: NetName=GND Pin=LED18-3
+Added Pin To Net: NetName=GND Pin=LED19-3
+Added Pin To Net: NetName=GND Pin=LED20-3
+Added Pin To Net: NetName=GND Pin=LED21-3
+Added Pin To Net: NetName=NetLED21_2 Pin=LED21-2
+Added Pin To Net: NetName=NetLED21_2 Pin=LED22-4
+Added Net: Name=NetLED21_2

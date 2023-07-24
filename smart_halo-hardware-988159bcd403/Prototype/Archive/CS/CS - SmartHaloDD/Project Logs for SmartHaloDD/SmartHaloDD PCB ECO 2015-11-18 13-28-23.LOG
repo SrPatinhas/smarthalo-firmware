@@ -1,0 +1,4 @@
+Added Component: Designator=R7(RESC0402(1005)_M)
+Added Pin To Net: NetName=RDYN Pin=U8-16
+Change Net Name : Old Net Name=RDYN New Net Name=R\D\Y\N\
+Added Member To Class: ClassName=PWR Member=Component R7 1R6 5% 0402(1005)

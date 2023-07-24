@@ -1,0 +1,12 @@
+Change Component Comment : Designator=R9 Old Comment=? kOhm New Comment=8.2 kOhm
+Change Component Comment : Designator=R10 Old Comment=? kOhm New Comment=8.2 kOhm
+Change Component Comment : Designator=R4 Old Comment=? kOhm New Comment=8.2 Ohm
+Change Component Comment : Designator=R6 Old Comment=? kOhm New Comment=8.2 Ohm
+Change Component Comment : Designator=R7 Old Comment=? kOhm New Comment=8.2 Ohm
+Change Component Comment : Designator=R8 Old Comment=? Ohm New Comment=8.2 kOhm
+Change Component Description : Designator=R8 Old Description=4K7 0.1W 5% 0603 (1608 Metric)  SMD New Description=8K2 0.1W 5% 0603 (1608 Metric)  SMD
+Change Component Description : Designator=R9 Old Description=4K7 0.1W 5% 0603 (1608 Metric)  SMD New Description=8K2 0.1W 5% 0603 (1608 Metric)  SMD
+Change Component Description : Designator=R10 Old Description=4K7 0.1W 5% 0603 (1608 Metric)  SMD New Description=8K2 0.1W 5% 0603 (1608 Metric)  SMD
+Change Component Description : Designator=R4 Old Description=4K7 0.1W 5% 0603 (1608 Metric)  SMD New Description=8R2 0.1W 5% 0603 (1608 Metric)  SMD
+Change Component Description : Designator=R6 Old Description=4K7 0.1W 5% 0603 (1608 Metric)  SMD New Description=8R2 0.1W 5% 0603 (1608 Metric)  SMD
+Change Component Description : Designator=R7 Old Description=4K7 0.1W 5% 0603 (1608 Metric)  SMD New Description=8R2 0.1W 5% 0603 (1608 Metric)  SMD

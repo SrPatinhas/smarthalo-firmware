@@ -1,0 +1,19 @@
+** Profile: "DummyLoad2A_TB-DCbias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles\dummyload2a_tb\dcbias.sim ] 
+
+** Creating circuit file "DCbias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../electronicload-pspicefiles/electronicload.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\DummyLoad2A_TB.net" 
+
+
+.END

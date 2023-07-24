@@ -1,0 +1,16 @@
+Change Component Library : Designator=X1 Old Library=Nordic Discrete DB.DbLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=X2 Old Library=Nordic Discrete DB.DbLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=JMP1 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=NT3 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=P1 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=P2 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=P3 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=P4 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=P5 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=P6 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=U1 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=U3 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=U4 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=U5 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=U6 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=X3 Old Library=Schlib1.SchLib New Library=SmartHalo.IntLib

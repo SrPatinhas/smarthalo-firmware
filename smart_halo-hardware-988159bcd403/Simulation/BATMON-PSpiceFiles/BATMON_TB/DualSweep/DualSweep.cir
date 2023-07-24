@@ -1,0 +1,20 @@
+** Profile: "BATMON_TB-DualSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\dualsweep.sim ] 
+
+** Creating circuit file "DualSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM VBAT 3 4.3 0.1 
++ LIN PARAM ILOAD -1.0 1.5 0.15 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\BATMON_TB.net" 
+
+
+.END

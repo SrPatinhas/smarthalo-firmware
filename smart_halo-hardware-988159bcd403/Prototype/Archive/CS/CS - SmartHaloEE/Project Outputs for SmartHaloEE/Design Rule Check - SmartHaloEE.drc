@@ -1,0 +1,93 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloEE\SmartHaloEE.CSPcbDoc
+Date     : 2015-12-11
+Time     : 17:45:44
+
+Processing Rule : Unpoured Polygon (Allow unpoured: False)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=3mm) (Prefered=3mm) (All)
+   Violation between Height Constraint: Component J5-TE-2106091-1 (0mm,21.463mm) on Top Layer
+   Violation between Height Constraint: SMT Small Component J4-BUZPADS (0mm,-26.543mm) on Bottom Layer
+   Violation between Height Constraint: SMT Small Component J2-TE-2213189-2 (4.953mm,-20.828mm) on Top Layer
+   Violation between Height Constraint: Component J1-TE-2106091-1 (-3.81mm,-21.209mm) on Top Layer
+Rule Violations :4
+
+Processing Rule : Component Clearance Constraint ( Horizontal Gap = 0.254mm, Vertical Gap = 0.254mm ) (All),(All) 
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Routing Layers(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.152mm) (Max=1.905mm) (Preferred=0.203mm) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('GND'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('VBZ'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('+3.3'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('AVDD'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('+5'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.203mm) (Max=1.27mm) (Preferred=0.305mm) (InNet('VLED'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.203mm) (Max=0.508mm) (Preferred=0.305mm) (InNet('VBAT'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('NetC47_2'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('ANT2'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('ANT1'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('NetANT1_1'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0.152mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mm) (InNet('NetANT1_1')),(OnLayer('Keep-Out Layer'))
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 4
+Time Elapsed        : 00:00:01

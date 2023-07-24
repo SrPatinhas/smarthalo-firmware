@@ -1,0 +1,265 @@
+
+**** 01/13/16 14:26:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\CentralLEDDriver-PSpiceFiles\CENT
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../centralleddriver-pspicefiles/centralleddriver.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 10u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\CENTRALLED_TB.net" 
+
+
+
+**** INCLUDING CENTRALLED_TB.net ****
+* source CENTRALLEDDRIVER
+X_Q1_M2         N00456 N00178 0 BSS138/FAI
+X_Q2_M2         N00463 N00178 0 BSS138/FAI
+X_Q3_M2         N00470 N00178 0 BSS138/FAI
+D_D1_D3         D1_N00173 N00456 Dbreak 
+D_D1_D2         D1_N00169 D1_N00173 Dbreak 
+D_D1_D1         N00360 D1_N00169 Dbreak 
+D_D2_D5         D2_N00371 N00463 Dbreak 
+D_D2_D4         D2_N00367 D2_N00371 Dbreak 
+D_D2_D3         D2_N00293 D2_N00367 Dbreak 
+D_D2_D2         D2_N00289 D2_N00293 Dbreak 
+D_D2_D1         N00360 D2_N00289 Dbreak 
+D_D3_D4         D3_N00535 D3_N00555 Dbreak 
+D_D3_D5         D3_N00555 N00470 Dbreak 
+D_D3_D3         D3_N00515 D3_N00535 Dbreak 
+D_D3_D2         D3_N00511 D3_N00515 Dbreak 
+D_D3_D1         N00360 D3_N00511 Dbreak 
+V_V2         N00360 0 {VLED}
+V_V3         N00178 0  
++PULSE 0Vdc {VDRIVE} 0 0 0 {0.05/DRIVEFREQ} {1/DRIVEFREQ}
+.PARAM  drivefreq=1k vdrive=3.3vdc vled=5vdc
+
+**** RESUMING trans.cir ****
+.END
+
+**** 01/13/16 14:26:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\CentralLEDDriver-PSpiceFiles\CENT
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          X_Q1_M2.DDS     X_Q1_M2.DBODY   X_Q1_M2.DGD     
+          IS   10.000000E-15   10.000000E-15  140.000000E-15   10.000000E-15 
+          BV                   50.084                                        
+          RS     .1                              .04                         
+          TT                                  100.000000E-09                 
+         CJO  100.000000E-15   23.000000E-12                   68.000000E-12 
+          VJ                     .8                              .4          
+           M                     .36                             .3          
+
+
+               X_Q2_M2.DDS     X_Q2_M2.DBODY   X_Q2_M2.DGD     X_Q3_M2.DDS     
+          IS   10.000000E-15  140.000000E-15   10.000000E-15   10.000000E-15 
+          BV   50.084                                          50.084        
+          RS                     .04                                         
+          TT                  100.000000E-09                                 
+         CJO   23.000000E-12                   68.000000E-12   23.000000E-12 
+          VJ     .8                              .4              .8          
+           M     .36                             .3              .36         
+
+
+               X_Q3_M2.DBODY   X_Q3_M2.DGD     
+          IS  140.000000E-15   10.000000E-15 
+          RS     .04                         
+          TT  100.000000E-09                 
+         CJO                   68.000000E-12 
+          VJ                     .4          
+           M                     .3          
+
+
+**** 01/13/16 14:26:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\CentralLEDDriver-PSpiceFiles\CENT
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1_M2.DMOS    X_Q1_M2.INTER   X_Q2_M2.DMOS    X_Q2_M2.INTER   
+               NMOS            NMOS            NMOS            NMOS            
+       LEVEL    3               1               3               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    1.2948          0               1.2948          0            
+          KP     .6472         10                .6472         10            
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX  100.000000E-09    0             100.000000E-09    0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+        VMAX  220.000000E+03                  220.000000E+03                 
+       THETA     .086                            .086                        
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_Q3_M2.DMOS    X_Q3_M2.INTER   
+               NMOS            NMOS            
+       LEVEL    3               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    1.2948          0            
+          KP     .6472         10            
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX  100.000000E-09    0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+        VMAX  220.000000E+03                 
+       THETA     .086                        
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+**** 01/13/16 14:26:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\CentralLEDDriver-PSpiceFiles\CENT
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00178)    0.0000 (N00360)    5.0000 (N00456)    3.6489 (N00463)    2.7832     
+
+(N00470)    2.7832 (D1_N00169)    4.5496                 (D1_N00173)    4.0993  
+
+(D2_N00289)    4.5566                 (D2_N00293)    4.1133                     
+
+(D2_N00367)    3.6699                 (D2_N00371)    3.2266                     
+
+(D3_N00511)    4.5566                 (D3_N00515)    4.1133                     
+
+(D3_N00535)    3.6699                 (D3_N00555)    3.2266                     
+
+(X_Q1_M2.1) 364.9E-09                 (X_Q1_M2.2)    3.6489                     
+
+(X_Q1_M2.3) 111.1E-15                 (X_Q1_M2.4)    3.6489                     
+
+(X_Q1_M2.5)    0.0000                 (X_Q1_M2.6) 369.9E-09                     
+
+(X_Q1_M2.7)    3.6489                 (X_Q1_M2.8)    7.2978                     
+
+(X_Q1_M2.9)   -7.2978                 (X_Q2_M2.1) 278.3E-09                     
+
+(X_Q2_M2.2)    2.7832                 (X_Q2_M2.3) 85.10E-15                     
+
+(X_Q2_M2.4)    2.7832                 (X_Q2_M2.5)    0.0000                     
+
+(X_Q2_M2.6) 283.3E-09                 (X_Q2_M2.7)    2.7832                     
+
+(X_Q2_M2.8)    5.5664                 (X_Q2_M2.9)   -5.5664                     
+
+(X_Q3_M2.1) 278.3E-09                 (X_Q3_M2.2)    2.7832                     
+
+(X_Q3_M2.3) 85.10E-15                 (X_Q3_M2.4)    2.7832                     
+
+(X_Q3_M2.5)    0.0000                 (X_Q3_M2.6) 283.3E-09                     
+
+(X_Q3_M2.7)    2.7832                 (X_Q3_M2.8)    5.5664                     
+
+(X_Q3_M2.9)   -5.5664                 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V2        -9.216E-07
+    V_V3         9.216E-07
+
+    TOTAL POWER DISSIPATION   4.61E-06  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/13/16 14:26:29 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\CentralLEDDriver-PSpiceFiles\CENT
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .31
+

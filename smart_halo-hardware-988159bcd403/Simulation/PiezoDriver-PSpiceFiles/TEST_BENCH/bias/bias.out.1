@@ -1,0 +1,45 @@
+
+**** 10/20/15 11:54:25 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-bias"  [ C:\Users\Olivier\Documents\Orcad\PiezoDriver-PSpiceFiles\TEST_BENCH\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\TEST_BENCH.net" 
+
+
+
+**** INCLUDING TEST_BENCH.net ****
+* source PIEZODRIVER
+Q_U1_Q1         U1_N00440 U1_N00154 0 QbreakN 
+R_U1_R2         U1_N00154 N00092  {Rb} TC=0,0 
+R_U1_R1         U1_N00436 N00092  {Rc} TC=0,0 
+L_U1_L1         U1_N00436 U1_N00440  10uH  
+V_V1         N00092 0 {VIN}
+.PARAM  rb=5k rc=0 vin=5vdc
+
+**** RESUMING bias.cir ****
+.END
+
+
+ERROR(ORPSIM-15152): Resistor R_U1_R1 has zero value
+

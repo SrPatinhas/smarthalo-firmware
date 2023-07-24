@@ -1,0 +1,302 @@
+
+**** 01/08/16 14:19:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PiezoAmp-PSpiceFiles\SCHEMATIC1\tran
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 100us 0 10ns 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PIEZOAMP
+R_R1         N00211 N00207  10k TC=0,0 
+R_R2         N00207 N00228  10k TC=0,0 
+X_R3         N00291 N00211 N00211 POT PARAMS: SET={POT} VALUE=200k
+X_U2A         N00244 N00207 N00500 0 N00228 LM124
+V_V3         N00500 0 {VCC}
+V_V4         N00291 0  
++SIN {VCC/2} {VIN} {FREQ} 0 0 0
+R_R4         N00244 N00500  10k TC=0,0 
+R_R5         0 N00244  10k TC=0,0 
+R_R6         N02296 N01562  10k TC=0,0 
+R_R7         N01562 N01584  20k TC=0,0 
+V_V6         N02286 0  
++SIN {VIN/2} {VIN/2} {FREQ} 0 0 0
+V_V5         N01716 0 {VCC}
+C_C1         N02286 N02296  1u  TC=0,0 
+V_V7         0 N01730 {VCC}
+C_C2         N01562 N01584  100p  TC=0,0 
+X_U3A         0 N01562 N01716 N01730 N01584 OP-471F
+X_U3B         0 N01584 N06269 N06324 N01584 OP-471F
+V_V8         N06269 0 {VCC}
+V_V9         0 N06324 {VCC}
+.PARAM  vin=5vdc freq=12k pot=0.95 vcc=12vdc
+
+**** RESUMING trans.cir ****
+.END
+
+**** 01/08/16 14:19:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PiezoAmp-PSpiceFiles\SCHEMATIC1\tran
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.dx        X_U2A.dy        X_U3A.dx        X_U3A.dy        
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03                    1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+               X_U3B.dx        X_U3B.dy        
+          IS  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 01/08/16 14:19:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PiezoAmp-PSpiceFiles\SCHEMATIC1\tran
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2A.qx        X_U3A.qx        X_U3B.qx        
+               PNP             NPN             NPN             
+       LEVEL    1               1               1            
+          IS  800.000000E-18  800.000000E-18  800.000000E-18 
+          BF  166.7             8.000000E+03    8.000000E+03 
+          NF    1               1               1            
+          BR    1               1               1            
+          NR    1               1               1            
+         ISS    0               0               0            
+          RE    0               0               0            
+          RC    0               0               0            
+         CJE    0               0               0            
+         VJE     .75             .75             .75         
+         CJC    0               0               0            
+         VJC     .75             .75             .75         
+         MJC     .33             .33             .33         
+        XCJC    1               1               1            
+         CJS    0               0               0            
+         VJS     .75             .75             .75         
+          KF    0               0               0            
+          AF    1               1               1            
+          CN    2.2             2.42            2.42         
+           D     .52             .87             .87         
+
+
+**** 01/08/16 14:19:09 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-trans"  [ C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\PiezoAmp-PSpiceFiles\SCHEMATIC1\tran
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00207)    6.0002 (N00211)    6.0001 (N00228)    5.9998 (N00244)    6.0002     
+
+(N00291)    6.0000 (N00500)   12.0000 (N01562)-146.9E-06 (N01584) 151.4E-06     
+
+(N01716)   12.0000 (N01730)  -12.0000 (N02286)    2.5000 (N02296)-146.9E-06     
+
+(N06269)   12.0000 (N06324)  -12.0000 (X_U2A.6) 31.12E-09                       
+
+(X_U2A.7)    5.9998                   (X_U2A.8)    5.9998                       
+
+(X_U2A.9)    0.0000                   (X_U3A.6)    -.0183                       
+
+(X_U3A.7)     .0014                   (X_U3A.8)     .0014                       
+
+(X_U3A.9)    0.0000                   (X_U3B.6)     .0182                       
+
+(X_U3B.7)    -.0011                   (X_U3B.8)    -.0011                       
+
+(X_U3B.9)    0.0000                   (X_U2A.10)    6.6079                      
+
+(X_U2A.11)     .0397                  (X_U2A.12)     .0397                      
+
+(X_U2A.13)    6.5940                  (X_U2A.14)    6.5940                      
+
+(X_U2A.53)   10.5000                  (X_U2A.54)     .6500                      
+
+(X_U2A.90)-35.37E-06                  (X_U2A.91)   40.0000                      
+
+(X_U2A.92)  -40.0000                  (X_U2A.99)    6.0000                      
+
+(X_U3A.10)    -.7374                  (X_U3A.11)   11.9030                      
+
+(X_U3A.12)   11.9020                  (X_U3A.13)    -.6656                      
+
+(X_U3A.14)    -.6655                  (X_U3A.53)   10.0000                      
+
+(X_U3A.54)  -10.0000                  (X_U3A.90)   25.4980                      
+
+(X_U3A.91)   25.0000                  (X_U3A.92)  -25.0000                      
+
+(X_U3A.99)    0.0000                  (X_U3B.10)    -.7372                      
+
+(X_U3B.11)   11.9020                  (X_U3B.12)   11.9030                      
+
+(X_U3B.13)    -.6654                  (X_U3B.14)    -.6655                      
+
+(X_U3B.53)   10.0000                  (X_U3B.54)  -10.0000                      
+
+(X_U3B.90)  -25.4980                  (X_U3B.91)   25.0000                      
+
+(X_U3B.92)  -25.0000                  (X_U3B.99)    0.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3        -1.936E-03
+    V_V4         9.495E-09
+    V_V6         0.000E+00
+    V_V5        -1.887E-03
+    V_V7        -1.888E-03
+    V_V8        -1.887E-03
+    V_V9        -1.888E-03
+    X_U2A.vb     3.112E-13
+    X_U2A.vc     4.501E-12
+    X_U2A.ve     5.431E-12
+    X_U2A.vlim  -3.537E-08
+    X_U2A.vlp   -4.000E-11
+    X_U2A.vln   -4.000E-11
+    X_U3A.vb    -1.827E-07
+    X_U3A.vc     1.000E-11
+    X_U3A.ve     1.091E-11
+    X_U3A.vlim   2.550E-02
+    X_U3A.vlp    1.862E-07
+    X_U3A.vln   -5.050E-11
+    X_U3B.vb     1.825E-07
+    X_U3B.vc     1.000E-11
+    X_U3B.ve     1.091E-11
+    X_U3B.vlim  -2.550E-02
+    X_U3B.vlp   -5.050E-11
+    X_U3B.vln    1.859E-07
+
+    TOTAL POWER DISSIPATION   1.14E-01  WATTS
+
+Reducing minimum delta to make the circuit converge.
+Reducing minimum delta to make the circuit converge.
+
+ERROR(ORPSIM-15138): Convergence problem in transient analysis at Time =  9.231E-06.
+         Time step =  145.5E-21, minimum allowable step size =  1.000E-18
+
+  These supply currents failed to converge:
+
+    I(V_V6)                   =         0A  \   -61.04uA
+    I(X_U2A.vc)               =   547.02nA  \   551.76nA
+    I(X_U3A.vc)               =   -2.491nA  \   -3.929nA
+    I(X_U3A.ve)               =    5.537nA  \    3.918nA
+    I(X_U3B.vc)               =   -5.534nA  \   -3.907nA
+    I(X_U3B.ve)               =    5.537nA  \    3.918nA
+
+  These devices failed to converge:
+    X_U2A.dc  X_U2A.de  X_U3A.dc  X_U3A.de  X_U3B.dc  X_U3B.de  
+
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00207)    6.0243 (N00211)    7.6150 (N00228)    4.4332 (N00244)    6.0003     
+
+(N00291)    9.2058 (N00500)   12.0000 (N01562)     .9987 (N01584)    -.0101     
+
+(N01716)   12.0000 (N01730)  -12.0000 (N02286)    4.1029 (N02296)    1.6024     
+
+(N06269)   12.0000 (N06324)  -12.0000 (X_U2A.6) 303.4E-06                       
+
+(X_U2A.7)    4.4251                   (X_U2A.8)    4.4251                       
+
+(X_U2A.9)    0.0000                   (X_U3A.6)   22.0550                       
+
+(X_U3A.7)    -.0114                   (X_U3A.8)    -.0114                       
+
+(X_U3A.9)    0.0000                   (X_U3B.6)   -2.1418                       
+
+(X_U3B.7)    -.0088                   (X_U3B.8)    -.0088                       
+
+(X_U3B.9)    0.0000                   (X_U2A.10)    6.6188                      
+
+(X_U2A.11)     .0279                  (X_U2A.12)     .0514                      
+
+(X_U2A.13)    6.6090                  (X_U2A.14)    6.6008                      
+
+(X_U2A.53)   10.5000                  (X_U2A.54)     .6500                      
+
+(X_U2A.90)    -.1603                  (X_U2A.91)   40.0000                      
+
+(X_U2A.92)  -40.0000                  (X_U2A.99)    6.0000                      
+
+(X_U3A.10)     .1709                  (X_U3A.11)   11.8040                      
+
+(X_U3A.12)   12.0000                  (X_U3A.13)     .3152                      
+
+(X_U3A.14)     .1709                  (X_U3A.53)   10.0000                      
+
+(X_U3A.54)  -10.0000                  (X_U3A.90)  -25.6820                      
+
+(X_U3A.91)   25.0000                  (X_U3A.92)  -25.0000                      
+
+(X_U3A.99)    0.0000                  (X_U3B.10)    -.7423                      
+
+(X_U3B.11)   11.9070                  (X_U3B.12)   11.8970                      
+
+(X_U3B.13)    -.6742                  (X_U3B.14)    -.6668                      
+
+(X_U3B.53)   10.0000                  (X_U3B.54)  -10.0000                      
+
+(X_U3B.90)   25.6220                  (X_U3B.91)   25.0000                      
+
+(X_U3B.92)  -25.0000                  (X_U3B.99)    0.0000                  
+
+
+**** Interrupt ****

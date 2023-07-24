@@ -1,0 +1,225 @@
+*.b##
+*.schPreview
+*.s##
+*.epf
+*.pro
+*.job
+*.s#2
+*.s#3
+*.s#4
+*.s#5
+*.s#1
+*.s#6
+*.b#9
+*.s#7
+*.b#7
+*.s#8
+*.s#9
+*.l#2
+*.l#3
+*.l#4
+*.l#5
+*.l#6
+*.l#7
+*.l#8
+*.l#9
+*.b#6
+*.b#8
+*.b#5
+*.b#4
+*.l#1
+*.b#3
+*.b#2
+*.b#1
+*.ALS
+*.net
+*.prp
+*.DSNlck
+*.DBK
+*.SchDocPreview
+Hardware/Prototype/Altium/Projects/SmartHaloDD1/History/
+Hardware/Prototype/Altium/Projects/SmartHaloDD2/History/
+Hardware/Simulation/PiezoDriver-PSpiceFiles/TEST_BENCH/trans/
+Hardware/Simulation/PiezoDriver-PSpiceFiles/TEST_BENCH/bias/
+Hardware/Prototype/eagle/SmartHalo BB Fonctionnel/Imported smarthalo_BRAIN_no_usb.PrjPcb/
+Code/Firmware/Arduino/Accelerometer/LSM303DLHCCalib/accelo1.txt
+Code/Firmware/Arduino/Accelerometer/LSM303DLHCCalib/accelo1_cal.txt
+Code/Firmware/Arduino/Accelerometer/LSM303DLHCCalib/magneto1.txt
+Code/Firmware/Arduino/Accelerometer/LSM303DLHCCalib/magneto1_cal.txt
+Hardware/Prototype/Altium/Projects/SmartHaloDD1/Project Logs for SmartHaloDD1/
+Hardware/Prototype/Altium/Projects/SmartHaloDD1/Project Outputs for SmartHaloDD1/
+Hardware/Prototype/Altium/Projects/SmartHaloDD2/Project Logs for SmartHaloDD2/
+Hardware/Prototype/Altium/Projects/SmartHaloDD2/Project Outputs for SmartHaloDD2/
+Hardware/Simulation/PiezoDriver-PSpiceFiles/PIEZO_DRIVER/bias/
+Hardware/Simulation/PiezoDriver-PSpiceFiles/MAGNETIC_BUZZER_DRIVER/bias/bias.mrk
+*.Dat
+Hardware/Prototype/Altium/CS/Templates/History/SH_B.~(1).SchDot.Zip
+Hardware/Prototype/Altium/CS/Templates/__Previews/
+*.CSPcbDocPreview
+Hardware/Prototype/Altium/Projects/SmartHaloDD1/LEDONLYCIRCLE.LOG
+Hardware/Prototype/Altium/CS/Library/nRF8001-Reference Layout_rev1_0/nRF8001-Reference Layout_rev1_0.SCHLIB
+Hardware/Prototype/Altium/CS/Library/nRF8001-Reference Layout_rev1_0/nRF8001-Reference PCB Layout_rev1_0.PcbLib
+Hardware/Prototype/Altium/CS/Library/nRF8001-Reference Layout_rev1_01/nRF8001-Reference Layout_rev1_0.SCHLIB
+Hardware/Prototype/Altium/CS/Library/nRF8001-Reference Layout_rev1_01/nRF8001-Reference PCB Layout_rev1_0.PcbLib
+Hardware/Prototype/Altium/Projects/SmartHaloDD1/SmartHaloDD1_OshPark.zip
+Hardware/Prototype/Altium/Projects/SmartHaloDD1/SmartHaloDD1_Corrected.zip
+Hardware/Prototype/Altium/Projects/Libraries/History/
+Hardware/Prototype/Altium/Projects/LEDBO_LRTBR98G/Project Logs for LEDBO_LRTBR98G/
+Hardware/Prototype/Altium/Projects/LEDBO_LRTBR98G/History/
+Hardware/Prototype/Altium/CS/Templates/PCB Projects/History/
+Hardware/Prototype/Altium/Projects/LEDBO_LRTBR98G/LEDBO_LRTBR98G.zip
+Hardware/Prototype/Altium/Projects/LEDBO_LRTBR98G/Project Outputs for LEDBO_LRTBR98G/
+Hardware/Prototype/Altium/Projects/LEDBO_LRTBR98G/LEDBO_LRTBR98G_48.zip
+Hardware/Prototype/Altium/Projects/LEDBO_LRTBR98G_72/Project Logs for LEDBO_LRTBR98G_72/
+Hardware/Prototype/Altium/Projects/LEDBO_LRTBR98G_72/Project Outputs for LEDBO_LRTBR98G_72/
+Hardware/Prototype/Altium/Projects/LEDBO_LRTBR98G_72/History/
+Hardware/Prototype/Altium/Projects/SmartHaloDD1/SmartHaloDD1_wPicknPlace.zip
+Hardware/Prototype/Altium/Projects/LEDBO_LRTBR98G_72/LEDBO_LRTBR98G_72.zip
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/SCHEMATIC1/bias/bias.1OP
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/SCHEMATIC1/bias/bias.cir
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/SCHEMATIC1/bias/bias.mif
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/SCHEMATIC1/bias/bias.mrk
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/SCHEMATIC1/bias/bias.out
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/SCHEMATIC1/bias/bias.out.1
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/centralleddriver.ind
+Hardware/Prototype/Altium/Projects/SmartHaloDD/History/
+Hardware/Prototype/Altium/Projects/SmartHaloDD/Project Outputs for SmartHaloDD/
+Hardware/Prototype/Altium/Projects/SmartHaloDD/Project Logs for SmartHaloDD/
+Hardware/Prototype/Altium/Projects/SmartHaloEE/History/
+Hardware/Prototype/Altium/Projects/SmartHaloEE/Project Logs for SmartHaloEE/
+Hardware/Prototype/Altium/Projects/SmartHaloDD/SmartHaloDD_Corrected.zip
+Hardware/Prototype/Altium/Projects/SmartHaloDD/SmartHaloDD_wPicknPlace.zip
+Hardware/Prototype/Altium/Projects/SmartHaloEE/Project Outputs for SmartHaloEE/
+Hardware/Prototype/Altium/Projects/SmartHaloEE/SmartHaloEE_forquote.zip
+Hardware/Prototype/Altium/Projects/CS - SmartHaloDD/History/
+Hardware/Prototype/Altium/Projects/CS - SmartHaloDD/Project Outputs for SmartHaloDD/
+Hardware/Prototype/Altium/Projects/CS - SmartHaloEE/History/
+Hardware/Prototype/Altium/Projects/CS - SmartHaloDD/Project Logs for SmartHaloDD/
+Hardware/Prototype/Altium/Projects/CS - SmartHaloEE/Project Logs for SmartHaloEE/
+Hardware/Prototype/Altium/Projects/CS - SmartHaloEE/Project Outputs for SmartHaloEE/
+*.zip
+Hardware/Simulation/PiezoAmp-PSpiceFiles/SCHEMATIC1/trans/
+Hardware/Simulation/BATMON-PSpiceFiles/BATMON_TB/AC/
+Hardware/Simulation/BATMON-PSpiceFiles/BATMON_TB/DualSweep/
+Hardware/Simulation/BATMON-PSpiceFiles/BATMON_TB/ILOADSWEEP/ILOADSWEEP.cir
+Hardware/Simulation/BATMON-PSpiceFiles/BATMON_TB/ILOADSWEEP/
+Hardware/Simulation/BATMON-PSpiceFiles/BATMON_TB/VBATSWEEP/
+*.PcbDocPreview
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/CENTRALLED_TB/bias/
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/CENTRALLED_TB/trans/
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/CENTRALLED_TB/VDriveSweep/
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/CENTRALLED_TB/VLEDSweep/
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/NMOSDRIVER/bias/
+Hardware/Simulation/PiezoAmp-PSpiceFiles/INVGAIN/trans/
+Hardware/Simulation/PiezoAmp-PSpiceFiles/PROTOTEST/trans/
+Hardware/Simulation/BATMON-PSpiceFiles/BATMON/VBATSweep/
+Hardware/Simulation/CentralLEDDriver-PSpiceFiles/NMOSDRIVER_GB/bias/
+Hardware/Prototype/Altium/Projects/LEDBO_LTSN-N213EGBW/Project Logs for LEDBO_LTSN-N213EGBW/
+*.PrjPcbStructure
+Hardware/Prototype/Altium/AD16/Library/SmartHalo.IntLib
+Hardware/Prototype/Altium/Projects/LEDBO_LTSN-N213EGBW/Project Outputs for LEDBO_LTSN-N213EGBW/
+Hardware/Prototype/Altium/Projects/TouchButton_Electrode/Project Outputs for TouchButton_Electrode/
+Hardware/Prototype/Altium/Projects/TouchButton_Electrode/Project Logs for TouchButton_Electrode/
+Hardware/Prototype/Altium/Projects/PROTO_QTOUCH/Project Logs for PROTO_QTOUCH/
+Hardware/Prototype/Altium/Projects/PROTO_QTOUCH/Project Outputs for PROTO_QTOUCH/
+Hardware/Simulation/ElectronicLoad-PSpiceFiles/DummyLoad2A_TB/DCSweepVRef/
+Hardware/Simulation/ElectronicLoad-PSpiceFiles/DummyLoad2A_TB/DCbias/
+Hardware/Prototype/Altium/Projects/RFTuningBoard/Project Logs for RFTuningBoard/
+Hardware/Prototype/Altium/Projects/RFTuningBoard/Project Outputs for RFTuningBoard/
+Hardware/Simulation/PiezoHBridge-PSpiceFiles/
+Doc/Touch/FlexTouchDimensions.png
+Hardware/Prototype/Altium/AD16/Library/pca10040/400150.PcbLib
+Hardware/Prototype/Altium/AD16/Library/pca10040/pca10040.SCHLIB
+Doc/Touch/TouchConnectorPlacement.png
+Hardware/Prototype/Altium/Projects/SmartHaloEE/SmartHaloEE 2016-05-02 9-47-03.WAS
+Hardware/Prototype/Altium/Projects/SmartHaloFF/Project Outputs for SmartHaloFF/
+Hardware/3rd/Nordic Semiconductor/nRF52-DK - Hardware files 0_9_0/PCA10040-nRF52832 Bluetooth Smart,ANT,2.4GHz RF Development Board 0_9_0/Production files/
+.metadata/.lock
+.metadata/.plugins/org.eclipse.cdt.codan.ui/dialog_settings.xml
+.metadata/.plugins/org.eclipse.cdt.core/Dual_bootloader_SDK11.1470843554520.pdom
+.metadata/.plugins/org.eclipse.cdt.core/Dual_bootloader_SDK11.language.settings.xml
+.metadata/.plugins/org.eclipse.cdt.core/SmartHalo_SDK11_Firmware.language.settings.xml
+.metadata/.plugins/org.eclipse.cdt.core/TestFirmware.language.settings.xml
+.metadata/.plugins/org.eclipse.cdt.core/USB_BLE_Bridge.language.settings.xml
+.metadata/.plugins/org.eclipse.cdt.core/shareddefaults.xml
+.metadata/.plugins/org.eclipse.cdt.make.core/specs.c
+.metadata/.plugins/org.eclipse.cdt.make.core/specs.cpp
+.metadata/.plugins/org.eclipse.cdt.make.ui/dialog_settings.xml
+.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec
+.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/spec.c
+.metadata/.plugins/org.eclipse.cdt.ui/dialog_settings.xml
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/.indexes/properties.index
+.metadata/.plugins/org.eclipse.core.resources/.projects/RemoteSystemsTempFiles/org.eclipse.egit.core/GitProjectData.properties
+.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/history.version
+.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.index
+.metadata/.plugins/org.eclipse.core.resources/.root/.indexes/properties.version
+.metadata/.plugins/org.eclipse.core.resources/.root/2.tree
+.metadata/.plugins/org.eclipse.core.resources/.safetable/org.eclipse.core.resources
+.metadata/.plugins/org.eclipse.core.runtime/.settings/ilg.gnuarmeclipse.debug.gdbjtag.jlink.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.core.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.debug.core.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.dsf.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.managedbuilder.core.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.mylyn.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.cdt.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.resources.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.core.variables.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.core.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.debug.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.egit.core.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.logging.aeri.ide.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.epp.mpc.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.launchbar.core.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.context.core.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.monitor.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.mylyn.tasks.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.core.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.rse.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.team.ui.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.editors.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.ide.prefs
+.metadata/.plugins/org.eclipse.core.runtime/.settings/org.eclipse.ui.workbench.prefs
+.metadata/.plugins/org.eclipse.debug.core/.launches/SmartHalo_SDK11_Firmware Default.launch
+.metadata/.plugins/org.eclipse.debug.ui/dialog_settings.xml
+.metadata/.plugins/org.eclipse.debug.ui/launchConfigurationHistory.xml
+.metadata/.plugins/org.eclipse.e4.workbench/workbench.xmi
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.fdt
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.fdx
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.fnm
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.frq
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.nrm
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.tii
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/_0.tis
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/segments.gen
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/segments_1
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/local-history/write.lock
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.fdt
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.fdx
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.fnm
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.frq
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.nrm
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.tii
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/_0.tis
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/segments.gen
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/remote-history/segments_1
+.metadata/.plugins/org.eclipse.epp.logging.aeri.ide/org.eclipse.epp.logging.aeri.ide.server/server-config.json
+.metadata/.plugins/org.eclipse.equinox.p2.ui/dialog_settings.xml
+.metadata/.plugins/org.eclipse.linuxtools.cdt.libhover/C/devhelp.libhover
+.metadata/.plugins/org.eclipse.linuxtools.cdt.libhover/C/glibc_library.libhover
+.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/.workspace/2016/8/33/refactorings.history
+.metadata/.plugins/org.eclipse.ltk.core.refactoring/.refactorings/.workspace/2016/8/33/refactorings.index
+.metadata/.plugins/org.eclipse.ltk.ui.refactoring/dialog_settings.xml
+.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup
+.metadata/.plugins/org.eclipse.rse.core/initializerMarks/org.eclipse.rse.internal.core.RSELocalConnectionInitializer.mark
+.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.desktop-jib19q3_32626/FP.local.files_0/node.properties
+.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.desktop-jib19q3_32626/H.local_16/node.properties
+.metadata/.plugins/org.eclipse.rse.core/profiles/PRF.desktop-jib19q3_32626/node.properties
+.metadata/.plugins/org.eclipse.ui.editors/dialog_settings.xml
+.metadata/.plugins/org.eclipse.ui.ide/dialog_settings.xml
+.metadata/.plugins/org.eclipse.ui.intro/introstate
+.metadata/.plugins/org.eclipse.ui.workbench.texteditor/dialog_settings.xml
+.metadata/.plugins/org.eclipse.ui.workbench/dialog_settings.xml
+.metadata/.plugins/org.eclipse.ui.workbench/workingsets.xml
+.metadata/version.ini
+RemoteSystemsTempFiles/.project
+language.settings.xml

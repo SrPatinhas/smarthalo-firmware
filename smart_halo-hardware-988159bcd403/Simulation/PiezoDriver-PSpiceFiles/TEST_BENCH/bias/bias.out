@@ -1,0 +1,125 @@
+
+**** 10/20/15 17:16:56 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-bias"  [ C:\Users\Olivier\Documents\Orcad\piezodriver-pspicefiles\test_bench\bias.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\TEST_BENCH.net" 
+
+
+
+**** INCLUDING TEST_BENCH.net ****
+* source PIEZODRIVER
+Q_U1_Q1         U1_N00440 U1_N00154 0 QbreakN 
+R_U1_R2         U1_N00154 N00140  {Rb} TC=0,0 
+C_U1_C1         U1_N00440 N00140  {Cp}  TC=0,0 
+R_U1_R3         U1_N00440 N00140  {Rp} TC=0,0 
+V_V1         N00140 0 {VIN}
+.PARAM  rb=1k vin=5vdc cp=10n rp=1k
+
+**** RESUMING bias.cir ****
+.END
+
+**** 10/20/15 17:16:56 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-bias"  [ C:\Users\Olivier\Documents\Orcad\piezodriver-pspicefiles\test_bench\bias.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               QbreakN         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  100            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 10/20/15 17:16:56 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-bias"  [ C:\Users\Olivier\Documents\Orcad\piezodriver-pspicefiles\test_bench\bias.sim ] 
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00140)    5.0000 (U1_N00154)     .8406                 (U1_N00440)     .0304  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -9.129E-03
+
+    TOTAL POWER DISSIPATION   4.56E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/20/15 17:16:56 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "TEST_BENCH-bias"  [ C:\Users\Olivier\Documents\Orcad\piezodriver-pspicefiles\test_bench\bias.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+

@@ -1,0 +1,201 @@
+
+**** 01/19/16 17:50:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-VLEDSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver-pspicefiles\
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "VLEDSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../centralleddriver-pspicefiles/centralleddriver.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM VLED 0Vdc 10Vdc 0.5 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\CENTRALLED_TB.net" 
+
+
+
+**** INCLUDING CENTRALLED_TB.net ****
+* source CENTRALLEDDRIVER
+X_Q1_M2         Q1_N02185 N00192 0 BSS138/FAI
+R_Q1_R1         Q1_N02185 N00456  {RD} TC=0,0 
+X_Q2_M2         Q2_N02185 N00178 0 BSS138/FAI
+R_Q2_R1         Q2_N02185 N00463  {RD} TC=0,0 
+X_Q3_M2         Q3_N02185 N00178 0 BSS138/FAI
+R_Q3_R1         Q3_N02185 N00470  {RD} TC=0,0 
+D_D1_D3         D1_N00173 N00456 Dbreak 
+D_D1_D2         D1_N00169 D1_N00173 Dbreak 
+D_D1_D1         N00360 D1_N00169 Dbreak 
+D_D2_D5         D2_N00371 N00463 Dbreak 
+D_D2_D4         D2_N00367 D2_N00371 Dbreak 
+D_D2_D3         D2_N00293 D2_N00367 Dbreak 
+D_D2_D2         D2_N00289 D2_N00293 Dbreak 
+D_D2_D1         N00360 D2_N00289 Dbreak 
+D_D3_D4         D3_N00535 D3_N00555 Dbreak 
+D_D3_D5         D3_N00555 N00470 Dbreak 
+D_D3_D3         D3_N00515 D3_N00535 Dbreak 
+D_D3_D2         D3_N00511 D3_N00515 Dbreak 
+D_D3_D1         N00360 D3_N00511 Dbreak 
+V_V2         N00360 0 {VLED}
+V_V3         N00192 0 {RVDRIVE}
+V_V4         N00178 0 {GBVDRIVE}
+.PARAM  rvdrive=5vdc drivefreq=1k rd=85 gbvdrive=5vdc vled=5vdc
+
+**** RESUMING VLEDSweep.cir ****
+.END
+
+**** 01/19/16 17:50:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-VLEDSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver-pspicefiles\
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          X_Q1_M2.DDS     X_Q1_M2.DBODY   X_Q1_M2.DGD     
+          IS   10.000000E-15   10.000000E-15  140.000000E-15   10.000000E-15 
+          BV                   50.084                                        
+          RS     .1                              .04                         
+          TT                                  100.000000E-09                 
+         CJO  100.000000E-15   23.000000E-12                   68.000000E-12 
+          VJ                     .8                              .4          
+           M                     .36                             .3          
+
+
+               X_Q2_M2.DDS     X_Q2_M2.DBODY   X_Q2_M2.DGD     X_Q3_M2.DDS     
+          IS   10.000000E-15  140.000000E-15   10.000000E-15   10.000000E-15 
+          BV   50.084                                          50.084        
+          RS                     .04                                         
+          TT                  100.000000E-09                                 
+         CJO   23.000000E-12                   68.000000E-12   23.000000E-12 
+          VJ     .8                              .4              .8          
+           M     .36                             .3              .36         
+
+
+               X_Q3_M2.DBODY   X_Q3_M2.DGD     
+          IS  140.000000E-15   10.000000E-15 
+          RS     .04                         
+          TT  100.000000E-09                 
+         CJO                   68.000000E-12 
+          VJ                     .4          
+           M                     .3          
+
+
+**** 01/19/16 17:50:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-VLEDSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver-pspicefiles\
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q1_M2.DMOS    X_Q1_M2.INTER   X_Q2_M2.DMOS    X_Q2_M2.INTER   
+               NMOS            NMOS            NMOS            NMOS            
+       LEVEL    3               1               3               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    1.2948          0               1.2948          0            
+          KP     .6472         10                .6472         10            
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX  100.000000E-09    0             100.000000E-09    0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+        VMAX  220.000000E+03                  220.000000E+03                 
+       THETA     .086                            .086                        
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_Q3_M2.DMOS    X_Q3_M2.INTER   
+               NMOS            NMOS            
+       LEVEL    3               1            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+         VTO    1.2948          0            
+          KP     .6472         10            
+       GAMMA    0               0            
+         PHI     .6              .6          
+      LAMBDA    0               0            
+          IS   10.000000E-15   10.000000E-15 
+          JS    0               0            
+          PB     .8              .8          
+        PBSW     .8              .8          
+          CJ    0               0            
+        CJSW    0               0            
+        CGSO    0               0            
+        CGDO    0               0            
+        CGBO    0               0            
+         TOX  100.000000E-09    0            
+          XJ    0               0            
+       UCRIT   10.000000E+03   10.000000E+03 
+        VMAX  220.000000E+03                 
+       THETA     .086                        
+      DIOMOD    1               1            
+         VFB    0               0            
+        LETA    0               0            
+        WETA    0               0            
+          U0    0               0            
+        TEMP    0               0            
+         VDD    5               5            
+       XPART    0               0            
+
+
+
+          JOB CONCLUDED
+
+**** 01/19/16 17:50:10 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-VLEDSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver-pspicefiles\
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .06
+

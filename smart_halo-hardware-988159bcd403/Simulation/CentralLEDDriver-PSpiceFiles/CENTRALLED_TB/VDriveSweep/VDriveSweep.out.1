@@ -1,0 +1,476 @@
+
+**** 03/23/16 10:52:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-VDriveSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver-pspicefile
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "VDriveSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../centralleddriver-pspicefiles/centralleddriver.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM RVDRIVE 0Vdc 3.3Vdc 0.01 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\CENTRALLED_TB.net" 
+
+
+
+**** INCLUDING CENTRALLED_TB.net ****
+* source CENTRALLEDDRIVER
+X_Q2_M2         Q2_N02185 N00178 0 BSS138/FAI
+R_Q2_R1         Q2_N02185 N00463  {GB_RD} TC=0,0 
+X_Q3_M2         Q3_N02185 N00178 0 BSS138/FAI
+R_Q3_R1         Q3_N02185 N00470  {GB_RD} TC=0,0 
+D_D2_D5         D2_N00371 N00463 Dbreak 
+D_D2_D4         D2_N00367 D2_N00371 Dbreak 
+D_D2_D3         D2_N00293 D2_N00367 Dbreak 
+D_D2_D2         D2_N00289 D2_N00293 Dbreak 
+D_D2_D1         N00360 D2_N00289 Dbreak 
+D_D3_D4         D3_N00535 D3_N00555 Dbreak 
+D_D3_D5         D3_N00555 N00470 Dbreak 
+D_D3_D3         D3_N00515 D3_N00535 Dbreak 
+D_D3_D2         D3_N00511 D3_N00515 Dbreak 
+D_D3_D1         N00360 D3_N00511 Dbreak 
+V_V2         N00360 0 {VLED}
+V_V3         N00192 0 {RVDRIVE}
+V_V4         N00178 0 {GBVDRIVE}
+D_D1_D3         D1_N00173 N02114 Dbreak 
+D_D1_D2         D1_N00169 D1_N00173 Dbreak 
+D_D1_D1         N00360 D1_N00169 Dbreak 
+R_Q1_R1         Q1_N02335 N02114  {R_RD} TC=0,0 
+X_Q1_M2         Q1_N02335 N00192 0 BSS138/FAI
+D_D4_D3         D4_N00781 D4_N00807 Dbreak 
+D_D4_D1         N00360 D4_N00763 Dbreak 
+D_D4_D2         D4_N00763 D4_N00781 Dbreak 
+D_D4_D4         D4_N00807 N02628 Dbreak 
+R_Q4_R1         Q4_N02335 N02628  {FL_RD} TC=0,0 
+X_Q4_M2         Q4_N02335 N02427 0 BSS138/FAI
+V_V5         N02427 0 {FLVDRIVE}
+D_D5_D3         D5_N00781 D5_N00807 Dbreak 
+D_D5_D1         N00360 D5_N00763 Dbreak 
+D_D5_D2         D5_N00763 D5_N00781 Dbreak 
+D_D5_D4         D5_N00807 N02814 Dbreak 
+R_Q5_R1         Q5_N02335 N02814  {FL_RD} TC=0,0 
+X_Q5_M2         Q5_N02335 N02427 0 BSS138/FAI
+R_Q6_R1         0 Q6_N02514  {R_RREG} TC=0,0 
+X_Q6_M2         N03816 Q6_N02702 Q6_N02514 BSS138/FAI
+E_Q6_U1         Q6_N02698 0 VALUE {LIMIT(V(N00192,Q6_N02514)*1E6,-15V,+15V)}
+R_Q6_R2         Q6_N02702 Q6_N02698  10k TC=0,0 
+D_D6_D3         D6_N00173 N03816 Dbreak 
+D_D6_D1         N00360 D6_N00169 Dbreak 
+D_D6_D2         D6_N00169 D6_N00173 Dbreak 
+D_D7_D4         D7_N00367 D7_N00371 Dbreak 
+D_D7_D1         N00360 D7_N00289 Dbreak 
+D_D7_D2         D7_N00289 D7_N00293 Dbreak 
+D_D7_D5         D7_N00371 N04563 Dbreak 
+D_D7_D3         D7_N00293 D7_N00367 Dbreak 
+R_Q8_R1         0 Q8_N02759  {GB_RREG} TC=0,0 
+E_Q8_U1         Q8_N02911 0 VALUE {LIMIT(V(N00178,Q8_N02759)*1E6,-15V,+15V)}
+X_Q8_M2         N04563 Q8_N02915 Q8_N02759 BSS138/FAI
+R_Q8_R2         Q8_N02915 Q8_N02911  10k TC=0,0 
+R_Q9_R1         0 Q9_N02759  {GB_RREG} TC=0,0 
+E_Q9_U1         Q9_N02911 0 VALUE {LIMIT(V(N00178,Q9_N02759)*1E6,-15V,+15V)}
+X_Q9_M2         N05069 Q9_N02915 Q9_N02759 BSS138/FAI
+R_Q9_R2         Q9_N02915 Q9_N02911  10k TC=0,0 
+D_D8_D4         D8_N00535 D8_N00555 Dbreak 
+D_D8_D5         D8_N00555 N05069 Dbreak 
+D_D8_D1         N00360 D8_N00511 Dbreak 
+D_D8_D2         D8_N00511 D8_N00515 Dbreak 
+D_D8_D3         D8_N00515 D8_N00535 Dbreak 
+.PARAM  r_rd=130 rvdrive=3.3vdc gb_rd=62 drivefreq=1k gb_rreg=62
++  gbvdrive=3.3vdc flvdrive=3.3vdc vled=5vdc fl_rd=100 r_rreg=130
+
+**** RESUMING VDriveSweep.cir ****
+.END
+
+**** 03/23/16 10:52:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-VDriveSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver-pspicefile
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               Dbreak          X_Q2_M2.DDS     X_Q2_M2.DBODY   X_Q2_M2.DGD     
+          IS   10.000000E-15   10.000000E-15  140.000000E-15   10.000000E-15 
+          BV                   50.084                                        
+          RS     .1                              .04                         
+          TT                                  100.000000E-09                 
+         CJO  100.000000E-15   23.000000E-12                   68.000000E-12 
+          VJ                     .8                              .4          
+           M                     .36                             .3          
+
+
+               X_Q3_M2.DDS     X_Q3_M2.DBODY   X_Q3_M2.DGD     X_Q1_M2.DDS     
+          IS   10.000000E-15  140.000000E-15   10.000000E-15   10.000000E-15 
+          BV   50.084                                          50.084        
+          RS                     .04                                         
+          TT                  100.000000E-09                                 
+         CJO   23.000000E-12                   68.000000E-12   23.000000E-12 
+          VJ     .8                              .4              .8          
+           M     .36                             .3              .36         
+
+
+               X_Q1_M2.DBODY   X_Q1_M2.DGD     X_Q4_M2.DDS     X_Q4_M2.DBODY   
+          IS  140.000000E-15   10.000000E-15   10.000000E-15  140.000000E-15 
+          BV                                   50.084                        
+          RS     .04                                             .04         
+          TT  100.000000E-09                                  100.000000E-09 
+         CJO                   68.000000E-12   23.000000E-12                 
+          VJ                     .4              .8                          
+           M                     .3              .36                         
+
+
+               X_Q4_M2.DGD     X_Q5_M2.DDS     X_Q5_M2.DBODY   X_Q5_M2.DGD     
+          IS   10.000000E-15   10.000000E-15  140.000000E-15   10.000000E-15 
+          BV                   50.084                                        
+          RS                                     .04                         
+          TT                                  100.000000E-09                 
+         CJO   68.000000E-12   23.000000E-12                   68.000000E-12 
+          VJ     .4              .8                              .4          
+           M     .3              .36                             .3          
+
+
+               X_Q6_M2.DDS     X_Q6_M2.DBODY   X_Q6_M2.DGD     X_Q8_M2.DDS     
+          IS   10.000000E-15  140.000000E-15   10.000000E-15   10.000000E-15 
+          BV   50.084                                          50.084        
+          RS                     .04                                         
+          TT                  100.000000E-09                                 
+         CJO   23.000000E-12                   68.000000E-12   23.000000E-12 
+          VJ     .8                              .4              .8          
+           M     .36                             .3              .36         
+
+
+               X_Q8_M2.DBODY   X_Q8_M2.DGD     X_Q9_M2.DDS     X_Q9_M2.DBODY   
+          IS  140.000000E-15   10.000000E-15   10.000000E-15  140.000000E-15 
+          BV                                   50.084                        
+          RS     .04                                             .04         
+          TT  100.000000E-09                                  100.000000E-09 
+         CJO                   68.000000E-12   23.000000E-12                 
+          VJ                     .4              .8                          
+           M                     .3              .36                         
+
+
+               X_Q9_M2.DGD     
+          IS   10.000000E-15 
+         CJO   68.000000E-12 
+          VJ     .4          
+           M     .3          
+
+
+**** 03/23/16 10:52:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-VDriveSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver-pspicefile
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_Q2_M2.DMOS    X_Q2_M2.INTER   X_Q3_M2.DMOS    X_Q3_M2.INTER   
+               NMOS            NMOS            NMOS            NMOS            
+       LEVEL    3               1               3               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    1.2948          0               1.2948          0            
+          KP     .6472         10                .6472         10            
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX  100.000000E-09    0             100.000000E-09    0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+        VMAX  220.000000E+03                  220.000000E+03                 
+       THETA     .086                            .086                        
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_Q1_M2.DMOS    X_Q1_M2.INTER   X_Q4_M2.DMOS    X_Q4_M2.INTER   
+               NMOS            NMOS            NMOS            NMOS            
+       LEVEL    3               1               3               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    1.2948          0               1.2948          0            
+          KP     .6472         10                .6472         10            
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX  100.000000E-09    0             100.000000E-09    0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+        VMAX  220.000000E+03                  220.000000E+03                 
+       THETA     .086                            .086                        
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_Q5_M2.DMOS    X_Q5_M2.INTER   X_Q6_M2.DMOS    X_Q6_M2.INTER   
+               NMOS            NMOS            NMOS            NMOS            
+       LEVEL    3               1               3               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    1.2948          0               1.2948          0            
+          KP     .6472         10                .6472         10            
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX  100.000000E-09    0             100.000000E-09    0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+        VMAX  220.000000E+03                  220.000000E+03                 
+       THETA     .086                            .086                        
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+               X_Q8_M2.DMOS    X_Q8_M2.INTER   X_Q9_M2.DMOS    X_Q9_M2.INTER   
+               NMOS            NMOS            NMOS            NMOS            
+       LEVEL    3               1               3               1            
+           L  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06  100.000000E-06  100.000000E-06 
+         VTO    1.2948          0               1.2948          0            
+          KP     .6472         10                .6472         10            
+       GAMMA    0               0               0               0            
+         PHI     .6              .6              .6              .6          
+      LAMBDA    0               0               0               0            
+          IS   10.000000E-15   10.000000E-15   10.000000E-15   10.000000E-15 
+          JS    0               0               0               0            
+          PB     .8              .8              .8              .8          
+        PBSW     .8              .8              .8              .8          
+          CJ    0               0               0               0            
+        CJSW    0               0               0               0            
+        CGSO    0               0               0               0            
+        CGDO    0               0               0               0            
+        CGBO    0               0               0               0            
+         TOX  100.000000E-09    0             100.000000E-09    0            
+          XJ    0               0               0               0            
+       UCRIT   10.000000E+03   10.000000E+03   10.000000E+03   10.000000E+03 
+        VMAX  220.000000E+03                  220.000000E+03                 
+       THETA     .086                            .086                        
+      DIOMOD    1               1               1               1            
+         VFB    0               0               0               0            
+        LETA    0               0               0               0            
+        WETA    0               0               0               0            
+          U0    0               0               0               0            
+        TEMP    0               0               0               0            
+         VDD    5               5               5               5            
+       XPART    0               0               0               0            
+
+
+ERROR -- Convergence problem in DC sweep
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00178)    3.2935 (N00192)    2.7645 (N00360)    4.9901 (N00463)    1.3124     
+
+(N00470)    1.3124 (N02114)    2.7818 (N02427)    3.2935 (N02628)    2.0506     
+
+(N02814)    2.0506 (N03816)    2.7813 (N04563)    1.3111 (N05069)    1.3111     
+
+(D1_N00169)    4.2540                 (D1_N00173)    3.5179                     
+
+(D2_N00289)    4.2546                 (D2_N00293)    3.5190                     
+
+(D2_N00367)    2.7835                 (D2_N00371)    2.0480                     
+
+(D3_N00511)    4.2546                 (D3_N00515)    3.5190                     
+
+(D3_N00535)    2.7835                 (D3_N00555)    2.0480                     
+
+(D4_N00763)    4.2552                 (D4_N00781)    3.5203                     
+
+(D4_N00807)    2.7855                 (D5_N00763)    4.2552                     
+
+(D5_N00781)    3.5203                 (D5_N00807)    2.7855                     
+
+(D6_N00169)    4.2538                 (D6_N00173)    3.5175                     
+
+(D7_N00289)    4.2543                 (D7_N00293)    3.5185                     
+
+(D7_N00367)    2.7827                 (D7_N00371)    2.0469                     
+
+(D8_N00511)    4.2543                 (D8_N00515)    3.5185                     
+
+(D8_N00535)    2.7827                 (D8_N00555)    2.0469                     
+
+(Q1_N02335)     .0362                 (Q2_N02185)     .0295                     
+
+(Q3_N02185)     .0295                 (Q4_N02335)     .0288                     
+
+(Q5_N02335)     .0288                 (Q6_N02514)    2.7645                     
+
+(Q6_N02698)   14.9700                 (Q6_N02702)   14.8790                     
+
+(Q8_N02759)    1.2951                 (Q8_N02911)   14.9700                     
+
+(Q8_N02915)   14.9570                 (Q9_N02759)    1.2951                     
+
+(Q9_N02911)   14.9700                 (Q9_N02915)   14.9570                     
+
+(X_Q1_M2.1)    2.7645                 (X_Q1_M2.2)     .0256                     
+
+(X_Q1_M2.3) 211.2E-06                 (X_Q1_M2.4)     .0319                     
+
+(X_Q1_M2.5) 1.942E-09                 (X_Q1_M2.6)     .0320                     
+
+(X_Q1_M2.7)    2.7645                 (X_Q1_M2.8)    -.1866                     
+
+(X_Q1_M2.9)    2.9831                 (X_Q2_M2.1)    3.2935                     
+
+(X_Q2_M2.2)     .0191                 (X_Q2_M2.3) 206.9E-06                     
+
+(X_Q2_M2.4)     .0253                 (X_Q2_M2.5)-17.97E-09                     
+
+(X_Q2_M2.6)     .0254                 (X_Q2_M2.7)    3.2935                     
+
+(X_Q2_M2.8)    -.2361                 (X_Q2_M2.9)    3.5549                     
+
+(X_Q3_M2.1)    3.2935                 (X_Q3_M2.2)     .0191                     
+
+(X_Q3_M2.3) 206.9E-06                 (X_Q3_M2.4)     .0253                     
+
+(X_Q3_M2.5)-17.97E-09                 (X_Q3_M2.6)     .0254                     
+
+(X_Q3_M2.7)    3.2935                 (X_Q3_M2.8)    -.2361                     
+
+(X_Q3_M2.9)    3.5549                 (X_Q4_M2.1)    3.2935                     
+
+(X_Q4_M2.2)     .0187                 (X_Q4_M2.3) 202.2E-06                     
+
+(X_Q4_M2.4)     .0248                 (X_Q4_M2.5) 6.632E-09                     
+
+(X_Q4_M2.6)     .0248                 (X_Q4_M2.7)    3.2935                     
+
+(X_Q4_M2.8)    -.2367                 (X_Q4_M2.9)    3.5550                     
+
+(X_Q5_M2.1)    3.2935                 (X_Q5_M2.2)     .0187                     
+
+(X_Q5_M2.3) 202.2E-06                 (X_Q5_M2.4)     .0248                     
+
+(X_Q5_M2.5) 6.632E-09                 (X_Q5_M2.6)     .0248                     
+
+(X_Q5_M2.7)    3.2935                 (X_Q5_M2.8)    -.2367                     
+
+(X_Q5_M2.9)    3.5550                 (X_Q6_M2.1)   14.8790                     
+
+(X_Q6_M2.2)    2.7706                 (X_Q6_M2.3)    2.7648                     
+
+(X_Q6_M2.4)    2.7770                 (X_Q6_M2.5)    2.7645                     
+
+(X_Q6_M2.6)    2.7771                 (X_Q6_M2.7)   14.8790                     
+
+(X_Q6_M2.8)    1.8090                 (X_Q6_M2.9)   15.8470                     
+
+(X_Q8_M2.1)   14.9570                 (X_Q8_M2.2)    1.3007                     
+
+(X_Q8_M2.3)    1.2953                 (X_Q8_M2.4)    1.3070                     
+
+(X_Q8_M2.5)    1.2951                 (X_Q8_M2.6)    1.3071                     
+
+(X_Q8_M2.7)   14.9570                 (X_Q8_M2.8)     .2151                     
+
+(X_Q8_M2.9)   16.0490                 (X_Q9_M2.1)   14.9570                     
+
+(X_Q9_M2.2)    1.3007                 (X_Q9_M2.3)    1.2953                     
+
+(X_Q9_M2.4)    1.3070                 (X_Q9_M2.5)    1.2951                     
+
+(X_Q9_M2.6)    1.3071                 (X_Q9_M2.7)   14.9570                     
+
+(X_Q9_M2.8)     .2151                 (X_Q9_M2.9)   16.0490                 
+
+
+  These voltages failed to converge:
+
+    V(Q6_N02698)              =     14.81V  \     14.97V
+    V(Q8_N02911)              =     15.00V  \     14.97V
+    V(Q9_N02911)              =     15.00V  \     14.97V
+
+  These supply currents failed to converge:
+
+    I(E_Q6_U1)                =    7.333uA  \   -9.156uA
+    I(E_Q8_U1)                =   -4.334uA  \   -1.367uA
+    I(E_Q9_U1)                =   -4.334uA  \   -1.367uA
+    I(V_V3)                   =  -275.50nA  \  -274.07nA
+    I(V_V4)                   =  -632.20nA  \  -658.96nA
+    I(V_V5)                   =  -664.67nA  \  -654.79nA
+
+  These devices failed to converge:
+    X_Q2_M2.Dds X_Q3_M2.Dds X_Q1_M2.Dds X_Q4_M2.Dds X_Q5_M2.Dds X_Q8_M2.Dds 
+    X_Q9_M2.Dds E_Q6_U1   
+
+**** Interrupt ****

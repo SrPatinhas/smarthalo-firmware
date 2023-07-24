@@ -1,0 +1,16 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 17:47:01 On 2015-12-18
+
+Output: NC Drill
+Type  : NC Drill
+From  : PCB Document [LEDBO_48LEDS.CSPcbDoc]
+   Generated File[[LEDBO_LRTBR98G.PrjPcb] LEDBO_48LEDS.TXT]
+   Generated File[[LEDBO_LRTBR98G.PrjPcb] LEDBO_48LEDS.LDP]
+   Generated File[[LEDBO_LRTBR98G.PrjPcb] LEDBO_48LEDS.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 17:47:02 On 2015-12-18

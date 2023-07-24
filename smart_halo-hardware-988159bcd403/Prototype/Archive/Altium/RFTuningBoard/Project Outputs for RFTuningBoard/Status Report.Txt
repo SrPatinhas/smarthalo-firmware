@@ -1,0 +1,10 @@
+Output: AutoCAD dwg/dxf File PCB
+Type  : AutoCAD PCB
+From  : PCB Document [RFTuningBoard.PcbDoc]
+   Generated File[RFTuningBoard.DWG]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 10:39:27 On 2016-03-10

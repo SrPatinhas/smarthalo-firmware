@@ -1,0 +1,49 @@
+
+**** 03/10/16 12:13:52 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "DummyLoad2A_TB-DCSweepVRef"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DCSweepVRef.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../electronicload-pspicefiles/electronicload.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN V_VREF 0Vdc 5Vdc 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\DummyLoad2A_TB.net" 
+
+
+
+**** INCLUDING DummyLoad2A_TB.net ****
+* source ELECTRONICLOAD
+V_VLOAD         N00113 0 {VLOAD}
+V_VREF         N00109 0 {VREF}
+X_DL1_U1A         N00109 DL1_N00600 N00419 0 DL1_N00100 LM324
+M_DL1_M2         N00113 DL1_N00100 DL1_N00245 DL1_N00245 IRF150
+R_DL1_R1         DL1_N00245 0 {RSENSE}
+R_DL1_R2         DL1_N00600 DL1_N00245 10k
+R_DL1_R3         DL1_N00600 DL1_N00100 {RGAIN*10k}
+V_VREF1         N00419 0 {VCC}
+.PARAM  vload=3.8vdc rsense=0.3 vref=5vdc vcc=5vdc
+
+**** RESUMING DCSweepVRef.cir ****
+.END
+
+ERROR(ORPSIM-15167): Undefined parameter: RGAIN.
+

@@ -1,0 +1,15 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: LEDBO_72LEDS.CSPcbDoc   2015-12-10  14:15:35
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : [LEDBO_LRTBR98G_72.PrjPcb] LEDBO_72LEDS.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        13mil (0.3302mm)         Round          209              31.50 Inch (800.11 mm)
+T2        40.16mil (1.02006mm)     Round          10               1.97 Inch (50.04 mm)
+---------------------------------------------------------------------------
+Totals                                            219              33.47 Inch (850.15 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:01

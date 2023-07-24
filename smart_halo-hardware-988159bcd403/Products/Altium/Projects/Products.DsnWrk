@@ -1,0 +1,6 @@
+[ProjectGroup]
+Version=1.0
+[Project1]
+ProjectPath=SmartHaloV1\SmartHaloV1.PrjPcb
+[Project2]
+ProjectPath=TouchButton_ElectrodeV1\TouchButton_ElectrodeV1.PrjPcb

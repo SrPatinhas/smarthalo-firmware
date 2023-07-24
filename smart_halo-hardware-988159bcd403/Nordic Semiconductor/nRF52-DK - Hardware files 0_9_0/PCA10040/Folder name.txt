@@ -1,0 +1,1 @@
+PCA10040-nRF52832 Bluetooth Smart,ANT,2.4GHz RF Development Board 0_9_0

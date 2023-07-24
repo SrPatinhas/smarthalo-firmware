@@ -1,0 +1,139 @@
+(ExpressProject "ElectronicLoad"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\electronicload.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\electronicload-pspicefiles\dummyload2a_tb\dummyload2a_tb.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\electronicload-pspicefiles\dummyload2a_tb\dcsweepvref.sim"
+        (DisplayName "DummyLoad2A_TB-DCSweepVRef")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\electronicload-pspicefiles\dummyload2a_tb\dcbias.sim"
+        (DisplayName "DummyLoad2A_TB-DCbias")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\electronicload-pspicefiles\dummyload2a_tb\dcsweepvref.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\electronicload-pspicefiles\electronicload.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\electronicload-pspicefiles\electronicload.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload.dsn")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload.dsn"
+         "DummyLoad2A_TB")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload.dsn"
+         "DummyLoad2A")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload.dsn"
+         "Design Cache")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Simulation Profiles"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 417"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1740 104 564")
+        (Scroll "0 110")
+        (Zoom "200")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\ELECTRONICLOAD.DSN")
+      (Schematic "DummyLoad2A_TB")
+      (Page "DummyLoad2A_TB"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1792 156 616")
+        (Scroll "0 205")
+        (Zoom "174")
+        (Occurrence "/DL1"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\ELECTRONICLOAD.DSN")
+      (Schematic "DummyLoad2A")
+      (Page "DummyLoad2A")))
+  (PartMRUSelector
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (LM324
+      (FullPartName "LM324.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\EVAL.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IRF150
+      (FullPartName "IRF150.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\PWRMOS.OLB")
+      (DeviceIndex "0"))
+    (FDP7030L/FAI
+      (FullPartName "FDP7030L/FAI.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\FAIRCHILD.OLB")
+      (DeviceIndex "0"))
+    (power_Mbreakn
+      (FullPartName "power_Mbreakn.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (OPAMP
+      (FullPartName "OPAMP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (MbreakN3
+      (FullPartName "MbreakN3.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\CADENCE\SPB_16.6\TOOLS\capture\library\pspice")
+  (MPSSessionName "sgelinas"))

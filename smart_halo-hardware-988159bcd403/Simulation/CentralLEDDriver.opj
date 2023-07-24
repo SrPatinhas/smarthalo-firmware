@@ -1,0 +1,198 @@
+(ExpressProject "CentralLEDDriver"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\centralleddriver.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (RootChangedForceReNetlist "x"))
+  (Folder "Outputs"
+    (File ".\centralleddriver-pspicefiles\schematic1\schematic1.net"
+      (Type "Report"))
+    (File ".\centralleddriver-pspicefiles\centralled_tb\centralled_tb.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\centralleddriver-pspicefiles\nmosdriver_gb\bias.sim"
+        (DisplayName "NMOSDRIVER_GB-bias")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\centralleddriver-pspicefiles\centralled_tb\vdrivesweep.sim"
+        (DisplayName "CENTRALLED_TB-VDriveSweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\centralleddriver-pspicefiles\centralled_tb\vledsweep.sim"
+        (DisplayName "CENTRALLED_TB-VLEDSweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\centralleddriver-pspicefiles\centralled_tb\trans.sim"
+        (DisplayName "CENTRALLED_TB-trans")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\centralleddriver-pspicefiles\centralled_tb\bias.sim"
+        (DisplayName "CENTRALLED_TB-bias")
+        (Type "PSpice Profile"))
+      (ActiveProfile
+         ".\centralleddriver-pspicefiles\centralled_tb\vdrivesweep.sim"))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\centralleddriver-pspicefiles\centralleddriver.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\centralleddriver-pspicefiles\centralleddriver.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (OPAMP
+      (FullPartName "OPAMP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (VPULSE
+      (FullPartName "VPULSE.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (BSS138/FAI
+      (FullPartName "BSS138/FAI.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\FAIRCHILD.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-L
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (Dbreak
+      (FullPartName "Dbreak.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (MbreakN3
+      (FullPartName "MbreakN3.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (LED55BF/TO
+      (FullPartName "LED55BF/TO.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (LED55B/TO
+      (FullPartName "LED55B/TO.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (QbreakN
+      (FullPartName "QbreakN.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0"))
+    (LED
+      (FullPartName "LED.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (BC846BL
+      (FullPartName "BC846BL.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\TRANSISTOR.OLB")
+      (DeviceIndex "0")))
+  (LastUsedLibraryBrowseDirectory
+     "C:\CADENCE\SPB_16.6\TOOLS\capture\library\pspice")
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn"
+         "CENTRALLED_TB")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn"
+         "FRONTLED")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn"
+         "IREGDRIVER_GB")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn"
+         "IREGDRIVER_R")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn"
+         "LEDB")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn"
+         "LEDG")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn"
+         "LEDR")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn"
+         "NMOSDRIVER_FL")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn"
+         "NMOSDRIVER_GB")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver.dsn"
+         "NMOSDRIVER_R")
+      (Path "Outputs"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 0 200 0 421"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 156 1499 156 616")
+        (Scroll "-274 9")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\CENTRALLEDDRIVER.DSN")
+      (Schematic "CENTRALLED_TB")
+      (Page "CENTRALLED_TB"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1499 156 616")
+        (Scroll "-162 0")
+        (Zoom "100")
+        (Occurrence "/Q6"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\CENTRALLEDDRIVER.DSN")
+      (Schematic "IREGDRIVER_R")
+      (Page "IREGDRIVER_R"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1525 182 642")
+        (Scroll "-162 0")
+        (Zoom "100")
+        (Occurrence "/Q8"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\CENTRALLEDDRIVER.DSN")
+      (Schematic "IREGDRIVER_GB")
+      (Page "IREGDRIVER_GB")))
+  (MPSSessionName "sgelinas"))

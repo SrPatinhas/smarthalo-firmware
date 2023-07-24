@@ -1,0 +1,23 @@
+Importer Log Report
+Project : smarthalo_BRAIN_no_usb.PrjPcb
+
+Section : Analyze Document - C:\Users\Olivier\Desktop\SmartHalo BB Fonctionnel\smarthalo_BRAIN_no_usb.brd
+    Analyzing data of C:\Users\Olivier\Desktop\SmartHalo BB Fonctionnel\smarthalo_BRAIN_no_usb.brd
+    Load settings
+    Load layers 128
+    Load Library "MySMD"
+    Load Packages 4
+    Load Library "MySMD2"
+    Load Packages 1
+    Load Library "MyCON2"
+    Load Packages 1
+    Load Library "microbuilder"
+    Load Packages 14
+    Load Library "SparkFun-Connectors"
+    Load Packages 2
+    Load Library "SparkFun-Passives"
+    Load Packages 1
+    Load Library "rcl"
+    Load Packages 1
+    ERROR: Unhandled typeerrors
+EndSection

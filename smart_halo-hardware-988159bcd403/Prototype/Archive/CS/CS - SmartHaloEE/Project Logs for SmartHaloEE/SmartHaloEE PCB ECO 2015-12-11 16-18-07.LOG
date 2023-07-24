@@ -1,0 +1,68 @@
+Change Component Footprint: Designator=U2 Old Footprint=DRC10-2400X1650TP New Footprint=DRC10-2400X1650TP
+Change Component Footprint: Designator=U7 Old Footprint=DRV6-1600X1000TP New Footprint=DRV6-1600X1000TP
+Added Component: Designator=C6(CAPC1005X04L)
+Added Component: Designator=C8(CAPC1005X04L)
+Added Component: Designator=C20(CAPC1005X04L)
+Added Component: Designator=C21(CAPC1005X04L)
+Added Component: Designator=C22(CAPC1608X06L)
+Added Component: Designator=C23(CAPC1608X06L)
+Added Component: Designator=C26(CAPC1005X04L)
+Added Component: Designator=C27(CAPC1005X04L)
+Added Component: Designator=C28(CAPC1005X04L)
+Added Component: Designator=C29(CAPC1005X04L)
+Added Component: Designator=L2(INDC1005X04L)
+Added Component: Designator=L3(INDC1005X04L)
+Added Component: Designator=L5(INDC1005X04L)
+Added Component: Designator=L6(INDC1608X06L)
+Added Component: Designator=L7(INDC1005X04L)
+Added Component: Designator=X1(CRYSTAL_16MHz_SMT4)
+Added Pin To Net: NetName=NetANT1_1 Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=AVDD Pin=C20-1
+Added Pin To Net: NetName=GND Pin=C20-2
+Added Pin To Net: NetName=ANT_P Pin=C21-1
+Added Pin To Net: NetName=NetC21_2 Pin=C21-2
+Added Pin To Net: NetName=GND Pin=C22-1
+Added Pin To Net: NetName=AVDD Pin=C22-2
+Added Pin To Net: NetName=+3.3 Pin=C23-1
+Added Pin To Net: NetName=GND Pin=C23-2
+Added Pin To Net: NetName=NetC21_2 Pin=C26-1
+Added Pin To Net: NetName=GND Pin=C26-2
+Added Pin To Net: NetName=NetC27_1 Pin=C27-1
+Added Pin To Net: NetName=GND Pin=C27-2
+Added Pin To Net: NetName=NetC28_1 Pin=C28-1
+Added Pin To Net: NetName=GND Pin=C28-2
+Added Pin To Net: NetName=+3.3 Pin=C29-1
+Added Pin To Net: NetName=GND Pin=C29-2
+Added Pin To Net: NetName=NetC28_1 Pin=L2-1
+Added Pin To Net: NetName=ANT_N Pin=L2-2
+Added Pin To Net: NetName=NetC21_2 Pin=L3-1
+Added Pin To Net: NetName=NetANT1_1 Pin=L3-2
+Added Pin To Net: NetName=NetL5_1 Pin=L5-1
+Added Pin To Net: NetName=AVDD Pin=L5-2
+Added Pin To Net: NetName=NetL6_1 Pin=L6-1
+Added Pin To Net: NetName=NetL5_1 Pin=L6-2
+Added Pin To Net: NetName=ANT_N Pin=L7-1
+Added Pin To Net: NetName=ANT_P Pin=L7-2
+Added Pin To Net: NetName=XC_N Pin=X1-1
+Added Pin To Net: NetName=GND Pin=X1-2
+Added Pin To Net: NetName=XC_P Pin=X1-3
+Added Pin To Net: NetName=GND Pin=X1-4
+Added Member To Class: ClassName=BLE Member=Component C6 1.5pF
+Added Member To Class: ClassName=BLE Member=Component C8 100nF
+Added Member To Class: ClassName=BLE Member=Component C20 1.0nF
+Added Member To Class: ClassName=BLE Member=Component C21 3.9pF
+Added Member To Class: ClassName=BLE Member=Component C22 1.0µF
+Added Member To Class: ClassName=BLE Member=Component C23 4.7µF
+Added Member To Class: ClassName=BLE Member=Component C26 1.0pF
+Added Member To Class: ClassName=BLE Member=Component C27 47nF
+Added Member To Class: ClassName=BLE Member=Component C28 2.2nF
+Added Member To Class: ClassName=BLE Member=Component C29 100nF
+Added Member To Class: ClassName=BLE Member=Component L2 27nH
+Added Member To Class: ClassName=BLE Member=Component L3 3.3nH
+Added Member To Class: ClassName=BLE Member=Component L5 15nH
+Added Member To Class: ClassName=BLE Member=Component L6 10µH
+Added Member To Class: ClassName=BLE Member=Component L7 4.7nH
+Added Member To Class: ClassName=BLE Member=Component X1 16MHz

@@ -1,0 +1,16 @@
+Added Component: Designator=Q5(NXP-SC74_M)
+Added Component: Designator=Q6(NXP-SC74_M)
+Added Pin To Net: NetName=GND Pin=Q5-1
+Added Pin To Net: NetName=NetQ5_2 Pin=Q5-2
+Added Pin To Net: NetName=CATHODE_FL Pin=Q5-3
+Added Pin To Net: NetName=GND Pin=Q5-4
+Added Pin To Net: NetName=NetQ5_5 Pin=Q5-5
+Added Pin To Net: NetName=NetLED1_C1 Pin=Q5-6
+Added Pin To Net: NetName=GND Pin=Q6-1
+Added Pin To Net: NetName=NetQ6_2 Pin=Q6-2
+Added Pin To Net: NetName=NetLED1_C2 Pin=Q6-3
+Added Pin To Net: NetName=GND Pin=Q6-4
+Added Pin To Net: NetName=NetQ6_5 Pin=Q6-5
+Added Pin To Net: NetName=NetLED1_C3 Pin=Q6-6
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component Q5 PBSS4160DS,115
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component Q6 PBSS4160DS,115

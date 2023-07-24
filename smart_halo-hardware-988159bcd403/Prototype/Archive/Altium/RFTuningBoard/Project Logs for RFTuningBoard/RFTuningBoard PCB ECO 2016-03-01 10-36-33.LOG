@@ -1,0 +1,36 @@
+Added Component: Designator=C1(CAPC0603(1608)100_N)
+Added Component: Designator=C2(CAPC0603(1608)100_N)
+Added Component: Designator=C3(CAPC0603(1608)100_N)
+Added Component: Designator=C4(CAPC0603(1608)100_N)
+Added Component: Designator=C5(CAPC0603(1608)100_N)
+Added Component: Designator=C6(CAPC0603(1608)100_N)
+Added Component: Designator=C7(CAPC0603(1608)100_N)
+Added Component: Designator=C8(CAPC0603(1608)100_N)
+Added Component: Designator=C9(CAPC0603(1608)100_N)
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetANT1_1 Pin=C1-2
+Added Pin To Net: NetName=NetC1_1 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=NetANT1_1 Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=NetANT2_1 Pin=C4-2
+Added Pin To Net: NetName=NetC4_1 Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=NetANT2_1 Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=NetC7_1 Pin=C7-1
+Added Pin To Net: NetName=NetANT3_1 Pin=C7-2
+Added Pin To Net: NetName=NetC7_1 Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=NetANT3_1 Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Member To Class: ClassName=RFTuningBoard Member=Component C1 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C2 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C3 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C4 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C5 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C6 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C7 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C8 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C9 TBD

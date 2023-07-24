@@ -1,0 +1,7 @@
+[submodule "Code/3rd/nrf5_sdk"]
+	path = Code/3rd/nrf5_sdk
+url=https://sh_sgelinas@bitbucket.org/smart_halo/nrf5_sdk.git
+[submodule "Code/Tools"]
+	path = Code/Tools
+	url = git@bitbucket.org:smart_halo/smarthalo_tools.git
+	branch = master

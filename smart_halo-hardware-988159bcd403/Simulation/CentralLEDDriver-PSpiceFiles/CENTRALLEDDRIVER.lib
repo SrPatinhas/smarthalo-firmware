@@ -1,0 +1,8 @@
+* PSpice Model Editor - Version 16.6.0
+*$
+.model Dbreak D Is=1e-14 Cjo=.1pF Rs=.1
+*$
+.model LRTBGVSG_RED_typ
+*$
+.model Qbreakn NPN Bf=200
+*$

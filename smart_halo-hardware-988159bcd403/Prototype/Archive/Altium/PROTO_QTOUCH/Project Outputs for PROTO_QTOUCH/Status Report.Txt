@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 16:56:23 On 2016-01-26
+
+Output: AutoCAD dwg/dxf File PCB
+Type  : AutoCAD PCB
+From  : PCB Document [PROTO_QTOUCH.PcbDoc]
+   Generated File[PROTO_QTOUCH.DWG]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 16:56:25 On 2016-01-26

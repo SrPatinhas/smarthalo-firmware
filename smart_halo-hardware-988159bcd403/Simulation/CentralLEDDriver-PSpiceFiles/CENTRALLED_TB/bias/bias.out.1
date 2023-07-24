@@ -1,0 +1,77 @@
+
+**** 02/05/16 12:07:39 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "CENTRALLED_TB-bias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\centralleddriver-pspicefiles\centr
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "bias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../centralleddriver-pspicefiles/centralleddriver.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OP
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\CENTRALLED_TB.net" 
+
+
+
+**** INCLUDING CENTRALLED_TB.net ****
+* source CENTRALLEDDRIVER
+X_Q2_M2         Q2_N02185 N00178 0 BSS138/FAI
+R_Q2_R1         Q2_N02185 N00463  {GB_RD} TC=0,0 
+X_Q3_M2         Q3_N02185 N00178 0 BSS138/FAI
+R_Q3_R1         Q3_N02185 N00470  {GB_RD} TC=0,0 
+D_D2_D5         D2_N00371 N00463 Dbreak 
+D_D2_D4         D2_N00367 D2_N00371 Dbreak 
+D_D2_D3         D2_N00293 D2_N00367 Dbreak 
+D_D2_D2         D2_N00289 D2_N00293 Dbreak 
+D_D2_D1         N00360 D2_N00289 Dbreak 
+D_D3_D4         D3_N00535 D3_N00555 Dbreak 
+D_D3_D5         D3_N00555 N00470 Dbreak 
+D_D3_D3         D3_N00515 D3_N00535 Dbreak 
+D_D3_D2         D3_N00511 D3_N00515 Dbreak 
+D_D3_D1         N00360 D3_N00511 Dbreak 
+V_V2         N00360 0 {VLED}
+V_V3         N00192 0 {RVDRIVE}
+V_V4         N00178 0 {GBVDRIVE}
+D_D1_D3         D1_N00173 N02114 Dbreak 
+D_D1_D2         D1_N00169 D1_N00173 Dbreak 
+D_D1_D1         N00360 D1_N00169 Dbreak 
+R_Q1_R1         Q1_N02335 N02114  {R_RD} TC=0,0 
+X_Q1_M2         Q1_N02335 N00192 0 BSS138/FAI
+D_D4_D3         D4_N00781 D4_N00807 Dbreak 
+D_D4_D1         N00360 D4_N00763 Dbreak 
+D_D4_D2         D4_N00763 D4_N00781 Dbreak 
+D_D4_D4         D4_N00807 N02628 Dbreak 
+R_Q4_R1         Q4_N02335 N02628  {FL_RD} TC=0,0 
+X_Q4_M2         Q4_N02335 N02427 0 BSS138/FAI
+V_V5         N02427 0 {FLDRIVE}
+D_D5_D3         D5_N00781 D5_N00807 Dbreak 
+D_D5_D1         N00360 D5_N00763 Dbreak 
+D_D5_D2         D5_N00763 D5_N00781 Dbreak 
+D_D5_D4         D5_N00807 N02814 Dbreak 
+R_Q5_R1         Q5_N02335 N02814  {FL_RD} TC=0,0 
+X_Q5_M2         Q5_N02335 N02427 0 BSS138/FAI
+.PARAM  r_rd=130 rvdrive=5vdc gb_rd=62 drivefreq=1k gbvdrive=5vdc flvdrive=5vdc
++  vled=5vdc fl_rd=91
+
+**** RESUMING bias.cir ****
+.END
+
+ERROR(ORPSIM-15167): Undefined parameter: FLDRIVE.
+

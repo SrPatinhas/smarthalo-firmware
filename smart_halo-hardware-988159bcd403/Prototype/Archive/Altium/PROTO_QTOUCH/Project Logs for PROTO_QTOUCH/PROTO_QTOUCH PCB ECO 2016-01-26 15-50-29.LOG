@@ -1,0 +1,5 @@
+Added Component: Designator=P4(SMTC-TSW-103-07-X-S)
+Added Pin To Net: NetName=QTOUCH2 Pin=P4-1
+Added Pin To Net: NetName=SYNC/MODE Pin=P4-2
+Added Pin To Net: NetName=QTOUCH1 Pin=P4-3
+Added Member To Class: ClassName=TOUCH Member=Component P4 TSW-103-07-F-S

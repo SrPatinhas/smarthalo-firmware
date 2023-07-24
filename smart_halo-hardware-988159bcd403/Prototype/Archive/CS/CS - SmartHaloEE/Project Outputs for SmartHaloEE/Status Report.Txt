@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 19:26:34 On 2015-12-21
+
+Output: Pick Place
+Type  : Pick Place
+From  : Variant [[No Variations]] of PCB Document [SmartHaloEE.CSPcbDoc]
+   Generated File[[SmartHaloEE.PrjPcb] Pick Place for SmartHaloEE.txt]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 19:26:35 On 2015-12-21

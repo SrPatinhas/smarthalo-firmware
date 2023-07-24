@@ -1,0 +1,120 @@
+Added Component: Designator=C2(CAPC1005X04L)
+Added Component: Designator=C6(CAPC1005X04L)
+Added Component: Designator=C8(CAPC1005X04L)
+Added Component: Designator=C10(CAPC1005X04L)
+Added Component: Designator=C45(CAPC1005X04L)
+Added Component: Designator=C46(CAPC1005X04L)
+Added Component: Designator=C47(CAPC1005X04L)
+Added Component: Designator=C48(CAPC1005X04L)
+Added Component: Designator=C49(CAPC1005X04L)
+Added Component: Designator=C50(CAPC1005X04L)
+Added Component: Designator=C51(CAPC1005X04L)
+Added Component: Designator=C52(CAPC1005X04L)
+Added Component: Designator=C53(CAPC1005X04L)
+Added Component: Designator=L2(INDC1005X04L)
+Added Component: Designator=L5(INDC1005X04L)
+Added Component: Designator=U8(QFN40P600X600X90-48N)
+Added Component: Designator=X1(BT-XTAL_2520)
+Added Component: Designator=X2(XTAL_3215)
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=SWCLK Pin=C2-2
+Added Pin To Net: NetName=NetANT1_1 Pin=C6-1
+Added Pin To Net: NetName=SWCLK Pin=C6-2
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=SWCLK Pin=C8-2
+Added Pin To Net: NetName=NetC10_1 Pin=C10-1
+Added Pin To Net: NetName=SWCLK Pin=C10-2
+Added Pin To Net: NetName=SWCLK Pin=C45-1
+Added Pin To Net: NetName=XL2 Pin=C45-2
+Added Pin To Net: NetName=NetC46_1 Pin=C46-1
+Added Pin To Net: NetName=SWCLK Pin=C46-2
+Added Pin To Net: NetName=SWCLK Pin=C47-1
+Added Pin To Net: NetName=XL1 Pin=C47-2
+Added Pin To Net: NetName=VCC_NRF Pin=C48-1
+Added Pin To Net: NetName=SWCLK Pin=C48-2
+Added Pin To Net: NetName=NetC49_1 Pin=C49-1
+Added Pin To Net: NetName=NetC49_2 Pin=C49-2
+Added Pin To Net: NetName=VCC_NRF Pin=C50-1
+Added Pin To Net: NetName=SWCLK Pin=C50-2
+Added Pin To Net: NetName=NetC49_2 Pin=C51-1
+Added Pin To Net: NetName=SWCLK Pin=C51-2
+Added Pin To Net: NetName=NetC52_1 Pin=C52-1
+Added Pin To Net: NetName=SWCLK Pin=C52-2
+Added Pin To Net: NetName=VCC_NRF Pin=C53-1
+Added Pin To Net: NetName=SWCLK Pin=C53-2
+Added Pin To Net: NetName=NetC52_1 Pin=L2-1
+Added Pin To Net: NetName=NetL2_2 Pin=L2-2
+Added Pin To Net: NetName=NetL2_2 Pin=L5-1
+Added Pin To Net: NetName=NetC49_1 Pin=L5-2
+Added Pin To Net: NetName=VCC_NRF Pin=U8-1
+Added Pin To Net: NetName=P0.30 Pin=U8-3
+Added Pin To Net: NetName=P0.00 Pin=U8-4
+Added Pin To Net: NetName=P0.01 Pin=U8-5
+Added Pin To Net: NetName=P0.02 Pin=U8-6
+Added Pin To Net: NetName=P0.03 Pin=U8-7
+Added Pin To Net: NetName=P0.04 Pin=U8-8
+Added Pin To Net: NetName=P0.05 Pin=U8-9
+Added Pin To Net: NetName=P0.06 Pin=U8-10
+Added Pin To Net: NetName=P0.07 Pin=U8-11
+Added Pin To Net: NetName=VCC_NRF Pin=U8-12
+Added Pin To Net: NetName=SWCLK Pin=U8-13
+Added Pin To Net: NetName=P0.08 Pin=U8-14
+Added Pin To Net: NetName=P0.09 Pin=U8-15
+Added Pin To Net: NetName=P0.10 Pin=U8-16
+Added Pin To Net: NetName=P0.11 Pin=U8-17
+Added Pin To Net: NetName=P0.12 Pin=U8-18
+Added Pin To Net: NetName=P0.13 Pin=U8-19
+Added Pin To Net: NetName=P0.14 Pin=U8-20
+Added Pin To Net: NetName=P0.15 Pin=U8-21
+Added Pin To Net: NetName=P0.16 Pin=U8-22
+Added Pin To Net: NetName=SWCLK Pin=U8-23
+Added Pin To Net: NetName=SWCLK Pin=U8-24
+Added Pin To Net: NetName=P0.17 Pin=U8-25
+Added Pin To Net: NetName=P0.18 Pin=U8-26
+Added Pin To Net: NetName=P0.19 Pin=U8-27
+Added Pin To Net: NetName=P0.20 Pin=U8-28
+Added Pin To Net: NetName=NetC10_1 Pin=U8-29
+Added Pin To Net: NetName=NetC52_1 Pin=U8-30
+Added Pin To Net: NetName=NetL2_2 Pin=U8-31
+Added Pin To Net: NetName=NetC49_1 Pin=U8-32
+Added Pin To Net: NetName=SWCLK Pin=U8-33
+Added Pin To Net: NetName=SWCLK Pin=U8-34
+Added Pin To Net: NetName=VCC_NRF Pin=U8-35
+Added Pin To Net: NetName=VCC_NRF Pin=U8-36
+Added Pin To Net: NetName=NetC46_1 Pin=U8-37
+Added Pin To Net: NetName=NetC2_1 Pin=U8-38
+Added Pin To Net: NetName=NetC8_1 Pin=U8-39
+Added Pin To Net: NetName=P0.21 Pin=U8-40
+Added Pin To Net: NetName=P0.22 Pin=U8-41
+Added Pin To Net: NetName=P0.23 Pin=U8-42
+Added Pin To Net: NetName=P0.24 Pin=U8-43
+Added Pin To Net: NetName=P0.25 Pin=U8-44
+Added Pin To Net: NetName=XL2 Pin=U8-45
+Added Pin To Net: NetName=XL1 Pin=U8-46
+Added Pin To Net: NetName=P0.28 Pin=U8-47
+Added Pin To Net: NetName=P0.29 Pin=U8-48
+Added Pin To Net: NetName=SWCLK Pin=U8-49
+Added Pin To Net: NetName=NetC46_1 Pin=X1-1
+Added Pin To Net: NetName=SWCLK Pin=X1-2
+Added Pin To Net: NetName=NetC2_1 Pin=X1-3
+Added Pin To Net: NetName=SWCLK Pin=X1-4
+Added Pin To Net: NetName=XL2 Pin=X2-1
+Added Pin To Net: NetName=XL1 Pin=X2-2
+Added Member To Class: ClassName=BLE Member=Component C2 12pF
+Added Member To Class: ClassName=BLE Member=Component C6 1.5pF
+Added Member To Class: ClassName=BLE Member=Component C8 100nF
+Added Member To Class: ClassName=BLE Member=Component C10 47nF
+Added Member To Class: ClassName=BLE Member=Component C45 12pF
+Added Member To Class: ClassName=BLE Member=Component C46 12pF
+Added Member To Class: ClassName=BLE Member=Component C47 12pF
+Added Member To Class: ClassName=BLE Member=Component C48 1.0nF
+Added Member To Class: ClassName=BLE Member=Component C49 3.9pF
+Added Member To Class: ClassName=BLE Member=Component C50 100nF
+Added Member To Class: ClassName=BLE Member=Component C51 1.0pF
+Added Member To Class: ClassName=BLE Member=Component C52 2.2nF
+Added Member To Class: ClassName=BLE Member=Component C53 100nF
+Added Member To Class: ClassName=BLE Member=Component L2 27nH
+Added Member To Class: ClassName=BLE Member=Component L5 4.7nH
+Added Member To Class: ClassName=BLE Member=Component U8 nRF51x22-QFAC
+Added Member To Class: ClassName=BLE Member=Component X1 16MHz
+Added Member To Class: ClassName=BLE Member=Component X2 32.768kHz

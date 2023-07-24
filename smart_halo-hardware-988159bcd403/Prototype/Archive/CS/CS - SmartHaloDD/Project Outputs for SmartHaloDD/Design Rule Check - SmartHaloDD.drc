@@ -1,0 +1,92 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloDD1\SmartHaloDD1.CSPcbDoc
+Date     : 2015-11-30
+Time     : 11:36:59
+
+Processing Rule : Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('NetC47_2'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('ANT2'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('ANT1'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=50.00ohms) (Max=50.00ohms) (Preferred=50.00ohms) (Disabled)(InNet('NetANT1_1'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=50mil) (Preferred=12mil) (InNet('VLED'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=20mil) (Preferred=12mil) (InNet('VBZ'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=20mil) (Preferred=12mil) (InNet('VBAT'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=20mil) (Preferred=12mil) (InNet('GND'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=20mil) (Preferred=12mil) (InNet('AVDD'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=20mil) (Preferred=12mil) (InNet('+3.3'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=20mil) (Preferred=12mil) (InNet('+5'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=0mil) (InNet('NetANT1_1')),(OnLayer('Keep-Out Layer'))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=6mil) (Max=75mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=118.11mil) (Prefered=118.11mil) (All)
+   Violation between Height Constraint: Small Component P6-MTLW-102-05-G-S-172 (103mil,-895mil) on Top Layer
+   Violation between Height Constraint: Small Component P5-MTLW-102-05-G-S-172 (220mil,-791mil) on Top Layer
+   Violation between Height Constraint: Small Component P1-MTLW-102-05-G-S-172 (-402mil,-815mil) on Top Layer
+   Violation between Height Constraint: Small Component P2-MTLW-102-05-G-S-172 (-24mil,-902mil) on Top Layer
+   Violation between Height Constraint: Small Component P3-TSW-103-07-F-S (-98mil,854mil) on Top Layer
+   Violation between Height Constraint: DIP Component P4-MTLW-103-06-G-D-180 (39mil,808mil) on Top Layer
+Rule Violations :6
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Unpoured Polygon (Allow unpoured: False)
+Rule Violations :0
+
+
+Violations Detected : 6
+Time Elapsed        : 00:00:01

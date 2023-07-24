@@ -1,0 +1,116 @@
+Removed Pin From Net: NetName=VCC Pin=C3-1
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Pin From Net: NetName=VCC Pin=C4-1
+Removed Pin From Net: NetName=GND Pin=C4-2
+Removed Pin From Net: NetName=GND Pin=P3-1
+Removed Pin From Net: NetName=GND Pin=R2-1
+Removed Pin From Net: NetName=GND Pin=R9-1
+Removed Pin From Net: NetName=SDB Pin=R9-2
+Removed Pin From Net: NetName=GND Pin=R13-1
+Removed Pin From Net: NetName=VCC Pin=R14-2
+Removed Pin From Net: NetName=GND Pin=U2-4
+Removed Pin From Net: NetName=VCC Pin=U2-8
+Removed Member From Class: ClassName=CENTRALLEDS Member=C1
+Removed Member From Class: ClassName=CENTRALLEDS Member=C3
+Removed Member From Class: ClassName=DRIVERS_CONNECTORS Member=C5
+Removed Member From Class: ClassName=DRIVERS_CONNECTORS Member=C6
+Removed Member From Class: ClassName=CENTRALLEDS Member=P4
+Removed Member From Class: ClassName=CENTRALLEDS Member=P5
+Removed Member From Class: ClassName=CENTRALLEDS Member=R3
+Removed Member From Class: ClassName=CENTRALLEDS Member=R4
+Removed Member From Class: ClassName=CENTRALLEDS Member=R9
+Removed Member From Class: ClassName=CENTRALLEDS Member=R10
+Removed Member From Class: ClassName=DRIVERS_CONNECTORS Member=R10
+Removed Member From Class: ClassName=CENTRALLEDS Member=R12
+Removed Member From Class: ClassName=CENTRALLEDS Member=R13
+Removed Member From Class: ClassName=CENTRALLEDS Member=R14
+Removed Member From Class: ClassName=DRIVERS_CONNECTORS Member=R16
+Removed Member From Class: ClassName=CENTRALLEDS Member=R17
+Removed Member From Class: ClassName=CENTRALLEDS Member=RSENSE1
+Removed Member From Class: ClassName=CENTRALLEDS Member=U2
+Change Component Comment : Designator=R3 Old Comment=2 kOhm New Comment=3.3 kOhm
+Change Component Comment : Designator=R17 Old Comment=2 kOhm New Comment=3.3 kOhm
+Change Component Comment : Designator=R9 Old Comment=100 kOhm New Comment=TBD Ohm
+Change Component Designator: OldDesignator=C1 NewDesignator=C4
+Change Component Designator: OldDesignator=C2 NewDesignator=C3
+Change Component Designator: OldDesignator=C5 NewDesignator=C1
+Change Component Designator: OldDesignator=C6 NewDesignator=C2
+Change Component Designator: OldDesignator=LED1 NewDesignator=LED20
+Change Component Designator: OldDesignator=LED2 NewDesignator=LED19
+Change Component Designator: OldDesignator=LED3 NewDesignator=LED21
+Change Component Designator: OldDesignator=LED4 NewDesignator=LED18
+Change Component Designator: OldDesignator=LED5 NewDesignator=LED22
+Change Component Designator: OldDesignator=LED6 NewDesignator=LED17
+Change Component Designator: OldDesignator=LED7 NewDesignator=LED23
+Change Component Designator: OldDesignator=LED8 NewDesignator=LED16
+Change Component Designator: OldDesignator=LED9 NewDesignator=LED24
+Change Component Designator: OldDesignator=LED10 NewDesignator=LED15
+Change Component Designator: OldDesignator=LED11 NewDesignator=LED25
+Change Component Designator: OldDesignator=LED12 NewDesignator=LED14
+Change Component Designator: OldDesignator=LED13 NewDesignator=LED1
+Change Component Designator: OldDesignator=LED14 NewDesignator=LED2
+Change Component Designator: OldDesignator=LED15 NewDesignator=LED13
+Change Component Designator: OldDesignator=LED16 NewDesignator=LED3
+Change Component Designator: OldDesignator=LED17 NewDesignator=LED12
+Change Component Designator: OldDesignator=LED18 NewDesignator=LED4
+Change Component Designator: OldDesignator=LED19 NewDesignator=LED11
+Change Component Designator: OldDesignator=LED20 NewDesignator=LED5
+Change Component Designator: OldDesignator=LED21 NewDesignator=LED10
+Change Component Designator: OldDesignator=LED22 NewDesignator=LED6
+Change Component Designator: OldDesignator=LED23 NewDesignator=LED9
+Change Component Designator: OldDesignator=LED24 NewDesignator=LED7
+Change Component Designator: OldDesignator=LED25 NewDesignator=LED8
+Change Component Designator: OldDesignator=P1 NewDesignator=P2
+Change Component Designator: OldDesignator=P2 NewDesignator=P1
+Change Component Designator: OldDesignator=P4 NewDesignator=P3
+Change Component Designator: OldDesignator=R3 NewDesignator=R2
+Change Component Designator: OldDesignator=R5 NewDesignator=R8
+Change Component Designator: OldDesignator=R7 NewDesignator=R4
+Change Component Designator: OldDesignator=R8 NewDesignator=R7
+Change Component Designator: OldDesignator=R12 NewDesignator=R6
+Change Component Designator: OldDesignator=R15 NewDesignator=R3
+Change Component Designator: OldDesignator=R16 NewDesignator=R5
+Change Component Designator: OldDesignator=R17 NewDesignator=R1
+Change Component Designator: OldDesignator=U1 NewDesignator=U2
+Change Component Designator: OldDesignator=U4 NewDesignator=U1
+Change Component Description : Designator=R2 Old Description=2k 0.1W 5% 0603 (1608 Metric)  SMD New Description=3K3 0.1W 5% 0603 (1608 Metric)  SMD
+Change Component Description : Designator=R1 Old Description=2k 0.1W 5% 0603 (1608 Metric)  SMD New Description=3K3 0.1W 5% 0603 (1608 Metric)  SMD
+Change Component Description : Designator=R9 Old Description=100k 0.1W 5% 0603 (1608 Metric)  SMD New Description=TBDR TBDW TBD% 0603 (1608 Metric)  SMD
+Added Component: Designator=C5(CAPC0603(1608)100_N)
+Added Component: Designator=C6(CAPC0603(1608)100_N)
+Added Component: Designator=C7(CAPC0603(1608)100_N)
+Added Component: Designator=C8(CAPC0603(1608)100_N)
+Added Component: Designator=P4(SMTC-MTLW-102-05-X-S-172)
+Added Component: Designator=R11(RESC0603(1608)_M)
+Added Component: Designator=U4(6ST1_N)
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=VCC Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=VCC Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=GND Pin=R9-1
+Added Pin To Net: NetName=SDB Pin=R9-2
+Added Pin To Net: NetName=GND Pin=U4-2
+Added Pin To Net: NetName=VCC Pin=U4-5
+Added Pin To Net: NetName=CAPIN Pin=C5-1
+Added Pin To Net: NetName=CAPIN Pin=R9-2
+Added Net: Name=CAPIN
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_1 Pin=U4-4
+Added Net: Name=NetC6_1
+Added Pin To Net: NetName=NetC6_2 Pin=C6-2
+Added Pin To Net: NetName=NetC6_2 Pin=R9-1
+Added Pin To Net: NetName=NetC6_2 Pin=U4-3
+Added Net: Name=NetC6_2
+Added Pin To Net: NetName=QTOUCH Pin=P4-1
+Added Pin To Net: NetName=QTOUCH Pin=U4-1
+Added Net: Name=QTOUCH
+Added Pin To Net: NetName=SYNC/MODE Pin=P4-2
+Added Pin To Net: NetName=SYNC/MODE Pin=U4-6
+Added Net: Name=SYNC/MODE
+Added Class: Name=TOUCH
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component C3 1.0uF
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component C4 100.0nF
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R3 4.7 kOhm
+Added Member To Class: ClassName=DRIVERS_CONNECTORS Member=Component R8 27 Ohm
+Added Room: Name=TOUCH

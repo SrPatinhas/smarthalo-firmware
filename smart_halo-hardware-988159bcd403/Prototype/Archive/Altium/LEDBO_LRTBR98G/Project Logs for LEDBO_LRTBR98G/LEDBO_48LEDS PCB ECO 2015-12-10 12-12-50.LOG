@@ -1,0 +1,11 @@
+Change Component DesignItemId : Designator=Q1 Old DesignItemId=CMP-1177-00008-1 New DesignItemId=PBSS4160DS,115
+Change Component DesignItemId : Designator=Q2 Old DesignItemId=CMP-1177-00008-1 New DesignItemId=PBSS4160DS,115
+Change Component Comment : Designator=Q1 Old Comment=BC846U New Comment=PBSS4160DS,115
+Change Component Comment : Designator=Q2 Old Comment=BC846U New Comment=PBSS4160DS,115
+Change Component Description : Designator=Q1 Old Description=NPN Silicon AF Transistor Array, 65 V VCEO, 100 mA IC, SC74, Reel, Green New Description=TRANS 2NPN 60V 1A 6TSOP
+Change Component Description : Designator=Q2 Old Description=NPN Silicon AF Transistor Array, 65 V VCEO, 100 mA IC, SC74, Reel, Green New Description=TRANS 2NPN 60V 1A 6TSOP
+Change Component Library : Designator=Q1 Old Library=Altium Content Vault New Library=SmartHalo.IntLib
+Change Component Library : Designator=Q2 Old Library=Altium Content Vault New Library=SmartHalo.IntLib
+Change Component Kind : Designator=P3 Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=P2 Old Kind=Standard New Kind=Standard (No BOM)
+Change Component Kind : Designator=P1 Old Kind=Standard New Kind=Standard (No BOM)

@@ -1,0 +1,8 @@
+Added Component: Designator=P5(SMTC-MTLW-102-05-X-S-172)
+Added Component: Designator=P6(SMTC-MTLW-102-05-X-S-172)
+Added Pin To Net: NetName=SP_OUT- Pin=P5-1
+Added Pin To Net: NetName=SP_OUT+ Pin=P5-2
+Added Pin To Net: NetName=BZ_OUT- Pin=P6-1
+Added Pin To Net: NetName=BZ_OUT+ Pin=P6-2
+Added Member To Class: ClassName=ALARM Member=Component P5 MTLW-102-05-G-S-172
+Added Member To Class: ClassName=ALARM Member=Component P6 MTLW-102-05-G-S-172

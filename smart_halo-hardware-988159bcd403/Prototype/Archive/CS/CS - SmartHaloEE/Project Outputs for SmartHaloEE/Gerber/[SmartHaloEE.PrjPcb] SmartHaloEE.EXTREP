@@ -1,0 +1,21 @@
+------------------------------------------------------------------------------------------
+Gerber File Extension Report For: [SmartHaloEE.PrjPcb] SmartHaloEE.GBR   2015-12-21  19:26:01
+------------------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------------------
+Layer Extension     Layer Description                      
+------------------------------------------------------------------------------------------
+.GTL                Top Layer                               
+.GP1                Ground Plane                            
+.GP2                Power Plane                             
+.GBL                Bottom Layer                            
+.GTO                Top Overlay                             
+.GTP                Top Paste                               
+.GTS                Top Solder                              
+.GBS                Bottom Solder                           
+.GBP                Bottom Paste                            
+.GBO                Bottom Overlay                          
+.Outline            Mechanical 1                            
+.Courtyard Top      Mechanical 15                           
+------------------------------------------------------------------------------------------

@@ -1,0 +1,13 @@
+*.SchDocPreview
+*.CSPcbDocPreview
+*.PcbDocPreview
+*.PrjPcbStructure
+*.zip
+*/Project Outputs for *
+*/Project Logs for *
+*/__Previews/
+*/History/
+SHMP/*/Project Outputs for *
+SHMP/*/Project Logs for *
+SHMP/*/__Previews/
+SHMP/*/History/

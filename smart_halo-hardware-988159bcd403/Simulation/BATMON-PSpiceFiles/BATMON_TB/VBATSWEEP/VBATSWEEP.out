@@ -1,0 +1,368 @@
+
+**** 03/29/16 14:50:16 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-VBATSWEEP"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\vbat
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "VBATSWEEP.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM VBAT 3 4.3 0.1 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\BATMON_TB.net" 
+
+
+
+**** INCLUDING BATMON_TB.net ****
+* source BATMON
+R_R1         N03106 0 1M
+R_R2         N02561 0 1M
+V_V1         N03517 0 DC {VBAT} AC {VBATNOISE} 
+I_I2         N00182 0 DC {ILOAD} AC {ILOADNOISE} 
+C_C1         N00182 0 {CLOAD}
+V_V2         N01396 0 {VDD}
+V_V3         N05390 0 {VDD/2}
+R_U1_U3_U1_R4         N05390 U1_U3_U1_N08791 {IGAIN*R/10}
+R_U1_U3_U1_R5         U1_U3_N11470 U1_U3_U1_N08809 {R/10}
+R_U1_U3_U1_R6         N05932 U1_U3_U1_N08809 {IGAIN*R/10}
+X_U1_U3_U1_U1         U1_U3_U1_N08809 U1_U3_U1_N08791 N05932 N01396 0 TS507
+R_U1_U3_U1_R3         U1_U3_U1_N08791 U1_U3_N11396 {R/10}
+X_U1_U3_U2_U1         N03517 U1_U3_N11396 U1_U3_N11396 N01396 0 TS507
+X_U1_U3_U3_U1         N00182 U1_U3_N11470 U1_U3_N11470 N01396 0 TS507
+R_U1_U2_R4         N05390 U1_U2_N08791 {IGAIN*R/10}
+R_U1_U2_R5         N00182 U1_U2_N08809 {R/10}
+R_U1_U2_R6         N02561 U1_U2_N08809 {IGAIN*R/10}
+R_U1_U2_R3         U1_U2_N08791 N03517 {R/10}
+X_U1_U2_U1         U1_U2_N08809 U1_U2_N08791 N02561 N01396 0 TS507
+R_U1_R2         0 U1_N05336 {(VGAIN*R)/(1-VGAIN)}
+R_U1_R1         U1_N05336 N03517 {R}
+R_U1_RSENSE         N03517 N00182 {RSENSE}
+X_U1_U1_U1         U1_N05336 N03106 N03106 N01396 0 TS507
+R_R3         N05932 0 1M
+.PARAM  igain=110 cload=15.8u vbatnoise=1vac imin=-1.0adc iload=0.5adc
++  voff=0vdc imax=1.5adc vbatmin=3vdc rsense=0.01 r=100k vbatmax=4.3vdc
++  iloadnoise=1aac vgain=0.75 vbat=3.9vdc vdd=3.3
+
+**** RESUMING VBATSWEEP.cir ****
+.END
+
+**** 03/29/16 14:50:16 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-VBATSWEEP"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\vbat
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1_U3_U1_U1.DIODE_VLIM 
+          IS  800.000000E-18 
+
+
+               X_U1_U3_U1_U1.DIODE_ILIM 
+          IS  800.000000E-18 
+
+
+               X_U1_U3_U1_U1.DX 
+          IS   10.000000E-15 
+
+
+               X_U1_U3_U2_U1.DIODE_VLIM 
+          IS  800.000000E-18 
+
+
+               X_U1_U3_U2_U1.DIODE_ILIM 
+          IS  800.000000E-18 
+
+
+               X_U1_U3_U2_U1.DX 
+          IS   10.000000E-15 
+
+
+               X_U1_U3_U3_U1.DIODE_VLIM 
+          IS  800.000000E-18 
+
+
+               X_U1_U3_U3_U1.DIODE_ILIM 
+          IS  800.000000E-18 
+
+
+               X_U1_U3_U3_U1.DX 
+          IS   10.000000E-15 
+
+
+               X_U1_U2_U1.DIODE_VLIM 
+          IS  800.000000E-18 
+
+
+               X_U1_U2_U1.DIODE_ILIM           X_U1_U2_U1.DX   
+          IS  800.000000E-18                   10.000000E-15 
+
+
+               X_U1_U1_U1.DIODE_VLIM 
+          IS  800.000000E-18 
+
+
+               X_U1_U1_U1.DIODE_ILIM           X_U1_U1_U1.DX   
+          IS  800.000000E-18                   10.000000E-15 
+
+
+**** 03/29/16 14:50:16 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-VBATSWEEP"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\vbat
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1_U3_U1_U1.MOS_N 
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO     .65         
+          KP  500.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1_U3_U2_U1.MOS_N 
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO     .65         
+          KP  500.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1_U3_U3_U1.MOS_N 
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO     .65         
+          KP  500.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1_U2_U1.MOS_N 
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO     .65         
+          KP  500.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+               X_U1_U1_U1.MOS_N 
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO     .65         
+          KP  500.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+INTERNAL ERROR -- Overflow, Convert
+
+ABORTING SIMULATION
+**** 03/29/16 14:50:16 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-VBATSWEEP"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\vbat
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =          15
+  External (NCNODS)                 =         220
+  Total (NUMNOD)                    =         220
+
+Total device count (NUMEL)          =         369
+  Capacitors (C)                    =          41
+  Diodes (D)                        =          70
+  VCVS (E)                          =          65
+  CCCS (F)                          =           5
+  VCCS (G)                          =          15
+  CCVS (H)                          =          10
+  Current Sources (I)               =           6
+  MosFETs (M)                       =          10
+  Resistors (R)                     =          84
+  Voltage Sources (V)               =          63
+
+Number of subcircuits (X)           =           5
+
+Matrix statistics:
+  Matrix size (NSTOP)               =         358
+  Initial no. elements (NTTAR)      =        1120
+  No. elements w/ fillin (NTTBR)    =       29274
+  No. fillins (IFILL)               =       28154
+  No. overflows (NTTOV)             =         878
+  No. LU operations (IOPS)          =     1201605
+  Percent sparsity (PERSPA)         =      77.159
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           2
+
+Runtime statistics:                       Seconds      Iterations   Stopped At
+  Matrix load                       =         .05
+  Matrix solution                   =        1.16               8
+  Readin                            =         .06
+  General setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =         .03             111
+  Bias point                        =        0.00               0
+  Default algorithm                 =        -.66              -8
+  GMIN stepping                     =         .66               8     100.00m
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        0.00
+  Total job time (using Solver 1)   =        1.31
+

@@ -1,0 +1,41 @@
+Change Component DesignItemId : Designator=P4 Old DesignItemId=SMTC-MTLW-102-05-X-S-172 New DesignItemId=CMP-1024-00331-1
+Change Component Comment : Designator=P4 Old Comment=MTLW-102-05-G-S-172 New Comment=TSW-103-07-F-S
+Change Component Description : Designator=P4 Old Description=Low Profile .025" SQ Post Header, Through-hole, Vertical, -55 to 125 degC, 2.54 mm Pitch, 2-Pin, Male, RoHS New Description=0.025" SQ Post Header, Through-hole, Vertical, -55 to 125 degC, 2.54 mm Pitch, 3-Pin, Male, RoHS
+Change Component Library : Designator=P4 Old Library=SmartHalo.IntLib New Library=
+Change Component Kind : Designator=P4 Old Kind=Standard (No BOM) New Kind=Standard
+Added Component: Designator=C9(CAPC0603(1608)100_N)
+Added Component: Designator=C10(CAPC0603(1608)100_N)
+Added Component: Designator=C11(CAPC0603(1608)100_N)
+Added Component: Designator=C12(CAPC0603(1608)100_N)
+Added Component: Designator=R10(RESC0603(1608)_M)
+Added Component: Designator=U5(6ST1_N)
+Added Pin To Net: NetName=VCC Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=VCC Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=GND Pin=U5-2
+Added Pin To Net: NetName=VCC Pin=U5-5
+Added Pin To Net: NetName=SYNC/MODE Pin=U5-6
+Change Net Name : Old Net Name=CAPIN New Net Name=CAPIN1
+Added Pin To Net: NetName=CAPIN2 Pin=C11-1
+Added Pin To Net: NetName=CAPIN2 Pin=R10-2
+Added Net: Name=CAPIN2
+Added Pin To Net: NetName=NetC12_1 Pin=C12-1
+Added Pin To Net: NetName=NetC12_1 Pin=U5-4
+Added Net: Name=NetC12_1
+Added Pin To Net: NetName=NetC12_2 Pin=C12-2
+Added Pin To Net: NetName=NetC12_2 Pin=R10-1
+Added Pin To Net: NetName=NetC12_2 Pin=U5-3
+Added Net: Name=NetC12_2
+Added Pin To Net: NetName=QTOUCH1 Pin=U4-1
+Added Net: Name=QTOUCH1
+Added Pin To Net: NetName=QTOUCH2 Pin=P4-1
+Added Pin To Net: NetName=QTOUCH2 Pin=U5-1
+Added Net: Name=QTOUCH2
+Added Member To Class: ClassName=TOUCH Member=Component C9 1.0uF
+Added Member To Class: ClassName=TOUCH Member=Component C10 100.0nF
+Added Member To Class: ClassName=TOUCH Member=Component C11 TBD nF
+Added Member To Class: ClassName=TOUCH Member=Component C12 TBD nF
+Added Member To Class: ClassName=TOUCH Member=Component R10 TBD Ohm
+Added Member To Class: ClassName=TOUCH Member=Component U5 AT42QT1010

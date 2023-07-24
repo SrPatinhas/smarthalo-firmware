@@ -1,0 +1,8 @@
+Change Component DesignItemId : Designator=ANT2 Old DesignItemId=ANTENNA_PCB_2.4GHz New DesignItemId=ANTENNA_PCB_2.4GHz_2PINS
+Change Component DesignItemId : Designator=ANT4 Old DesignItemId=ANTENNA_PCB_2.4GHz New DesignItemId=ANTENNA_PCB_2.4GHz_2PINS
+Change Component Description : Designator=ANT2 Old Description=Antenna PCB, 2.4GHz, 26.11 mm x 1.27 mm, FR4 60 mils, Er = 4.2 New Description=Antenna PCB, 2.4GHz
+Change Component Description : Designator=ANT4 Old Description=Antenna PCB, 2.4GHz, 26.11 mm x 1.27 mm, FR4 60 mils, Er = 4.2 New Description=Antenna PCB, 2.4GHz
+Change Component Library : Designator=ANT2 Old Library=SmartHalo_Symbols.SchLib New Library=SmartHalo.IntLib
+Change Component Library : Designator=ANT4 Old Library=SmartHalo_Symbols.SchLib New Library=SmartHalo.IntLib
+Added Pin To Net: NetName=GND Pin=ANT2-2
+Added Pin To Net: NetName=GND Pin=ANT4-2

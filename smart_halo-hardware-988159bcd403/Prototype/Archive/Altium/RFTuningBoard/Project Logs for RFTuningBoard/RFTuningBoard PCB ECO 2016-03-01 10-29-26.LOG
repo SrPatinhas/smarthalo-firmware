@@ -1,0 +1,36 @@
+Added Component: Designator=ANT1(ANTENNA_PCB_2.4GHZ)
+Added Component: Designator=ANT2(ANTENNA_PCB_2.4GHZ)
+Added Component: Designator=ANT3(ANTENNA_PCB_2.4GHZ)
+Added Component: Designator=P1(TE_SMA_TH)
+Added Component: Designator=P2(TE_SMA_TH)
+Added Component: Designator=P3(TE_SMA_TH)
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=NetANT1_1 Pin=ANT1-1
+Added Net: Name=NetANT1_1
+Added Pin To Net: NetName=NetANT2_1 Pin=ANT2-1
+Added Net: Name=NetANT2_1
+Added Pin To Net: NetName=NetANT3_1 Pin=ANT3-1
+Added Net: Name=NetANT3_1
+Added Pin To Net: NetName=NetC1_1 Pin=P1-1
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC4_1 Pin=P2-1
+Added Net: Name=NetC4_1
+Added Pin To Net: NetName=NetC7_1 Pin=P3-1
+Added Net: Name=NetC7_1
+Added Member To Class: ClassName=RFTuningBoard Member=Component ANT1 Antenna
+Added Member To Class: ClassName=RFTuningBoard Member=Component ANT2 Antenna
+Added Member To Class: ClassName=RFTuningBoard Member=Component ANT3 Antenna
+Added Member To Class: ClassName=RFTuningBoard Member=Component P1 TE 5-1814832-1
+Added Member To Class: ClassName=RFTuningBoard Member=Component P2 TE 5-1814832-1
+Added Member To Class: ClassName=RFTuningBoard Member=Component P3 TE 5-1814832-1

@@ -1,0 +1,192 @@
+
+**** 01/13/16 17:12:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "INVGAIN-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\INVGAIN\trans.sim 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2.5m 0 25u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\INVGAIN.net" 
+
+
+
+**** INCLUDING INVGAIN.net ****
+* source PIEZOAMP
+R_R1         N09192 N00207  {R} TC=0,0 
+R_R2         N00207 N00228  {R*VGAIN} TC=0,0 
+V_V7         N09192 N09074  
++PULSE {-VIN} {+VIN} 0 1n 1n {0.5/FREQ} {1/FREQ}
+V_V9         N09074 0 2.5Vdc
+V_V11         N10177 0 {VDD}
+V_V12         0 N10334 {VDD}
+X_U3         N11419 N00207 N10177 N10334 N00228 AD8614/AD
+V_V13         N11308 0 2.5Vdc
+R_R3         N11419 0  {R*VGAIN} TC=0,0 
+R_R4         N11308 N11419  {R} TC=0,0 
+.PARAM  vin=2.5vdc freq=4k r=10k vgain=4.4 vdd=11vdc vcc=5vdc
+
+**** RESUMING trans.cir ****
+.END
+
+**** 01/13/16 17:12:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "INVGAIN-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\INVGAIN\trans.sim 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.DX         
+          IS  100.000000E-18 
+          RS    5            
+
+
+**** 01/13/16 17:12:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "INVGAIN-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\INVGAIN\trans.sim 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.NIX        X_U3.PIX        X_U3.POUT       X_U3.NOUT       
+               NPN             PNP             PNP             NPN             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF  220             220             100             100            
+          NF    1               1               1               1            
+         VAF  130             130             200             200            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               4               4            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF   25.000000E-15   25.000000E-15    0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.2             2.42         
+           D     .87             .52             .52             .87         
+
+
+**** 01/13/16 17:12:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "INVGAIN-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\INVGAIN\trans.sim 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00207)    2.0335 (N00228)   10.9810 (N09074)    2.5000 (N09192)    0.0000     
+
+(N10177)   11.0000 (N10334)  -11.0000 (N11308)    2.5000 (N11419)    2.0365     
+
+(X_U3.3)    2.7609 (X_U3.4)    2.7578 (X_U3.5)  -10.6440 (X_U3.6)  -10.6320     
+
+(X_U3.7)    2.0375 (X_U3.8)   10.3000 (X_U3.9)   10.3000 (X_U3.10)    2.8569    
+
+(X_U3.11)   10.6240                   (X_U3.12)   10.6360                       
+
+(X_U3.13)    1.3119                   (X_U3.14)    1.3087                       
+
+(X_U3.15)    1.2105                   (X_U3.16)  -10.3000                       
+
+(X_U3.17)  -10.3000                   (X_U3.30)  -11.6160                       
+
+(X_U3.40)   -1.3284                   (X_U3.41)   10.1270                       
+
+(X_U3.42)  -21.9030                   (X_U3.43)  -11.4570                       
+
+(X_U3.46)   10.6270                   (X_U3.47)  -10.5000                       
+
+(X_U3.51)  -11.0000                   (X_U3.70)    0.0000                       
+
+(X_U3.71)    0.0000                   (X_U3.72)    0.0000                       
+
+(X_U3.73)    0.0000                   (X_U3.80)    0.0000                       
+
+(X_U3.81)    0.0000                   (X_U3.97)   11.0000                       
+
+(X_U3.98)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V7         2.034E-04
+    V_V9         2.034E-04
+    V_V11       -9.896E-04
+    V_V12       -7.863E-04
+    V_V13       -4.635E-05
+    X_U3.V1      7.539E-12
+    X_U3.V2      7.542E-12
+    X_U3.V3      1.161E-11
+    X_U3.V4      1.161E-11
+    X_U3.VN1     0.000E+00
+    X_U3.V5      3.728E-13
+    X_U3.V6     -2.089E-02
+
+    TOTAL POWER DISSIPATION   3.01E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/13/16 17:12:02 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "INVGAIN-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\INVGAIN\trans.sim 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .28
+

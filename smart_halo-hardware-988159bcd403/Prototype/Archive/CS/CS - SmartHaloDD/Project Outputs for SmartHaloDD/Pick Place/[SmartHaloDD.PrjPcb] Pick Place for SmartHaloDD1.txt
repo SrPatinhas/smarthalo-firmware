@@ -1,0 +1,143 @@
+Designator Footprint               Mid X         Mid Y         Ref X         Ref Y         Pad X         Pad Y TB      Rotation Comment        
+
+X2         CRYSTAL_32.768KHZ_SMT2   -364.103mil    608.803mil   -364.103mil    608.803mil   -364.103mil    526.126mil  T         90.00 32.768kHz      
+X1         CRYSTAL_16MHZ_SMT4         -9mil        197mil         -9mil        197mil    -33.606mil    226.528mil  T        270.00 16MHz          
+U9         6ST1_M             385.465mil    760.195mil    385.465mil    760.195mil    348.063mil    712.951mil  T         90.00 AT42QT1010-TSHR
+U8         NORDIC_QFN50P500X500X90-33N       -279mil        163mil       -279mil        163mil   -210.102mil    259.457mil  T        270.00 nRF8001        
+U7         DRV6-1600X1000TP        436mil       -800mil        436mil       -800mil    394.661mil   -774.409mil  T        360.00 TPS61170DRVR   
+U6         SOP8                731.59mil   -386.989mil        619mil       -432mil        619mil       -432mil  T         60.00 IS31AP4991-GRLS2-TR
+U5         LGA12-2X2X1_N      252.205mil   -120.375mil    252.205mil   -120.375mil    222.677mil   -149.903mil  T         90.00 LSM303CTR      
+U4         32A_M                  591mil        155mil        591mil        155mil    701.236mil    322.323mil  T        270.00 ATmega328P-AU  
+U3         SOT23-5_N             -577mil       -556mil       -577mil       -556mil   -529.756mil   -593.402mil  T        180.00 MIC5225-3.3YM5 
+U2         DRC10-2400X1650TP   -160.805mil    -696.82mil   -160.805mil    -696.82mil   -218.876mil    -657.45mil  T        360.00 TPS61202DRCR   
+U1         RHL20-3050X2050TP     37.001mil   -415.001mil     37.004mil   -415.004mil     66.528mil   -502.599mil  T        180.00 bq51051B       
+R26        RESC0805(2012)_N       -166mil        -55mil       -166mil        -55mil       -166mil    -17.599mil  T        270.00 22k            
+R25        RESC0402(1005)_L        930mil        209mil        930mil        209mil    925.415mil    226.113mil  T        285.00 1K 5% 0402(1005)
+R24        RESC0402(1005)_L    951.001mil         92mil        951mil         92mil    951.001mil    109.717mil  T        270.00 300K 5% 0402(1005)
+R23        RESC0603(1608)_N    526.001mil    711.001mil        526mil        711mil    526.001mil    742.497mil  T        270.00 2K 5% 0603(1608)
+R22        RESC0402(1005)_M        672mil       -546mil        672mil       -546mil    690.753mil   -556.827mil  T        150.00 20K 5% 0402(1005)
+R21        RESC0402(1005)_L    -43.805mil   -739.819mil    -43.805mil    -739.82mil    -43.805mil   -722.103mil  T        270.00 2M74 1% 0402(1005)
+R20        RESC0402(1005)_L    340.001mil   -800.999mil        340mil       -801mil    322.285mil   -800.999mil  T        360.00 2M74 1% 0402(1005)
+R19        RESC0402(1005)_L    357.001mil   -750.999mil        357mil       -751mil    357.001mil   -733.283mil  T        270.00 2M74 1% 0402(1005)
+R18        RESC0402(1005)_N    518.001mil       -318mil        518mil       -318mil    518.001mil   -298.315mil  T        270.00 1K2 5% 0402(1005)
+R17        RESC0402(1005)_N        330mil   -300.001mil        330mil       -300mil    349.685mil   -300.001mil  T        180.00 1K2 5% 0402(1005)
+R16        RESC0402(1005)_M        718mil       -607mil        718mil       -607mil    707.173mil   -625.753mil  T         60.00 20K 5% 0402(1005)
+R15        RESC0402(1005)_M        570mil       -545mil        570mil       -545mil    588.753mil   -555.827mil  T        150.00 20K 5% 0402(1005)
+R14        RESC0402(1005)_N    104.001mil        609mil        104mil        609mil    104.001mil    628.685mil  T        270.00 10K 1% 0402(1005)
+R13        RESC0402(1005)_N    104.001mil        531mil        104mil        531mil    104.001mil    511.315mil  T         90.00 10K 1% 0402(1005)
+R12        RESC0402(1005)_L         49mil    630.001mil         49mil        630mil     66.717mil    630.001mil  T        180.00 100R 5% 0402(1005)
+R11        RESC0402(1005)_N        816mil    482.999mil        816mil        483mil    825.843mil    465.951mil  T        120.00 10K 5% 0402(1005)
+R10        RESC0402(1005)_L    951.001mil     25.999mil        951mil         26mil    951.001mil     43.715mil  T        270.00 100K 5% 0402(1005)
+R9         RESC0402(1005)_N    298.001mil   -203.999mil        298mil       -204mil    317.687mil   -203.999mil  T        180.00 4K7 1% 0402(1005)
+R8         RESC0402(1005)_N    220.002mil   -203.999mil        220mil       -204mil    200.317mil   -203.999mil  T        360.00 4K7 1% 0402(1005)
+R6         RESC0402(1005)_M    -74.516mil   -204.004mil    -74.516mil   -204.004mil    -96.169mil   -204.004mil  T        360.00 1R6 5% 0402(1005)
+R5         RESC0402(1005)_M      -3.65mil   -223.689mil      -3.65mil   -223.689mil      -3.65mil   -245.342mil  T         90.00 1R6 5% 0402(1005)
+R4         RESC0402(1005)_M       49.5mil   -223.689mil       49.5mil   -223.689mil       49.5mil   -202.035mil  T        270.00 1R6 5% 0402(1005)
+R3         RESC0402(1005)_M    -74.516mil   -255.185mil    -74.516mil   -255.185mil    -52.862mil   -255.185mil  T        180.00 1R6 5% 0402(1005)
+R2         RESC0402(1005)_N    -43.805mil   -667.818mil    -43.805mil    -667.82mil    -43.805mil   -687.503mil  T         90.00 249K 1% 0402(1005)
+R1         RESC0402(1005)_L    322.001mil   -750.999mil        322mil       -751mil    322.001mil   -768.715mil  T         90.00 2M74 1% 0402(1005)
+Q2         INF-SOT23_L        432.637mil   -300.641mil    432.637mil   -300.642mil    475.945mil   -338.043mil  T        180.00 MMBT3904       
+Q1         NXP-SOT23_N        195.215mil     567.98mil    195.215mil     567.98mil    157.815mil    530.579mil  T         90.00 BSS138AKAR     
+P4         SMTC-MTLW-103-06-X-D-180        139mil        858mil         39mil        808mil         39mil        808mil  T        360.00 MTLW-103-06-G-D-180
+P3         SMTC-TSW-103-07-X-S       -198mil        854mil        -98mil        854mil        -98mil        854mil  T        180.00 TSW-103-07-F-S 
+P2         SMTC-MTLW-102-05-X-S-172        -74mil       -902mil        -24mil       -902mil        -24mil       -902mil  T        180.00 MTLW-102-05-G-S-172
+P1         SMTC-MTLW-102-05-X-S-172   -356.685mil   -836.131mil       -402mil       -815mil       -402mil       -815mil  T        335.00 MTLW-102-05-G-S-172
+L7         0402S             -418.204mil   -159.695mil   -443.204mil   -159.695mil   -443.204mil   -159.695mil  T        360.00 8.2nH          
+L6         CAPC0603(1608)100_N        169mil        395mil        169mil        395mil    200.496mil        395mil  T        180.00 10µH           
+L5         CAPC0603(1608)100_N        168mil        333mil        168mil        333mil    136.504mil        333mil  T        360.00 15nH           
+L4         VLCF5020T-100M1R1-1        414mil       -515mil        414mil       -515mil        414mil   -448.071mil  T        360.00 VLCF5020T      
+L3         0402S             -390.055mil   -231.939mil   -390.055mil   -206.939mil   -390.055mil   -206.939mil  T        270.00 3.9nH          
+L2         0402S                 -445mil        -96mil       -445mil        -71mil       -445mil        -71mil  T        270.00 5.6nH          
+L1         TAYO-IND0315_V    -349.999mil   -671.999mil       -350mil       -672mil   -349.999mil   -715.307mil  T         90.00 NR3015T2R2M    
+JMP1       JUMPER_SMT             353mil        879mil        353mil        879mil        381mil        879mil  T        180.00 JUMPER         
+J1         HEADERPIN              453mil        632mil        453mil        632mil        453mil        632mil  T          0.00 HEADERPIN      
+FB1        CAPC0805(2012)100_N        -48mil        426mil        -48mil        426mil    -83.433mil        426mil  T        360.00 MMZ1608B121C   
+D1         ONSC-SOD-123-2-425-04_V    268.001mil   -629.999mil        268mil       -630mil    268.001mil   -694.369mil  T         90.00 MBR0540T1G     
+C59        CAPC0805(2012)100_N       -245mil        637mil       -245mil        637mil   -209.567mil        637mil  T        180.00 15pF           
+C58        CAPC0805(2012)100_N   -199.937mil    364.921mil   -199.937mil    364.921mil   -164.504mil    364.921mil  T        180.00 100nF          
+C57        CAPC0402(1005)60_L    482.001mil    759.001mil        482mil        759mil    482.001mil    774.749mil  T        270.00 CAP 100nF 10V 0402(1005)
+C56        CAPC0402(1005)60_L    573.001mil    696.001mil        573mil        696mil    573.001mil    711.749mil  T        270.00 CAP 100nF 10V 0402(1005)
+C55        CAPC0402(1005)60_N    626.999mil   -656.999mil        627mil       -657mil    618.141mil   -672.341mil  T         60.00 CAP 220pF 6.3V 0402(1005)
+C54        CAPC0402(1005)60_N        646mil   -589.999mil        646mil       -590mil    661.343mil   -598.857mil  T        150.00 CAP 220pF 6.3V 0402(1005)
+C53        CAPC0805(2012)100_N       -245mil        555mil       -245mil        555mil   -209.567mil        555mil  T        180.00 15pF           
+C52        0402S                 -445mil         -4mil       -445mil         21mil       -445mil         21mil  T        270.00 2.2nF          
+C51        CAPC0805(2012)100_N   -343.638mil    364.921mil   -343.638mil    364.921mil   -379.071mil    364.921mil  T        360.00 33nF           
+C50        CAPC0805(2012)100_N   -343.638mil    449.567mil   -343.638mil    449.567mil   -379.071mil    449.567mil  T        360.00 100nF          
+C49        CAPC0805(2012)100_N   -199.937mil    449.567mil   -199.937mil    449.567mil   -164.504mil    449.567mil  T        180.00 10µF           
+C48        0402S             -480.606mil   -333.514mil   -480.606mil   -358.514mil   -480.606mil   -358.514mil  T         90.00 1.5pF          
+C47        0402S             -390.055mil   -333.514mil   -390.055mil   -358.514mil   -390.055mil   -358.514mil  T         90.00 1.8pF          
+C46        CAPC0805(2012)100_N     63.724mil    372.772mil     63.724mil    372.772mil     63.724mil    408.205mil  T        270.00 1µF            
+C45        CAPC0805(2012)100_N        134mil        236mil        134mil        236mil    169.433mil        236mil  T        180.00 15pF           
+C44        CAPC0402(1005)60_L    253.205mil    -44.375mil    253.205mil    -44.375mil    268.953mil    -44.375mil  T        180.00 CAP 100nF 10V 0402(1005)
+C43        CAPC0402(1005)60_L    186.205mil    -44.375mil    186.205mil    -44.375mil    201.953mil    -44.375mil  T        180.00 CAP 100nF 10V 0402(1005)
+C42        CAPC0402(1005)60_L   -267.999mil   -641.999mil       -268mil       -642mil   -267.999mil   -626.251mil  T        270.00 CAP 100nF 10V 0402(1005)
+C41        CAPC0603(1608)100_N       -190mil       -576mil       -190mil       -576mil   -158.504mil       -576mil  T        180.00 CAP 10uF 10V 0603(1608)
+C40        CAPC0603(1608)100_N   -201.554mil   -483.286mil   -201.554mil   -483.286mil   -201.554mil   -514.782mil  T         90.00 CAP 10uF 10V 0603(1608)
+C39        CAPC0603(1608)100_N   -138.554mil   -483.286mil   -138.554mil   -483.286mil   -138.554mil   -514.782mil  T         90.00 CAP 10uF 10V 0603(1608)
+C38        CAPC0603(1608)100_N    246.446mil   -478.286mil    246.446mil   -478.286mil    246.446mil   -509.782mil  T         90.00 CAP 10uF 10V 0603(1608)
+C37        CAPC0603(1608)100_N        436mil       -722mil        436mil       -722mil    404.504mil       -722mil  T        360.00 CAP 10uF 10V 0603(1608)
+C36        CAPC0402(1005)60_N     31.099mil   -567.601mil     31.098mil   -567.602mil     13.383mil   -567.601mil  T        360.00 CAP 27pF 25V 0402(1005)
+C35        CAPC0402(1005)60_N     31.099mil   -620.751mil     31.098mil   -620.752mil     13.383mil   -620.751mil  T        360.00 CAP 27pF 25V 0402(1005)
+C34        CAPC0402(1005)60_N    206.265mil   -584.853mil    206.264mil   -584.854mil    206.265mil   -602.569mil  T         90.00 CAP 27pF 25V 0402(1005)
+C33        CAPC0402(1005)60_N    103.903mil   -584.853mil    103.901mil   -584.854mil    103.903mil   -602.569mil  T         90.00 CAP 27pF 25V 0402(1005)
+C32        CAPC0402(1005)60_N    155.083mil   -584.853mil    155.083mil   -584.854mil    155.083mil   -602.569mil  T         90.00 CAP 27pF 25V 0402(1005)
+C31        CAPC0402(1005)60_L    839.999mil   -450.999mil        840mil       -451mil    832.125mil   -464.637mil  T         60.00 CAP 1uF 6.3V 0402(1005)
+C30        CAPC0402(1005)60_L     670.72mil    684.129mil     670.72mil     684.13mil    659.585mil    695.265mil  T        315.00 CAP 100nF 10V 0402(1005)
+C29        CAPC0402(1005)60_L    607.001mil       -736mil        607mil       -736mil    619.901mil   -726.969mil  T        215.00 CAP 100nF 10V 0402(1005)
+C28        CAPC0402(1005)60_L   -525.001mil   -794.001mil       -525mil       -794mil   -538.639mil   -786.127mil  T        330.00 CAP 100nF 10V 0402(1005)
+C27        CAPC0402(1005)60_L   -671.941mil    680.785mil    -671.94mil    680.785mil   -660.805mil    691.921mil  T        225.00 CAP 100nF 10V 0402(1005)
+X3         CSTCE10M0G55-R0        494mil        447mil        494mil        447mil    541.244mil        447mil  T        180.00 Cap            
+C25        CAPC0603(1608)100_N    243.205mil      5.625mil    243.205mil      5.625mil    274.701mil      5.625mil  T        180.00 CAP 10uF 10V 0603(1608)
+C24        CAPC0402(1005)60_L    326.001mil   -120.999mil        326mil       -121mil    326.001mil   -136.747mil  T         90.00 CAP 100nF 10V 0402(1005)
+C23        CAPC0402(1005)60_N        595mil   -502.001mil        595mil       -502mil    610.343mil   -510.859mil  T        150.00 CAP 220pF 6.3V 0402(1005)
+C22        CAPC0402(1005)60_L    621.001mil       -322mil        621mil       -322mil    613.127mil   -335.639mil  T         60.00 CAP 1uF 6.3V 0402(1005)
+C21        CAPC0402(1005)60_M        909mil    280.001mil        909mil        280mil    914.095mil    260.987mil  T        105.00 CAP 100nF 6.3V 0402(1005)
+C20        CAPC0402(1005)60_L    591.001mil    -87.999mil        591mil        -88mil    606.749mil    -87.999mil  T        180.00 CAP 100nF 10V 0402(1005)
+C19        CAPC0402(1005)60_L    622.223mil    397.779mil    622.224mil    397.777mil    637.971mil    397.779mil  T        180.00 CAP 100nF 10V 0402(1005)
+C18        CAPC0603(1608)55_N    622.223mil    446.991mil    622.224mil     446.99mil    653.719mil    446.991mil  T        180.00 CAP 4.7uF 10V 0603(1608)
+C17        CAPC0805(2012)145_N   -698.999mil       -557mil       -699mil       -557mil   -698.999mil   -521.567mil  T        270.00 CAP 10uF 10V 0805(2012)
+C16        CAPC0805(2012)145_N   -457.999mil   -539.998mil       -458mil       -540mil   -457.999mil   -575.431mil  T         90.00 CAP 10uF 10V 0805(2012)
+C15        CAPC1005           215.634mil   -397.349mil    215.634mil    -397.35mil    236.303mil   -397.349mil  T        180.00 CC0402KRX7R7BB104
+C14        CAPC1005          -145.464mil   -363.617mil   -145.465mil   -363.618mil   -166.133mil   -363.617mil  T        360.00 CC0402KRX7R7BB104
+C13        CAPC1005          -145.464mil   -322.277mil   -145.465mil   -322.279mil   -166.133mil   -322.277mil  T        360.00 CC0402KRX7R7BB104
+C12        CAPC1005          -145.405mil   -402.947mil   -145.406mil   -402.949mil   -166.075mil   -402.947mil  T        360.00 CC0402KRX7R7BB104
+C11        CAPC1005           -90.555mil   -485.285mil    -90.554mil   -485.286mil    -90.555mil   -464.615mil  T        270.00 CC0402KRX7R7BB104
+C10        CAPC0805(2012)100_N        -48mil        341mil        -48mil        341mil    -83.433mil        341mil  T        360.00 100nF          
+C9         CAPC0402(1005)60_L    340.001mil   -834.999mil        340mil       -835mil    355.749mil   -834.999mil  T        180.00 CAP 100nF 10V 0402(1005)
+C8         CAPC0603(1608)100_N       -262mil        -91mil       -262mil        -91mil   -230.504mil        -91mil  T        180.00 1.0nF          
+C7         CAPC1005           155.447mil   -494.287mil    155.446mil   -494.286mil    155.447mil   -514.957mil  T         90.00 CC0402KRX7R7BB104
+C6         0402S              -435.33mil   -333.514mil    -435.33mil   -358.514mil    -435.33mil   -358.514mil  T         90.00 1.2pF          
+C5         CAPC1005           195.447mil   -463.285mil    195.446mil   -463.286mil    195.447mil   -442.615mil  T        270.00 CC0402KRX7R7BB104
+C4         CAPC1005           215.634mil   -361.917mil    215.634mil   -361.917mil    236.303mil   -361.917mil  T        180.00 CC0402KRX7R7BB104
+C3         CAPC0603(1608)100_N        365mil       -659mil        365mil       -659mil    396.496mil       -659mil  T        180.00 CAP 10uF 10V 0603(1608)
+C2         CAPC0805(2012)100_N        135mil        148mil        135mil        148mil    170.433mil        148mil  T        180.00 15pF           
+C1         CAPC0603(1608)100_N   -128.805mil    -819.82mil   -128.805mil    -819.82mil   -160.301mil    -819.82mil  T        360.00 CAP 10uF 10V 0603(1608)
+ANT1       ANTENNA_PCB_2.4GHZ   -454.885mil   -361.225mil   -454.885mil   -361.225mil   -454.885mil   -361.225mil  T         90.00 Antenna        
+LED24      WS2812B5050       -289.877mil       1082mil   -289.877mil       1082mil   -399.868mil    1119.76mil  T         15.01 WS2812B        
+LED23      WS2812B5050           -560mil        970mil       -560mil        970mil   -676.018mil    977.983mil  T         30.02 WS2812B        
+LED22      WS2812B5050        -791.96mil        792mil    -791.96mil        792mil   -906.096mil    769.711mil  T         45.01 WS2812B        
+LED21      WS2812B5050       -969.948mil        560mil   -969.948mil        560mil  -1074.416mil    508.909mil  T         60.02 WS2812B        
+LED20      WS2812B5050      -1081.837mil        290mil  -1081.837mil        290mil  -1169.541mil    213.633mil  T         75.01 WS2812B        
+LED19      WS2812B5050          -1120mil          0mil      -1120mil          0mil  -1184.931mil    -96.477mil  T         90.02 WS2812B        
+LED18      WS2812B5050      -1081.838mil   -289.877mil  -1081.837mil   -289.877mil  -1119.613mil   -399.863mil  T        105.00 WS2812B        
+LED17      WS2812B5050       -969.948mil       -560mil   -969.948mil       -560mil   -977.947mil   -676.017mil  T        120.01 WS2812B        
+LED16      WS2812B5050       -791.961mil    -791.96mil    -791.96mil    -791.96mil   -769.687mil   -906.099mil  T        135.00 WS2812B        
+LED15      WS2812B5050           -560mil   -969.948mil       -560mil   -969.948mil   -508.924mil  -1074.423mil  T        150.01 WS2812B        
+LED14      WS2812B5050       -289.877mil  -1081.837mil   -289.877mil  -1081.837mil   -213.484mil  -1169.518mil  T        165.02 WS2812B        
+LED13      WS2812B5050         -0.001mil      -1120mil          0mil      -1120mil     96.467mil  -1184.945mil  T        180.01 WS2812B        
+LED12      WS2812B5050            290mil  -1081.837mil        290mil  -1081.837mil    399.997mil  -1119.579mil  T        195.02 WS2812B        
+LED11      WS2812B5050            560mil   -969.948mil        560mil   -969.948mil    676.015mil   -977.963mil  T        210.01 WS2812B        
+LED10      WS2812B5050            792mil   -791.961mil        792mil    -791.96mil    906.132mil   -769.652mil  T        225.02 WS2812B        
+LED9       WS2812B5050            970mil       -560mil        970mil       -560mil   1074.481mil   -508.938mil  T        240.00 WS2812B        
+LED8       WS2812B5050       1081.999mil   -289.877mil       1082mil   -289.877mil    1169.69mil   -213.496mil  T        255.02 WS2812B        
+LED7       WS2812B5050           1120mil     -0.001mil       1120mil          0mil   1184.957mil     96.459mil  T        270.00 WS2812B        
+LED6       WS2812B5050           1082mil        290mil       1082mil        290mil   1119.756mil    399.991mil  T        285.01 WS2812B        
+LED5       WS2812B5050            970mil        560mil        970mil        560mil    977.979mil    676.017mil  T        300.02 WS2812B        
+LED4       WS2812B5050            792mil        792mil        792mil        792mil    769.707mil    906.135mil  T        315.01 WS2812B        
+LED3       WS2812B5050            560mil        970mil        560mil        970mil    508.906mil   1074.466mil  T        330.02 WS2812B        
+LED2       WS2812B5050            290mil       1082mil        290mil       1082mil     213.63mil   1169.701mil  T        345.01 WS2812B        
+LED1       WS2812B5050              0mil       1120mil          0mil       1120mil    -96.457mil    1184.96mil  T          0.00 WS2812B        
+LED25      WS2812B5050              0mil          0mil          0mil          0mil    -96.457mil     64.961mil  T          0.00 WS2812B        
+P5         SMTC-MTLW-102-05-X-S-172        220mil       -841mil        220mil       -791mil        220mil       -791mil  T        270.00 MTLW-102-05-G-S-172
+P6         SMTC-MTLW-102-05-X-S-172        103mil       -845mil        103mil       -895mil        103mil       -895mil  T         90.00 MTLW-102-05-G-S-172
+

@@ -1,0 +1,19 @@
+** Profile: "BATMON_TB-AC"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\BATMON-PSpiceFiles\BATMON_TB\AC.sim ] 
+
+** Creating circuit file "AC.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.AC DEC 10 100 1000k
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\BATMON_TB.net" 
+
+
+.END

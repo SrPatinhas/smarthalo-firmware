@@ -1,0 +1,169 @@
+Added Component: Designator=LED54(LRTB_R98G)
+Added Component: Designator=LED55(LRTB_R98G)
+Added Component: Designator=LED56(LRTB_R98G)
+Added Component: Designator=LED57(LRTB_R98G)
+Added Component: Designator=LED58(LRTB_R98G)
+Added Component: Designator=LED59(LRTB_R98G)
+Added Component: Designator=LED60(LRTB_R98G)
+Added Component: Designator=LED61(LRTB_R98G)
+Added Component: Designator=LED62(LRTB_R98G)
+Added Component: Designator=LED63(LRTB_R98G)
+Added Component: Designator=LED64(LRTB_R98G)
+Added Component: Designator=LED65(LRTB_R98G)
+Added Component: Designator=LED66(LRTB_R98G)
+Added Component: Designator=LED67(LRTB_R98G)
+Added Component: Designator=LED68(LRTB_R98G)
+Added Component: Designator=LED69(LRTB_R98G)
+Added Component: Designator=LED70(LRTB_R98G)
+Added Component: Designator=LED71(LRTB_R98G)
+Added Component: Designator=LED72(LRTB_R98G)
+Added Component: Designator=LED73(LRTB_R98G)
+Added Component: Designator=LED74(LRTB_R98G)
+Added Component: Designator=LED75(LRTB_R98G)
+Added Component: Designator=LED76(LRTB_R98G)
+Added Component: Designator=LED77(LRTB_R98G)
+Added Pin To Net: NetName=VCC Pin=LED54-A1
+Added Pin To Net: NetName=VCC Pin=LED54-A2
+Added Pin To Net: NetName=VCC Pin=LED54-A3
+Added Pin To Net: NetName=NetLED7_C1 Pin=LED54-C1
+Added Pin To Net: NetName=NetLED7_C2 Pin=LED54-C2
+Added Pin To Net: NetName=NetLED7_C3 Pin=LED54-C3
+Added Pin To Net: NetName=VCC Pin=LED55-A1
+Added Pin To Net: NetName=VCC Pin=LED55-A2
+Added Pin To Net: NetName=VCC Pin=LED55-A3
+Added Pin To Net: NetName=NetLED8_C1 Pin=LED55-C1
+Added Pin To Net: NetName=NetLED8_C2 Pin=LED55-C2
+Added Pin To Net: NetName=NetLED8_C3 Pin=LED55-C3
+Added Pin To Net: NetName=VCC Pin=LED56-A1
+Added Pin To Net: NetName=VCC Pin=LED56-A2
+Added Pin To Net: NetName=VCC Pin=LED56-A3
+Added Pin To Net: NetName=NetLED9_C1 Pin=LED56-C1
+Added Pin To Net: NetName=NetLED9_C2 Pin=LED56-C2
+Added Pin To Net: NetName=NetLED9_C3 Pin=LED56-C3
+Added Pin To Net: NetName=VCC Pin=LED57-A1
+Added Pin To Net: NetName=VCC Pin=LED57-A2
+Added Pin To Net: NetName=VCC Pin=LED57-A3
+Added Pin To Net: NetName=NetLED10_C1 Pin=LED57-C1
+Added Pin To Net: NetName=NetLED10_C2 Pin=LED57-C2
+Added Pin To Net: NetName=NetLED10_C3 Pin=LED57-C3
+Added Pin To Net: NetName=VCC Pin=LED58-A1
+Added Pin To Net: NetName=VCC Pin=LED58-A2
+Added Pin To Net: NetName=VCC Pin=LED58-A3
+Added Pin To Net: NetName=NetLED11_C1 Pin=LED58-C1
+Added Pin To Net: NetName=NetLED11_C2 Pin=LED58-C2
+Added Pin To Net: NetName=NetLED11_C3 Pin=LED58-C3
+Added Pin To Net: NetName=VCC Pin=LED59-A1
+Added Pin To Net: NetName=VCC Pin=LED59-A2
+Added Pin To Net: NetName=VCC Pin=LED59-A3
+Added Pin To Net: NetName=NetLED12_C1 Pin=LED59-C1
+Added Pin To Net: NetName=NetLED12_C2 Pin=LED59-C2
+Added Pin To Net: NetName=NetLED12_C3 Pin=LED59-C3
+Added Pin To Net: NetName=VCC Pin=LED60-A1
+Added Pin To Net: NetName=VCC Pin=LED60-A2
+Added Pin To Net: NetName=VCC Pin=LED60-A3
+Added Pin To Net: NetName=NetLED13_C1 Pin=LED60-C1
+Added Pin To Net: NetName=NetLED13_C2 Pin=LED60-C2
+Added Pin To Net: NetName=NetLED13_C3 Pin=LED60-C3
+Added Pin To Net: NetName=VCC Pin=LED61-A1
+Added Pin To Net: NetName=VCC Pin=LED61-A2
+Added Pin To Net: NetName=VCC Pin=LED61-A3
+Added Pin To Net: NetName=NetLED14_C1 Pin=LED61-C1
+Added Pin To Net: NetName=NetLED14_C2 Pin=LED61-C2
+Added Pin To Net: NetName=NetLED14_C3 Pin=LED61-C3
+Added Pin To Net: NetName=VCC Pin=LED62-A1
+Added Pin To Net: NetName=VCC Pin=LED62-A2
+Added Pin To Net: NetName=VCC Pin=LED62-A3
+Added Pin To Net: NetName=NetLED15_C1 Pin=LED62-C1
+Added Pin To Net: NetName=NetLED15_C2 Pin=LED62-C2
+Added Pin To Net: NetName=NetLED15_C3 Pin=LED62-C3
+Added Pin To Net: NetName=VCC Pin=LED63-A1
+Added Pin To Net: NetName=VCC Pin=LED63-A2
+Added Pin To Net: NetName=VCC Pin=LED63-A3
+Added Pin To Net: NetName=NetLED16_C1 Pin=LED63-C1
+Added Pin To Net: NetName=NetLED16_C2 Pin=LED63-C2
+Added Pin To Net: NetName=NetLED16_C3 Pin=LED63-C3
+Added Pin To Net: NetName=VCC Pin=LED64-A1
+Added Pin To Net: NetName=VCC Pin=LED64-A2
+Added Pin To Net: NetName=VCC Pin=LED64-A3
+Added Pin To Net: NetName=NetLED17_C1 Pin=LED64-C1
+Added Pin To Net: NetName=NetLED17_C2 Pin=LED64-C2
+Added Pin To Net: NetName=NetLED17_C3 Pin=LED64-C3
+Added Pin To Net: NetName=VCC Pin=LED65-A1
+Added Pin To Net: NetName=VCC Pin=LED65-A2
+Added Pin To Net: NetName=VCC Pin=LED65-A3
+Added Pin To Net: NetName=NetLED18_C1 Pin=LED65-C1
+Added Pin To Net: NetName=NetLED18_C2 Pin=LED65-C2
+Added Pin To Net: NetName=NetLED18_C3 Pin=LED65-C3
+Added Pin To Net: NetName=VCC Pin=LED66-A1
+Added Pin To Net: NetName=VCC Pin=LED66-A2
+Added Pin To Net: NetName=VCC Pin=LED66-A3
+Added Pin To Net: NetName=NetLED19_C1 Pin=LED66-C1
+Added Pin To Net: NetName=NetLED19_C2 Pin=LED66-C2
+Added Pin To Net: NetName=NetLED19_C3 Pin=LED66-C3
+Added Pin To Net: NetName=VCC Pin=LED67-A1
+Added Pin To Net: NetName=VCC Pin=LED67-A2
+Added Pin To Net: NetName=VCC Pin=LED67-A3
+Added Pin To Net: NetName=NetLED20_C1 Pin=LED67-C1
+Added Pin To Net: NetName=NetLED20_C2 Pin=LED67-C2
+Added Pin To Net: NetName=NetLED20_C3 Pin=LED67-C3
+Added Pin To Net: NetName=VCC Pin=LED68-A1
+Added Pin To Net: NetName=VCC Pin=LED68-A2
+Added Pin To Net: NetName=VCC Pin=LED68-A3
+Added Pin To Net: NetName=NetLED21_C1 Pin=LED68-C1
+Added Pin To Net: NetName=NetLED21_C2 Pin=LED68-C2
+Added Pin To Net: NetName=NetLED21_C3 Pin=LED68-C3
+Added Pin To Net: NetName=VCC Pin=LED69-A1
+Added Pin To Net: NetName=VCC Pin=LED69-A2
+Added Pin To Net: NetName=VCC Pin=LED69-A3
+Added Pin To Net: NetName=NetLED22_C1 Pin=LED69-C1
+Added Pin To Net: NetName=NetLED22_C2 Pin=LED69-C2
+Added Pin To Net: NetName=NetLED22_C3 Pin=LED69-C3
+Added Pin To Net: NetName=VCC Pin=LED70-A1
+Added Pin To Net: NetName=VCC Pin=LED70-A2
+Added Pin To Net: NetName=VCC Pin=LED70-A3
+Added Pin To Net: NetName=NetLED23_C1 Pin=LED70-C1
+Added Pin To Net: NetName=NetLED23_C2 Pin=LED70-C2
+Added Pin To Net: NetName=NetLED23_C3 Pin=LED70-C3
+Added Pin To Net: NetName=VCC Pin=LED71-A1
+Added Pin To Net: NetName=VCC Pin=LED71-A2
+Added Pin To Net: NetName=VCC Pin=LED71-A3
+Added Pin To Net: NetName=NetLED24_C1 Pin=LED71-C1
+Added Pin To Net: NetName=NetLED24_C2 Pin=LED71-C2
+Added Pin To Net: NetName=NetLED24_C3 Pin=LED71-C3
+Added Pin To Net: NetName=VCC Pin=LED72-A1
+Added Pin To Net: NetName=VCC Pin=LED72-A2
+Added Pin To Net: NetName=VCC Pin=LED72-A3
+Added Pin To Net: NetName=NetLED25_C1 Pin=LED72-C1
+Added Pin To Net: NetName=NetLED25_C2 Pin=LED72-C2
+Added Pin To Net: NetName=NetLED25_C3 Pin=LED72-C3
+Added Pin To Net: NetName=VCC Pin=LED73-A1
+Added Pin To Net: NetName=VCC Pin=LED73-A2
+Added Pin To Net: NetName=VCC Pin=LED73-A3
+Added Pin To Net: NetName=NetLED26_C1 Pin=LED73-C1
+Added Pin To Net: NetName=NetLED26_C2 Pin=LED73-C2
+Added Pin To Net: NetName=NetLED26_C3 Pin=LED73-C3
+Added Pin To Net: NetName=VCC Pin=LED74-A1
+Added Pin To Net: NetName=VCC Pin=LED74-A2
+Added Pin To Net: NetName=VCC Pin=LED74-A3
+Added Pin To Net: NetName=NetLED27_C1 Pin=LED74-C1
+Added Pin To Net: NetName=NetLED27_C2 Pin=LED74-C2
+Added Pin To Net: NetName=NetLED27_C3 Pin=LED74-C3
+Added Pin To Net: NetName=VCC Pin=LED75-A1
+Added Pin To Net: NetName=VCC Pin=LED75-A2
+Added Pin To Net: NetName=VCC Pin=LED75-A3
+Added Pin To Net: NetName=NetLED28_C1 Pin=LED75-C1
+Added Pin To Net: NetName=NetLED28_C2 Pin=LED75-C2
+Added Pin To Net: NetName=NetLED28_C3 Pin=LED75-C3
+Added Pin To Net: NetName=VCC Pin=LED76-A1
+Added Pin To Net: NetName=VCC Pin=LED76-A2
+Added Pin To Net: NetName=VCC Pin=LED76-A3
+Added Pin To Net: NetName=NetLED29_C1 Pin=LED76-C1
+Added Pin To Net: NetName=NetLED29_C2 Pin=LED76-C2
+Added Pin To Net: NetName=NetLED29_C3 Pin=LED76-C3
+Added Pin To Net: NetName=VCC Pin=LED77-A1
+Added Pin To Net: NetName=VCC Pin=LED77-A2
+Added Pin To Net: NetName=VCC Pin=LED77-A3
+Added Pin To Net: NetName=NetLED6_C1 Pin=LED77-C1
+Added Pin To Net: NetName=NetLED6_C2 Pin=LED77-C2
+Added Pin To Net: NetName=NetLED6_C3 Pin=LED77-C3
+Added Class: Name=LEDS3

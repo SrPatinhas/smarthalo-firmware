@@ -1,0 +1,15 @@
+Change Component DesignItemId : Designator=U4 Old DesignItemId=CMP-0095-00269-2 New DesignItemId=MC-8B-ATM48-SQ32
+Change Component DesignItemId : Designator=U2 Old DesignItemId=CMP-0347-00020-1 New DesignItemId=CMP-0343-00055-1
+Change Component DesignItemId : Designator=P1 Old DesignItemId=CMP-1024-00064-1 New DesignItemId=SMTC-MTLW-102-05-X-S-172
+Change Component DesignItemId : Designator=P2 Old DesignItemId=CMP-1024-00064-1 New DesignItemId=SMTC-MTLW-102-05-X-S-172
+Change Component DesignItemId : Designator=P4 Old DesignItemId=CMP-1024-00068-1 New DesignItemId=SMTC-MTLW-103-06-X-D-180
+Change Component DesignItemId : Designator=P3 Old DesignItemId=CMP-1024-00331-1 New DesignItemId=SMTC-TSW-103-X-X-S-X
+Change Component Comment : Designator=U3 Old Comment=MIC5225-3.3 New Comment=MIC5225-3.3YM5
+Change Component Comment : Designator=U2 Old Comment=TPS61200DRCR New Comment=TPS61202DRCR
+Change Component Description : Designator=U2 Old Description=Boost Voltage Converter with 0.3 to 5.5 V Input and 1.8 to 5.5 V Output, -40 to 85 degC, 10-Pin SON (DRC), Green (RoHS & no Sb/Br) New Description=Boost Voltage Converter with 0.3 to 5.5 V Input and 5 V Output, -40 to 85 degC, 10-Pin SON (DRC), Green (RoHS & no Sb/Br)
+Change Component Description : Designator=U3 Old Description=IC REG LDO 5V 0.15A SOT23-5 New Description=IC REG LDO 3.3V 0.15A SOT23-5
+Change Component Library : Designator=P1 Old Library=Altium Content Vault New Library=Schlib1.SchLib
+Change Component Library : Designator=P2 Old Library=Altium Content Vault New Library=Schlib1.SchLib
+Change Component Library : Designator=P3 Old Library=Altium Content Vault New Library=Schlib1.SchLib
+Change Component Library : Designator=P4 Old Library=Altium Content Vault New Library=Schlib1.SchLib
+Change Component Library : Designator=U4 Old Library=Altium Content Vault New Library=Schlib1.SchLib

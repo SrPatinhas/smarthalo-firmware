@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 11:28:34 On 2015-12-14
+
+Output: BOM_PartType
+Type  : BOM
+From  : Variant [[No Variations]] of Project [SmartHaloDD.PrjPcb]
+   Generated File[[SmartHaloDD.PrjPcb] BOM_PartType-SmartHaloDD.xls]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 11:29:02 On 2015-12-14

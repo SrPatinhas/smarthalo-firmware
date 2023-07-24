@@ -1,0 +1,58 @@
+Change Component Footprint: Designator=ANT2 Old Footprint=ANTENNA_PCB_2.4GHZ New Footprint=ANT_2.4GHZ_FR408_4L_CMIFA
+Change Component Footprint: Designator=ANT3 Old Footprint=ANTENNA_PCB_2.4GHZ New Footprint=ANT_2.4GHZ_FR408_4L_Meander
+Change Component Designator: OldDesignator=C4 NewDesignator=C5
+Change Component Designator: OldDesignator=C5 NewDesignator=C8
+Change Component Designator: OldDesignator=C6 NewDesignator=C9
+Change Component Designator: OldDesignator=C7 NewDesignator=C10
+Change Component Designator: OldDesignator=C8 NewDesignator=C11
+Change Component Designator: OldDesignator=C9 NewDesignator=C12
+Change Component Designator: OldDesignator=P2 NewDesignator=P3
+Change Component Designator: OldDesignator=P3 NewDesignator=P4
+Change Component Library : Designator=ANT1 Old Library=SmartHalo.IntLib New Library=SmartHalo_Symbols.SchLib
+Added Component: Designator=ANT4(ANT_2.4GHZ_FR408_4L_TIFA)
+Added Component: Designator=C4(CAPC0603(1608)100_N)
+Added Component: Designator=C6(CAPC0603(1608)100_N)
+Added Component: Designator=C7(CAPC0603(1608)100_N)
+Added Component: Designator=C13(CAPC0603(1608)100_N)
+Added Component: Designator=C14(CAPC0603(1608)100_N)
+Added Component: Designator=C15(CAPC0603(1608)100_N)
+Added Component: Designator=P2(TE_SMA_TH)
+Added Component: Designator=P5(TE_SMA_TH)
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=GND Pin=C15-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P5-2
+Added Pin To Net: NetName=GND Pin=P5-2
+Added Pin To Net: NetName=GND Pin=P5-2
+Added Pin To Net: NetName=GND Pin=P5-2
+Change Net Name : Old Net Name=NetC4_1 New Net Name=NetC5_1
+Change Net Name : Old Net Name=NetC7_1 New Net Name=NetC10_1
+Added Pin To Net: NetName=NetANT4_1 Pin=ANT4-1
+Added Pin To Net: NetName=NetANT4_1 Pin=C13-2
+Added Pin To Net: NetName=NetANT4_1 Pin=C15-1
+Added Net: Name=NetANT4_1
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=NetC4_1 Pin=C6-1
+Added Pin To Net: NetName=NetC4_1 Pin=P2-1
+Added Net: Name=NetC4_1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=C7-1
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetC13_1 Pin=C13-1
+Added Pin To Net: NetName=NetC13_1 Pin=C14-1
+Added Pin To Net: NetName=NetC13_1 Pin=P5-1
+Added Net: Name=NetC13_1
+Added Member To Class: ClassName=RFTuningBoard Member=Component ANT4 Antenna
+Added Member To Class: ClassName=RFTuningBoard Member=Component C10 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C11 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C12 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C13 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C14 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C15 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component P4 TE 5-1814832-1
+Added Member To Class: ClassName=RFTuningBoard Member=Component P5 TE 5-1814832-1

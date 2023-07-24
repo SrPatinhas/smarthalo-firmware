@@ -1,0 +1,186 @@
+
+**** 03/29/16 11:24:23 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-ILOADSWEEP"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\ilo
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "ILOADSWEEP.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM ILOAD -1.0Adc 1.5Adc 0.25 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\BATMON_TB.net" 
+
+
+
+**** INCLUDING BATMON_TB.net ****
+* source BATMON
+R_R1         N03106 0 1M
+R_R2         N02561 0 1M
+V_V1         N03517 0 DC {VBAT} AC {VBATNOISE} 
+I_I2         N00182 0 DC {ILOAD} AC {ILOADNOISE} 
+C_C1         N00182 0 {CLOAD}
+V_V2         N01396 0 {VDD}
+R_U1_R6         N02561 U1_N00517 {IGAIN*R/10}
+R_U1_R5         N00182 U1_N00517 {R/10}
+R_U1_R4         N05390 U1_N00493 {IGAIN*R/10}
+E_U1_U1         N03106 0 VALUE {LIMIT(V(U1_N05336,N03106)*1E6,-15V,+15V)}
+R_U1_R3         U1_N00493 N03517 {R/10}
+R_U1_R2         0 U1_N05336 {(VGAIN*R)/(1-VGAIN)}
+R_U1_R1         U1_N05336 N03517 {R}
+R_U1_RSENSE         N03517 N00182 {RSENSE}
+X_U1_U3         U1_N00517 U1_N00493 N02561 0 N01396 TS507
+V_V3         N05390 0 {VDD/2}
+.PARAM  igain=110 cload=15.8u vbatnoise=1vac iload=0.5adc imin=-1.0adc
++  imax=1.5adc voff=1.65vdc vbatmin=3vdc vbatmax=4.3vdc r=100k rsense=0.01
++  vgain=0.75 iloadnoise=1aac vdd=3.3 vbat=3.9vdc
+
+**** RESUMING ILOADSWEEP.cir ****
+.END
+
+**** 03/29/16 11:24:23 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-ILOADSWEEP"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\ilo
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1_U3.DIODE_VLIM 
+          IS  800.000000E-18 
+
+
+               X_U1_U3.DIODE_ILIM              X_U1_U3.DX      
+          IS  800.000000E-18                   10.000000E-15 
+
+
+**** 03/29/16 11:24:23 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-ILOADSWEEP"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\ilo
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1_U3.MOS_N   
+               NMOS            
+       LEVEL    1            
+           L  100.000000E-06 
+           W  100.000000E-06 
+         VTO     .65         
+          KP  500.000000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          IS   10.000000E-15 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+          CJ    0            
+        CJSW    0            
+        CGSO    0            
+        CGDO    0            
+        CGBO    0            
+         TOX    0            
+          XJ    0            
+       UCRIT   10.000000E+03 
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+INTERNAL ERROR -- Overflow, Convert
+
+ABORTING SIMULATION
+**** 03/29/16 11:24:23 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-ILOADSWEEP"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\ilo
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =          10
+  External (NCNODS)                 =          51
+  Total (NUMNOD)                    =          51
+
+Total device count (NUMEL)          =          85
+  Capacitors (C)                    =           9
+  Diodes (D)                        =          14
+  VCVS (E)                          =          14
+  CCCS (F)                          =           1
+  VCCS (G)                          =           3
+  CCVS (H)                          =           2
+  Current Sources (I)               =           2
+  MosFETs (M)                       =           2
+  Resistors (R)                     =          23
+  Voltage Sources (V)               =          15
+
+Number of subcircuits (X)           =           1
+
+Matrix statistics:
+  Matrix size (NSTOP)               =          82
+  Initial no. elements (NTTAR)      =         246
+  No. elements w/ fillin (NTTBR)    =         347
+  No. fillins (IFILL)               =         101
+  No. overflows (NTTOV)             =         182
+  No. LU operations (IOPS)          =         411
+  Percent sparsity (PERSPA)         =      94.839
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =           1
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =        0.00
+  Matrix solution                   =         .02               5
+  Readin                            =         .05
+  General setup                     =        0.00
+  Setup                             =        0.00
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =        0.00
+  Total job time (using Solver 1)   =         .08
+

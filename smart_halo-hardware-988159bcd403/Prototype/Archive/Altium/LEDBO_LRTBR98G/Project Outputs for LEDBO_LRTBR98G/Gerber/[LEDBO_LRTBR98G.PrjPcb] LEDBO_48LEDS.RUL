@@ -1,0 +1,7 @@
+DRC Rules Export File for PCB: C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\LEDBO_LRTBR98G\LEDBO_48LEDS.CSPcbDoc
+RuleKind=Width|RuleName=Width_GND|Scope=Board|Minimum=8.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=6.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=6.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Width|RuleName=Width_VCC|Scope=Board|Minimum=8.00

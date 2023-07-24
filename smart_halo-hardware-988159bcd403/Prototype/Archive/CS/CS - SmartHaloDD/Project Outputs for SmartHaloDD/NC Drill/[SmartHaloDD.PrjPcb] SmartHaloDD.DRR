@@ -1,0 +1,17 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: SmartHaloDD1.CSPcbDoc   2015-12-07  20:51:17
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : [SmartHaloDD1.PrjPcb] SmartHaloDD1.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        7.87mil (0.1999mm)       Round          7                0.77 Inch (19.56 mm)
+T2        13mil (0.3302mm)         Round          144              28.78 Inch (731.08 mm)
+T3        40mil (1.016mm)          Round          1                0.00 Inch (0.00 mm)
+T4        40.16mil (1.02006mm)     Round          17               3.58 Inch (90.86 mm)
+---------------------------------------------------------------------------
+Totals                                            169              33.13 Inch (841.50 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00

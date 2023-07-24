@@ -1,0 +1,66 @@
+Added Component: Designator=ANT1(ANTENNA_PCB_2.4GHZ)
+Added Component: Designator=ANT2(ANTENNA_PCB_2.4GHZ)
+Added Component: Designator=ANT3(ANTENNA_PCB_2.4GHZ)
+Added Component: Designator=C1(CAPC0603(1608)100_N)
+Added Component: Designator=C2(CAPC0603(1608)100_N)
+Added Component: Designator=C3(CAPC0603(1608)100_N)
+Added Component: Designator=C4(CAPC0603(1608)100_N)
+Added Component: Designator=C5(CAPC0603(1608)100_N)
+Added Component: Designator=C6(CAPC0603(1608)100_N)
+Added Component: Designator=C7(CAPC0603(1608)100_N)
+Added Component: Designator=C8(CAPC0603(1608)100_N)
+Added Component: Designator=C9(CAPC0603(1608)100_N)
+Added Component: Designator=P1(TE_SMA_TH)
+Added Component: Designator=P2(TE_SMA_TH)
+Added Component: Designator=P3(TE_SMA_TH)
+Added Pin To Net: NetName=NetANT1_1 Pin=ANT1-1
+Added Pin To Net: NetName=NetANT2_1 Pin=ANT2-1
+Added Pin To Net: NetName=NetANT3_1 Pin=ANT3-1
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetANT1_1 Pin=C1-2
+Added Pin To Net: NetName=NetC1_1 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=NetANT1_1 Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=NetANT2_1 Pin=C4-2
+Added Pin To Net: NetName=NetC4_1 Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=NetANT2_1 Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=NetC7_1 Pin=C7-1
+Added Pin To Net: NetName=NetANT3_1 Pin=C7-2
+Added Pin To Net: NetName=NetC7_1 Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=NetANT3_1 Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=NetC1_1 Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-2
+Added Pin To Net: NetName=NetC4_1 Pin=P2-1
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=GND Pin=P2-2
+Added Pin To Net: NetName=NetC7_1 Pin=P3-1
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Pin To Net: NetName=GND Pin=P3-2
+Added Member To Class: ClassName=RFTuningBoard Member=Component ANT1 Antenna
+Added Member To Class: ClassName=RFTuningBoard Member=Component ANT2 Antenna
+Added Member To Class: ClassName=RFTuningBoard Member=Component ANT3 Antenna
+Added Member To Class: ClassName=RFTuningBoard Member=Component C1 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C2 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C3 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C4 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C5 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C6 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C7 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C8 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component C9 TBD
+Added Member To Class: ClassName=RFTuningBoard Member=Component P1 TE 5-1814832-1
+Added Member To Class: ClassName=RFTuningBoard Member=Component P2 TE 5-1814832-1
+Added Member To Class: ClassName=RFTuningBoard Member=Component P3 TE 5-1814832-1

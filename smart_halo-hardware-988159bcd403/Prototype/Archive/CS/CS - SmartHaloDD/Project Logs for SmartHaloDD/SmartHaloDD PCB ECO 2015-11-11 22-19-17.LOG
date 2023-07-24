@@ -1,0 +1,642 @@
+Change Component DesignItemId : Designator=LED1 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED2 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED3 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED4 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED5 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED6 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED7 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED8 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED9 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED10 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED11 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED12 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED13 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED14 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED15 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED16 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED17 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED18 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED19 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED20 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED21 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED22 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED23 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component DesignItemId : Designator=LED24 Old DesignItemId=WS2812B New DesignItemId=WS2812B5050
+Change Component Footprint: Designator=LED1 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED2 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED3 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED4 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED5 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED6 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED7 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED8 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED9 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED10 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED11 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED12 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED13 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED14 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED15 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED16 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED17 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED18 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED19 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED20 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED21 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED22 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED23 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Footprint: Designator=LED24 Old Footprint=WS2812B New Footprint=WS2812B5050
+Change Component Comment : Designator=LED1 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED2 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED3 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED4 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED5 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED6 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED7 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED8 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED9 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED10 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED11 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED12 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED13 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED14 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED15 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED16 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED17 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED18 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED19 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED20 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED21 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED22 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED23 Old Comment= New Comment=WS2812B
+Change Component Comment : Designator=LED24 Old Comment= New Comment=WS2812B
+Added Component: Designator=C1(CAPC0603(1608)100_N)
+Added Component: Designator=C3(CAPC0603(1608)100_N)
+Added Component: Designator=C4(CAPC1005)
+Added Component: Designator=C5(CAPC1005)
+Added Component: Designator=C7(CAPC1005)
+Added Component: Designator=C9(CAPC0402(1005)60_L)
+Added Component: Designator=C11(CAPC1005)
+Added Component: Designator=C12(CAPC1005)
+Added Component: Designator=C13(CAPC1005)
+Added Component: Designator=C14(CAPC1005)
+Added Component: Designator=C15(CAPC1005)
+Added Component: Designator=C16(CAPC0805(2012)145_N)
+Added Component: Designator=C17(CAPC0805(2012)145_N)
+Added Component: Designator=C18(CAPC0603(1608)55_N)
+Added Component: Designator=C19(CAPC0402(1005)60_L)
+Added Component: Designator=C20(CAPC0402(1005)60_L)
+Added Component: Designator=C21(CAPC0402(1005)60_M)
+Added Component: Designator=C22(CAPC0402(1005)60_L)
+Added Component: Designator=C23(CAPC0402(1005)60_N)
+Added Component: Designator=C24(CAPC0402(1005)60_L)
+Added Component: Designator=C25(CAPC0603(1608)100_N)
+Added Component: Designator=C26(CSTCE10M0G55-R0)
+Added Component: Designator=C27(CAPC0402(1005)60_L)
+Added Component: Designator=C28(CAPC0402(1005)60_L)
+Added Component: Designator=C29(CAPC0402(1005)60_L)
+Added Component: Designator=C30(CAPC0402(1005)60_L)
+Added Component: Designator=C31(CAPC0402(1005)60_L)
+Added Component: Designator=C32(CAPC0402(1005)60_N)
+Added Component: Designator=C33(CAPC0402(1005)60_N)
+Added Component: Designator=C34(CAPC0402(1005)60_N)
+Added Component: Designator=C35(CAPC0402(1005)60_N)
+Added Component: Designator=C36(CAPC0402(1005)60_N)
+Added Component: Designator=C37(CAPC0603(1608)100_N)
+Added Component: Designator=C38(CAPC0603(1608)100_N)
+Added Component: Designator=C39(CAPC0603(1608)100_N)
+Added Component: Designator=C40(CAPC0603(1608)100_N)
+Added Component: Designator=C41(CAPC0603(1608)100_N)
+Added Component: Designator=C42(CAPC0402(1005)60_L)
+Added Component: Designator=C43(CAPC0402(1005)60_L)
+Added Component: Designator=C44(CAPC0402(1005)60_L)
+Added Component: Designator=C54(CAPC0402(1005)60_N)
+Added Component: Designator=C55(CAPC0402(1005)60_N)
+Added Component: Designator=C56(CAPC0402(1005)60_L)
+Added Component: Designator=C57(CAPC0402(1005)60_L)
+Added Component: Designator=D1(ONSC-SOD-123-2-425-04_V)
+Added Component: Designator=J1(HEADERPIN)
+Added Component: Designator=JMP1(JUMPER_SMT)
+Added Component: Designator=L1(TAYO-IND0315_V)
+Added Component: Designator=L4(VLCF5020T-100M1R1-1)
+Added Component: Designator=NT2(NetTiePWR)
+Added Component: Designator=NT3(NetTiePWR)
+Added Component: Designator=P1(SMTC-MTLW-102-05-X-S-172)
+Added Component: Designator=P2(SMTC-MTLW-102-05-X-S-172)
+Added Component: Designator=P3(SMTC-TSW-103-07-X-S)
+Added Component: Designator=P4(SMTC-MTLW-103-06-X-D-180)
+Added Component: Designator=P5(SMTC-MTSW-104-07-X-S-170)
+Added Component: Designator=Q1(NXP-SOT23_N)
+Added Component: Designator=Q2(INF-SOT23_L)
+Added Component: Designator=R1(RESC0402(1005)_L)
+Added Component: Designator=R2(RESC0402(1005)_N)
+Added Component: Designator=R3(RESC0402(1005)_M)
+Added Component: Designator=R4(RESC0402(1005)_M)
+Added Component: Designator=R5(RESC0402(1005)_M)
+Added Component: Designator=R6(RESC0402(1005)_M)
+Added Component: Designator=R7(RESC0402(1005)_M)
+Added Component: Designator=R8(RESC0402(1005)_N)
+Added Component: Designator=R9(RESC0402(1005)_N)
+Added Component: Designator=R10(RESC0402(1005)_L)
+Added Component: Designator=R11(RESC0402(1005)_N)
+Added Component: Designator=R12(RESC0402(1005)_L)
+Added Component: Designator=R13(RESC0402(1005)_N)
+Added Component: Designator=R14(RESC0402(1005)_N)
+Added Component: Designator=R15(RESC0402(1005)_M)
+Added Component: Designator=R16(RESC0402(1005)_M)
+Added Component: Designator=R17(RESC0402(1005)_N)
+Added Component: Designator=R18(RESC0402(1005)_N)
+Added Component: Designator=R19(RESC0402(1005)_L)
+Added Component: Designator=R20(RESC0402(1005)_L)
+Added Component: Designator=R21(RESC0402(1005)_L)
+Added Component: Designator=R22(RESC0402(1005)_M)
+Added Component: Designator=R23(RESC0603(1608)_N)
+Added Component: Designator=R24(RESC0402(1005)_L)
+Added Component: Designator=R25(RESC0402(1005)_L)
+Added Component: Designator=U1(RHL20-3050X2050TP)
+Added Component: Designator=U2(DRC10-2400X1650TP)
+Added Component: Designator=U3(SOT23-5_N)
+Added Component: Designator=U4(32A_M)
+Added Component: Designator=U5(LGA12-2X2X1_N)
+Added Component: Designator=U6(SOP8)
+Added Component: Designator=U7(DRV6-1600X1000TP)
+Added Component: Designator=U9(6ST1_M)
+Added Pin To Net: NetName=SWCLK Pin=C1-1
+Added Pin To Net: NetName=VBAT Pin=C1-2
+Added Pin To Net: NetName=SWCLK Pin=C3-1
+Added Pin To Net: NetName=VBZ Pin=C3-2
+Added Pin To Net: NetName=NetC4_1 Pin=C4-1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=VBAT Pin=C5-1
+Added Pin To Net: NetName=SWCLK Pin=C5-2
+Added Pin To Net: NetName=NetC4_1 Pin=C7-1
+Added Pin To Net: NetName=NetC7_2 Pin=C7-2
+Added Pin To Net: NetName=SWCLK Pin=C9-1
+Added Pin To Net: NetName=NetC9_2 Pin=C9-2
+Added Pin To Net: NetName=NetC11_1 Pin=C11-1
+Added Pin To Net: NetName=SWCLK Pin=C11-2
+Added Pin To Net: NetName=RX2 Pin=C12-1
+Added Pin To Net: NetName=NetC12_2 Pin=C12-2
+Added Pin To Net: NetName=RX2 Pin=C13-1
+Added Pin To Net: NetName=NetC13_2 Pin=C13-2
+Added Pin To Net: NetName=RX2 Pin=C14-1
+Added Pin To Net: NetName=NetC14_2 Pin=C14-2
+Added Pin To Net: NetName=NetC4_1 Pin=C15-1
+Added Pin To Net: NetName=NetC15_2 Pin=C15-2
+Added Pin To Net: NetName=SWCLK Pin=C16-1
+Added Pin To Net: NetName=+5 Pin=C16-2
+Added Pin To Net: NetName=SWCLK Pin=C17-1
+Added Pin To Net: NetName=+3.3 Pin=C17-2
+Added Pin To Net: NetName=SWCLK Pin=C18-1
+Added Pin To Net: NetName=+3.3 Pin=C18-2
+Added Pin To Net: NetName=SWCLK Pin=C19-1
+Added Pin To Net: NetName=+3.3 Pin=C19-2
+Added Pin To Net: NetName=SWCLK Pin=C20-1
+Added Pin To Net: NetName=NetC20_2 Pin=C20-2
+Added Pin To Net: NetName=NetC21_1 Pin=C21-1
+Added Pin To Net: NetName=DTR Pin=C21-2
+Added Pin To Net: NetName=SWCLK Pin=C22-1
+Added Pin To Net: NetName=+3.3 Pin=C22-2
+Added Pin To Net: NetName=NetC23_1 Pin=C23-1
+Added Pin To Net: NetName=SP_OUT- Pin=C23-2
+Added Pin To Net: NetName=NetC24_1 Pin=C24-1
+Added Pin To Net: NetName=SWCLK Pin=C24-2
+Added Pin To Net: NetName=SWCLK Pin=C25-1
+Added Pin To Net: NetName=+3.3 Pin=C25-2
+Added Pin To Net: NetName=NetC26_1 Pin=C26-1
+Added Pin To Net: NetName=SWCLK Pin=C26-2
+Added Pin To Net: NetName=NetC26_3 Pin=C26-3
+Added Pin To Net: NetName=SWCLK Pin=C27-1
+Added Pin To Net: NetName=VLED Pin=C27-2
+Added Pin To Net: NetName=SWCLK Pin=C28-1
+Added Pin To Net: NetName=VLED Pin=C28-2
+Added Pin To Net: NetName=SWCLK Pin=C29-1
+Added Pin To Net: NetName=VLED Pin=C29-2
+Added Pin To Net: NetName=SWCLK Pin=C30-1
+Added Pin To Net: NetName=VLED Pin=C30-2
+Added Pin To Net: NetName=SWCLK Pin=C31-1
+Added Pin To Net: NetName=NetC31_2 Pin=C31-2
+Added Pin To Net: NetName=NetC32_1 Pin=C32-1
+Added Pin To Net: NetName=NetC4_1 Pin=C32-2
+Added Pin To Net: NetName=NetC32_1 Pin=C33-1
+Added Pin To Net: NetName=NetC4_1 Pin=C33-2
+Added Pin To Net: NetName=NetC32_1 Pin=C34-1
+Added Pin To Net: NetName=RX2 Pin=C35-1
+Added Pin To Net: NetName=NetC4_1 Pin=C35-2
+Added Pin To Net: NetName=NetC4_1 Pin=C36-2
+Added Pin To Net: NetName=SWCLK Pin=C37-1
+Added Pin To Net: NetName=VBAT Pin=C37-2
+Added Pin To Net: NetName=SWCLK Pin=C38-1
+Added Pin To Net: NetName=VBAT Pin=C38-2
+Added Pin To Net: NetName=SWCLK Pin=C39-1
+Added Pin To Net: NetName=NetC11_1 Pin=C39-2
+Added Pin To Net: NetName=SWCLK Pin=C40-1
+Added Pin To Net: NetName=NetC11_1 Pin=C40-2
+Added Pin To Net: NetName=SWCLK Pin=C41-1
+Added Pin To Net: NetName=+5 Pin=C41-2
+Added Pin To Net: NetName=SWCLK Pin=C42-1
+Added Pin To Net: NetName=NetC42_2 Pin=C42-2
+Added Pin To Net: NetName=+3.3 Pin=C43-1
+Added Pin To Net: NetName=SWCLK Pin=C43-2
+Added Pin To Net: NetName=SWCLK Pin=C44-1
+Added Pin To Net: NetName=+3.3 Pin=C44-2
+Added Pin To Net: NetName=NetC54_1 Pin=C54-1
+Added Pin To Net: NetName=NetC54_2 Pin=C54-2
+Added Pin To Net: NetName=SWCLK Pin=C55-1
+Added Pin To Net: NetName=NetC54_1 Pin=C55-2
+Added Pin To Net: NetName=SWCLK Pin=C56-1
+Added Pin To Net: NetName=CAPIN Pin=C56-2
+Added Pin To Net: NetName=NetC57_1 Pin=C57-1
+Added Pin To Net: NetName=NetC57_2 Pin=C57-2
+Added Pin To Net: NetName=VBZ Pin=D1-1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=CAPIN Pin=J1-1
+Added Pin To Net: NetName=+3.3 Pin=JMP1-1
+Added Pin To Net: NetName=NetJMP1_2 Pin=JMP1-2
+Added Pin To Net: NetName=SWCLK Pin=JMP1-3
+Added Pin To Net: NetName=VBAT Pin=L1-1
+Added Pin To Net: NetName=NetL1_2 Pin=L1-2
+Added Pin To Net: NetName=VBAT Pin=L4-1
+Added Pin To Net: NetName=NetD1_2 Pin=L4-2
+Added Pin To Net: NetName=VLED Pin=LED1-1
+Added Pin To Net: NetName=NetLED1_2 Pin=LED1-2
+Added Pin To Net: NetName=SWCLK Pin=LED1-3
+Added Pin To Net: NetName=NetLED1_4 Pin=LED1-4
+Added Pin To Net: NetName=VLED Pin=LED2-1
+Added Pin To Net: NetName=NetLED2_2 Pin=LED2-2
+Added Pin To Net: NetName=SWCLK Pin=LED2-3
+Added Pin To Net: NetName=NetLED1_2 Pin=LED2-4
+Added Pin To Net: NetName=VLED Pin=LED3-1
+Added Pin To Net: NetName=NetLED3_2 Pin=LED3-2
+Added Pin To Net: NetName=SWCLK Pin=LED3-3
+Added Pin To Net: NetName=NetLED2_2 Pin=LED3-4
+Added Pin To Net: NetName=VLED Pin=LED4-1
+Added Pin To Net: NetName=NetLED4_2 Pin=LED4-2
+Added Pin To Net: NetName=SWCLK Pin=LED4-3
+Added Pin To Net: NetName=NetLED3_2 Pin=LED4-4
+Added Pin To Net: NetName=VLED Pin=LED5-1
+Added Pin To Net: NetName=NetLED5_2 Pin=LED5-2
+Added Pin To Net: NetName=SWCLK Pin=LED5-3
+Added Pin To Net: NetName=NetLED4_2 Pin=LED5-4
+Added Pin To Net: NetName=VLED Pin=LED6-1
+Added Pin To Net: NetName=NetLED6_2 Pin=LED6-2
+Added Pin To Net: NetName=SWCLK Pin=LED6-3
+Added Pin To Net: NetName=NetLED5_2 Pin=LED6-4
+Added Pin To Net: NetName=VLED Pin=LED7-1
+Added Pin To Net: NetName=NetLED7_2 Pin=LED7-2
+Added Pin To Net: NetName=SWCLK Pin=LED7-3
+Added Pin To Net: NetName=NetLED6_2 Pin=LED7-4
+Added Pin To Net: NetName=VLED Pin=LED8-1
+Added Pin To Net: NetName=NetLED8_2 Pin=LED8-2
+Added Pin To Net: NetName=SWCLK Pin=LED8-3
+Added Pin To Net: NetName=NetLED7_2 Pin=LED8-4
+Added Pin To Net: NetName=VLED Pin=LED9-1
+Added Pin To Net: NetName=NetLED9_2 Pin=LED9-2
+Added Pin To Net: NetName=SWCLK Pin=LED9-3
+Added Pin To Net: NetName=NetLED8_2 Pin=LED9-4
+Added Pin To Net: NetName=VLED Pin=LED10-1
+Added Pin To Net: NetName=NetLED10_2 Pin=LED10-2
+Added Pin To Net: NetName=SWCLK Pin=LED10-3
+Added Pin To Net: NetName=NetLED9_2 Pin=LED10-4
+Added Pin To Net: NetName=VLED Pin=LED11-1
+Added Pin To Net: NetName=NetLED11_2 Pin=LED11-2
+Added Pin To Net: NetName=SWCLK Pin=LED11-3
+Added Pin To Net: NetName=NetLED10_2 Pin=LED11-4
+Added Pin To Net: NetName=VLED Pin=LED12-1
+Added Pin To Net: NetName=NetLED12_2 Pin=LED12-2
+Added Pin To Net: NetName=SWCLK Pin=LED12-3
+Added Pin To Net: NetName=NetLED11_2 Pin=LED12-4
+Added Pin To Net: NetName=VLED Pin=LED13-1
+Added Pin To Net: NetName=NetLED13_2 Pin=LED13-2
+Added Pin To Net: NetName=SWCLK Pin=LED13-3
+Added Pin To Net: NetName=NetLED12_2 Pin=LED13-4
+Added Pin To Net: NetName=VLED Pin=LED14-1
+Added Pin To Net: NetName=NetLED14_2 Pin=LED14-2
+Added Pin To Net: NetName=SWCLK Pin=LED14-3
+Added Pin To Net: NetName=NetLED13_2 Pin=LED14-4
+Added Pin To Net: NetName=VLED Pin=LED15-1
+Added Pin To Net: NetName=NetLED15_2 Pin=LED15-2
+Added Pin To Net: NetName=NetLED15_3 Pin=LED15-3
+Added Pin To Net: NetName=NetLED14_2 Pin=LED15-4
+Added Pin To Net: NetName=VLED Pin=LED16-1
+Added Pin To Net: NetName=NetLED16_2 Pin=LED16-2
+Added Pin To Net: NetName=NetLED15_3 Pin=LED16-3
+Added Pin To Net: NetName=NetLED15_2 Pin=LED16-4
+Added Pin To Net: NetName=VLED Pin=LED17-1
+Added Pin To Net: NetName=NetLED17_2 Pin=LED17-2
+Added Pin To Net: NetName=NetLED15_3 Pin=LED17-3
+Added Pin To Net: NetName=NetLED16_2 Pin=LED17-4
+Added Pin To Net: NetName=VLED Pin=LED18-1
+Added Pin To Net: NetName=NetLED18_2 Pin=LED18-2
+Added Pin To Net: NetName=NetLED15_3 Pin=LED18-3
+Added Pin To Net: NetName=NetLED17_2 Pin=LED18-4
+Added Pin To Net: NetName=VLED Pin=LED19-1
+Added Pin To Net: NetName=NetLED19_2 Pin=LED19-2
+Added Pin To Net: NetName=NetLED15_3 Pin=LED19-3
+Added Pin To Net: NetName=NetLED18_2 Pin=LED19-4
+Added Pin To Net: NetName=VLED Pin=LED20-1
+Added Pin To Net: NetName=NetLED20_2 Pin=LED20-2
+Added Pin To Net: NetName=NetLED15_3 Pin=LED20-3
+Added Pin To Net: NetName=NetLED19_2 Pin=LED20-4
+Added Pin To Net: NetName=VLED Pin=LED21-1
+Added Pin To Net: NetName=SWCLK Pin=LED21-2
+Added Pin To Net: NetName=NetLED15_3 Pin=LED21-3
+Added Pin To Net: NetName=NetLED20_2 Pin=LED21-4
+Added Pin To Net: NetName=VLED Pin=LED22-1
+Added Pin To Net: NetName=NetLED22_2 Pin=LED22-2
+Added Pin To Net: NetName=SWCLK Pin=LED22-3
+Added Pin To Net: NetName=SWCLK Pin=LED22-4
+Added Pin To Net: NetName=VLED Pin=LED23-1
+Added Pin To Net: NetName=NetLED23_2 Pin=LED23-2
+Added Pin To Net: NetName=SWCLK Pin=LED23-3
+Added Pin To Net: NetName=NetLED22_2 Pin=LED23-4
+Added Pin To Net: NetName=VLED Pin=LED24-1
+Added Pin To Net: NetName=NetLED24_2 Pin=LED24-2
+Added Pin To Net: NetName=SWCLK Pin=LED24-3
+Added Pin To Net: NetName=NetLED23_2 Pin=LED24-4
+Added Pin To Net: NetName=VBZ Pin=NT2-1
+Added Pin To Net: NetName=BZ_OUT+ Pin=NT2-2
+Added Pin To Net: NetName=+5 Pin=NT3-1
+Added Pin To Net: NetName=VLED Pin=NT3-2
+Added Pin To Net: NetName=SWCLK Pin=P1-1
+Added Pin To Net: NetName=VBAT Pin=P1-2
+Added Pin To Net: NetName=NetC32_1 Pin=P2-1
+Added Pin To Net: NetName=RX2 Pin=P2-2
+Added Pin To Net: NetName=+3.3 Pin=P3-1
+Added Pin To Net: NetName=FRONTLED Pin=P3-2
+Added Pin To Net: NetName=SWCLK Pin=P3-3
+Added Pin To Net: NetName=SWCLK Pin=P4-1
+Added Pin To Net: NetName=SWCLK Pin=P4-2
+Added Pin To Net: NetName=+3.3 Pin=P4-3
+Added Pin To Net: NetName=RX Pin=P4-4
+Added Pin To Net: NetName=TX Pin=P4-5
+Added Pin To Net: NetName=DTR Pin=P4-6
+Added Pin To Net: NetName=BZ_OUT+ Pin=P5-1
+Added Pin To Net: NetName=BZ_OUT- Pin=P5-2
+Added Pin To Net: NetName=SP_OUT- Pin=P5-3
+Added Pin To Net: NetName=SP_OUT+ Pin=P5-4
+Added Pin To Net: NetName=+3.3 Pin=Q1-1
+Added Pin To Net: NetName=HALO Pin=Q1-2
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=SWCLK Pin=Q2-2
+Added Pin To Net: NetName=BZ_OUT- Pin=Q2-3
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=VBZ Pin=R1-2
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Pin To Net: NetName=SWCLK Pin=R2-2
+Added Pin To Net: NetName=NetR3_1 Pin=R3-1
+Added Pin To Net: NetName=NetC11_1 Pin=R3-2
+Added Pin To Net: NetName=SWCLK Pin=R4-1
+Added Pin To Net: NetName=NetR4_2 Pin=R4-2
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=NetR3_1 Pin=R5-2
+Added Pin To Net: NetName=SWCLK Pin=R6-1
+Added Pin To Net: NetName=NetR3_1 Pin=R6-2
+Added Pin To Net: NetName=SCL Pin=R8-1
+Added Pin To Net: NetName=+3.3 Pin=R8-2
+Added Pin To Net: NetName=SDA Pin=R9-1
+Added Pin To Net: NetName=+3.3 Pin=R9-2
+Added Pin To Net: NetName=BAT_SENSE Pin=R10-1
+Added Pin To Net: NetName=VBAT Pin=R10-2
+Added Pin To Net: NetName=RDYN Pin=R11-1
+Added Pin To Net: NetName=+3.3 Pin=R11-2
+Added Pin To Net: NetName=NetQ1_3 Pin=R12-1
+Added Pin To Net: NetName=NetLED1_4 Pin=R12-2
+Added Pin To Net: NetName=HALO Pin=R13-1
+Added Pin To Net: NetName=+3.3 Pin=R13-2
+Added Pin To Net: NetName=NetQ1_3 Pin=R14-1
+Added Pin To Net: NetName=VLED Pin=R14-2
+Added Pin To Net: NetName=NetC23_1 Pin=R15-1
+Added Pin To Net: NetName=SP_OUT- Pin=R15-2
+Added Pin To Net: NetName=NetC54_1 Pin=R16-1
+Added Pin To Net: NetName=NetR16_2 Pin=R16-2
+Added Pin To Net: NetName=BZ_OUT- Pin=R17-1
+Added Pin To Net: NetName=BZ_OUT+ Pin=R17-2
+Added Pin To Net: NetName=NetR18_1 Pin=R18-1
+Added Pin To Net: NetName=NetQ2_1 Pin=R18-2
+Added Pin To Net: NetName=SWCLK Pin=R19-1
+Added Pin To Net: NetName=NetR1_1 Pin=R19-2
+Added Pin To Net: NetName=NetC9_2 Pin=R20-1
+Added Pin To Net: NetName=NetR20_2 Pin=R20-2
+Added Pin To Net: NetName=NetR2_1 Pin=R21-1
+Added Pin To Net: NetName=VBAT Pin=R21-2
+Added Pin To Net: NetName=NetC54_2 Pin=R22-1
+Added Pin To Net: NetName=NetC23_1 Pin=R22-2
+Added Pin To Net: NetName=NetC57_2 Pin=R23-1
+Added Pin To Net: NetName=CAPIN Pin=R23-2
+Added Pin To Net: NetName=SWCLK Pin=R24-1
+Added Pin To Net: NetName=BAT_SENSE Pin=R24-2
+Added Pin To Net: NetName=NetC21_1 Pin=R25-1
+Added Pin To Net: NetName=+3.3 Pin=R25-2
+Added Pin To Net: NetName=SWCLK Pin=U1-1
+Added Pin To Net: NetName=NetC4_1 Pin=U1-2
+Added Pin To Net: NetName=NetC7_2 Pin=U1-3
+Added Pin To Net: NetName=VBAT Pin=U1-4
+Added Pin To Net: NetName=NetC15_2 Pin=U1-5
+Added Pin To Net: NetName=NetC4_2 Pin=U1-6
+Added Pin To Net: NetName=B\A\T\C\H\G\ Pin=U1-7
+Added Pin To Net: NetName=SWCLK Pin=U1-9
+Added Pin To Net: NetName=NetR4_2 Pin=U1-10
+Added Pin To Net: NetName=NetR5_1 Pin=U1-12
+Added Pin To Net: NetName=NetR3_1 Pin=U1-14
+Added Pin To Net: NetName=NetC13_2 Pin=U1-15
+Added Pin To Net: NetName=NetC14_2 Pin=U1-16
+Added Pin To Net: NetName=NetC12_2 Pin=U1-17
+Added Pin To Net: NetName=NetC11_1 Pin=U1-18
+Added Pin To Net: NetName=RX2 Pin=U1-19
+Added Pin To Net: NetName=SWCLK Pin=U1-20
+Added Pin To Net: NetName=NetC42_2 Pin=U2-1
+Added Pin To Net: NetName=+5 Pin=U2-2
+Added Pin To Net: NetName=NetL1_2 Pin=U2-3
+Added Pin To Net: NetName=SWCLK Pin=U2-4
+Added Pin To Net: NetName=VBAT Pin=U2-5
+Added Pin To Net: NetName=VBAT Pin=U2-6
+Added Pin To Net: NetName=NetR2_1 Pin=U2-7
+Added Pin To Net: NetName=VBAT Pin=U2-8
+Added Pin To Net: NetName=SWCLK Pin=U2-9
+Added Pin To Net: NetName=+5 Pin=U2-10
+Added Pin To Net: NetName=SWCLK Pin=U2-11
+Added Pin To Net: NetName=+5 Pin=U3-1
+Added Pin To Net: NetName=SWCLK Pin=U3-2
+Added Pin To Net: NetName=+5 Pin=U3-3
+Added Pin To Net: NetName=+3.3 Pin=U3-5
+Added Pin To Net: NetName=INT_XL Pin=U4-1
+Added Pin To Net: NetName=NetR18_1 Pin=U4-2
+Added Pin To Net: NetName=SWCLK Pin=U4-3
+Added Pin To Net: NetName=+3.3 Pin=U4-4
+Added Pin To Net: NetName=SWCLK Pin=U4-5
+Added Pin To Net: NetName=+3.3 Pin=U4-6
+Added Pin To Net: NetName=NetC26_1 Pin=U4-7
+Added Pin To Net: NetName=NetC26_3 Pin=U4-8
+Added Pin To Net: NetName=NetR16_2 Pin=U4-9
+Added Pin To Net: NetName=FRONTLED Pin=U4-10
+Added Pin To Net: NetName=HALO Pin=U4-11
+Added Pin To Net: NetName=INT_MAG Pin=U4-12
+Added Pin To Net: NetName=NetU4_13 Pin=U4-13
+Added Pin To Net: NetName=NetU4_14 Pin=U4-14
+Added Pin To Net: NetName=NetU4_15 Pin=U4-15
+Added Pin To Net: NetName=NetU4_16 Pin=U4-16
+Added Pin To Net: NetName=NetU4_17 Pin=U4-17
+Added Pin To Net: NetName=+3.3 Pin=U4-18
+Added Pin To Net: NetName=SWCLK Pin=U4-19
+Added Pin To Net: NetName=NetC20_2 Pin=U4-20
+Added Pin To Net: NetName=SWCLK Pin=U4-21
+Added Pin To Net: NetName=SWCLK Pin=U4-22
+Added Pin To Net: NetName=B\A\T\C\H\G\ Pin=U4-24
+Added Pin To Net: NetName=BAT_SENSE Pin=U4-25
+Added Pin To Net: NetName=QTOUCH Pin=U4-26
+Added Pin To Net: NetName=SDA Pin=U4-27
+Added Pin To Net: NetName=SCL Pin=U4-28
+Added Pin To Net: NetName=NetC21_1 Pin=U4-29
+Added Pin To Net: NetName=RX Pin=U4-30
+Added Pin To Net: NetName=TX Pin=U4-31
+Added Pin To Net: NetName=RDYN Pin=U4-32
+Added Pin To Net: NetName=SCL Pin=U5-1
+Added Pin To Net: NetName=+3.3 Pin=U5-2
+Added Pin To Net: NetName=+3.3 Pin=U5-3
+Added Pin To Net: NetName=SDA Pin=U5-4
+Added Pin To Net: NetName=NetC24_1 Pin=U5-5
+Added Pin To Net: NetName=SWCLK Pin=U5-6
+Added Pin To Net: NetName=INT_MAG Pin=U5-7
+Added Pin To Net: NetName=SWCLK Pin=U5-8
+Added Pin To Net: NetName=+3.3 Pin=U5-9
+Added Pin To Net: NetName=+3.3 Pin=U5-10
+Added Pin To Net: NetName=DRDY Pin=U5-11
+Added Pin To Net: NetName=INT_XL Pin=U5-12
+Added Pin To Net: NetName=NetC31_2 Pin=U6-1
+Added Pin To Net: NetName=SP_OUT- Pin=U6-2
+Added Pin To Net: NetName=NetC23_1 Pin=U6-3
+Added Pin To Net: NetName=SWCLK Pin=U6-4
+Added Pin To Net: NetName=NetC31_2 Pin=U6-5
+Added Pin To Net: NetName=SP_OUT+ Pin=U6-6
+Added Pin To Net: NetName=+3.3 Pin=U6-7
+Added Pin To Net: NetName=+3.3 Pin=U6-8
+Added Pin To Net: NetName=NetR1_1 Pin=U7-1
+Added Pin To Net: NetName=NetR20_2 Pin=U7-2
+Added Pin To Net: NetName=SWCLK Pin=U7-3
+Added Pin To Net: NetName=NetD1_2 Pin=U7-4
+Added Pin To Net: NetName=VBAT Pin=U7-5
+Added Pin To Net: NetName=VBAT Pin=U7-6
+Added Pin To Net: NetName=SWCLK Pin=U7-7
+Added Pin To Net: NetName=QTOUCH Pin=U9-1
+Added Pin To Net: NetName=SWCLK Pin=U9-2
+Added Pin To Net: NetName=NetC57_2 Pin=U9-3
+Added Pin To Net: NetName=NetC57_1 Pin=U9-4
+Added Pin To Net: NetName=+3.3 Pin=U9-5
+Added Pin To Net: NetName=NetJMP1_2 Pin=U9-6
+Added Member To Class: ClassName=PWR Member=Component C1 CAP 10uF 10V 0603(1608)
+Added Member To Class: ClassName=PWR Member=Component C3 CAP 10uF 10V 0603(1608)
+Added Member To Class: ClassName=PWR Member=Component C4 CC0402KRX7R7BB104
+Added Member To Class: ClassName=PWR Member=Component C5 CC0402KRX7R7BB104
+Added Member To Class: ClassName=PWR Member=Component C7 CC0402KRX7R7BB104
+Added Member To Class: ClassName=PWR Member=Component C9 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component C11 CC0402KRX7R7BB104
+Added Member To Class: ClassName=PWR Member=Component C12 CC0402KRX7R7BB104
+Added Member To Class: ClassName=PWR Member=Component C13 CC0402KRX7R7BB104
+Added Member To Class: ClassName=PWR Member=Component C14 CC0402KRX7R7BB104
+Added Member To Class: ClassName=PWR Member=Component C15 CC0402KRX7R7BB104
+Added Member To Class: ClassName=PWR Member=Component C16 CAP 10uF 10V 0805(2012)
+Added Member To Class: ClassName=PWR Member=Component C17 CAP 10uF 10V 0805(2012)
+Added Member To Class: ClassName=MCU Member=Component C18 CAP 4.7uF 10V 0603(1608)
+Added Member To Class: ClassName=MCU Member=Component C19 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component C20 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component C21 CAP 100nF 6.3V 0402(1005)
+Added Member To Class: ClassName=ALARM Member=Component C22 CAP 1uF 6.3V 0402(1005)
+Added Member To Class: ClassName=ALARM Member=Component C23 CAP 220pF 6.3V 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component C24 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component C25 CAP 10uF 10V 0603(1608)
+Added Member To Class: ClassName=MCU Member=Component C26 Cap
+Added Member To Class: ClassName=LED Member=Component C27 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=LED Member=Component C28 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=LED Member=Component C29 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=LED Member=Component C30 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=ALARM Member=Component C31 CAP 1uF 6.3V 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component C32 CAP 27pF 25V 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component C33 CAP 27pF 25V 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component C34 CAP 27pF 25V 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component C35 CAP 27pF 25V 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component C36 CAP 27pF 25V 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component C37 CAP 10uF 10V 0603(1608)
+Added Member To Class: ClassName=PWR Member=Component C38 CAP 10uF 10V 0603(1608)
+Added Member To Class: ClassName=PWR Member=Component C39 CAP 10uF 10V 0603(1608)
+Added Member To Class: ClassName=PWR Member=Component C40 CAP 10uF 10V 0603(1608)
+Added Member To Class: ClassName=PWR Member=Component C41 CAP 10uF 10V 0603(1608)
+Added Member To Class: ClassName=PWR Member=Component C42 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component C43 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component C44 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=ALARM Member=Component C54 CAP 220pF 6.3V 0402(1005)
+Added Member To Class: ClassName=ALARM Member=Component C55 CAP 220pF 6.3V 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component C56 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component C57 CAP 100nF 10V 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component D1 MBR0540T1G
+Added Member To Class: ClassName=MCU Member=Component J1 HEADERPIN
+Added Member To Class: ClassName=MCU Member=Component JMP1 JUMPER
+Added Member To Class: ClassName=PWR Member=Component L1 NR3015T2R2M
+Added Member To Class: ClassName=PWR Member=Component L4 VLCF5020T
+Added Member To Class: ClassName=LED Member=Component LED1 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED2 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED3 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED4 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED5 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED6 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED7 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED8 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED9 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED10 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED11 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED12 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED13 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED14 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED15 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED16 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED17 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED18 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED19 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED20 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED21 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED22 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED23 WS2812B
+Added Member To Class: ClassName=LED Member=Component LED24 WS2812B
+Added Member To Class: ClassName=ALARM Member=Component NT2 NetTiePWR
+Added Member To Class: ClassName=PWR Member=Component NT3 NetTiePWR
+Added Member To Class: ClassName=PWR Member=Component P1 MTLW-102-05-G-S-172
+Added Member To Class: ClassName=PWR Member=Component P2 MTLW-102-05-G-S-172
+Added Member To Class: ClassName=MCU Member=Component P3 TSW-103-07-F-S
+Added Member To Class: ClassName=MCU Member=Component P4 MTLW-103-06-G-D-180
+Added Member To Class: ClassName=ALARM Member=Component P5 MTSW-104-07-L-S-170
+Added Member To Class: ClassName=MCU Member=Component Q1 BSS138AKAR
+Added Member To Class: ClassName=ALARM Member=Component Q2 MMBT3904
+Added Member To Class: ClassName=PWR Member=Component R1 2M74 1% 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component R2 249K 1% 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component R3 1R6 5% 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component R4 1R6 5% 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component R5 1R6 5% 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component R6 1R6 5% 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component R7 1R6 5% 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component R8 4K7 1% 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component R9 4K7 1% 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component R10 100K 5% 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component R11 10K 5% 0402(1005)
+Added Member To Class: ClassName=LED Member=Component R12 100R 5% 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component R13 10K 1% 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component R14 10K 1% 0402(1005)
+Added Member To Class: ClassName=ALARM Member=Component R15 20K 5% 0402(1005)
+Added Member To Class: ClassName=ALARM Member=Component R16 20K 5% 0402(1005)
+Added Member To Class: ClassName=ALARM Member=Component R17 1K2 5% 0402(1005)
+Added Member To Class: ClassName=ALARM Member=Component R18 1K2 5% 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component R19 2M74 1% 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component R20 2M74 1% 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component R21 2M74 1% 0402(1005)
+Added Member To Class: ClassName=ALARM Member=Component R22 20K 5% 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component R23 2K 5% 0603(1608)
+Added Member To Class: ClassName=MCU Member=Component R24 300K 5% 0402(1005)
+Added Member To Class: ClassName=MCU Member=Component R25 1K 5% 0402(1005)
+Added Member To Class: ClassName=PWR Member=Component U1 bq51051B
+Added Member To Class: ClassName=PWR Member=Component U2 TPS61200DRCR
+Added Member To Class: ClassName=PWR Member=Component U3 MIC5225-3.3
+Added Member To Class: ClassName=MCU Member=Component U4 ATmega328P-AU
+Added Member To Class: ClassName=MCU Member=Component U5 LSM303CTR
+Added Member To Class: ClassName=ALARM Member=Component U6 IS31AP4991-GRLS2-TR
+Added Member To Class: ClassName=PWR Member=Component U7 TPS61170DRVR
+Added Member To Class: ClassName=MCU Member=Component U9 AT42QT1010-TSHR

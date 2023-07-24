@@ -1,0 +1,230 @@
+(ExpressProject "BATMON"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library")
+    (NoModify)
+    (File ".\batmon.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (RootChangedForceReNetlist "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE")
+    (Board_sim_option "VHDL_flow")
+    (PSPICE_DoNot_Show_WarningDlg "TRUE"))
+  (Folder "Outputs"
+    (File ".\batmon-pspicefiles\batmon_tb\batmon_tb.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\batmon-pspicefiles\batmon\vbatsweep.sim"
+        (DisplayName "BATMON-VBATSweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\batmon-pspicefiles\batmon_tb\vbatsweep.sim"
+        (DisplayName "BATMON_TB-VBATSWEEP")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\batmon-pspicefiles\batmon_tb\iloadsweep.sim"
+        (DisplayName "BATMON_TB-ILOADSWEEP")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\batmon-pspicefiles\batmon_tb\dualsweep.sim"
+        (DisplayName "BATMON_TB-DualSweep")
+        (Type "PSpice Profile"))
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\batmon-pspicefiles\batmon_tb\ac.sim"
+        (DisplayName "BATMON_TB-AC")
+        (Type "PSpice Profile"))
+      (ActiveProfile ".\batmon-pspicefiles\batmon_tb\iloadsweep.sim"))
+    (Folder "Model Libraries"
+      (Sort User))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (TS507/SO23
+      (FullPartName "TS507/SO23.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ST_OPAMP.OLB")
+      (DeviceIndex "0"))
+    (OPAMP
+      (FullPartName "OPAMP.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\DISCRETE.OLB")
+      (DeviceIndex "0"))
+    (TSV911/MINISO-8
+      (FullPartName "TSV911/MINISO-8.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ST_OPAMP.OLB")
+      (DeviceIndex "0"))
+    (TS507/SO-8
+      (FullPartName "TS507/SO-8.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\ST_OPAMP.OLB")
+      (DeviceIndex "0"))
+    (LT1006/LT
+      (FullPartName "LT1006/LT.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\LIN_TECH.OLB")
+      (DeviceIndex "0"))
+    (LM723
+      (FullPartName "LM723.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (LM358
+      (FullPartName "LM358.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PORTLEFT-L
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (LM324
+      (FullPartName "LM324.Normal")
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\OPAMP.OLB")
+      (DeviceIndex "0"))
+    (TSV3XX_Model
+      (FullPartName "TSV3XX_Model.Normal")
+      (LibraryName "C:\USERS\SGELINAS\DOCUMENTS\ORCAD\TSV3XX.OLB")
+      (DeviceIndex "0"))
+    (TSV3XX
+      (FullPartName "TSV3XX.Normal")
+      (LibraryName "C:\USERS\SGELINAS\DOCUMENTS\ORCAD\TSV3XX.OLB")
+      (DeviceIndex "0"))
+    (VAC
+      (FullPartName "VAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (IAC
+      (FullPartName "IAC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PARAM
+      (FullPartName "PARAM.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SPECIAL.OLB")
+      (DeviceIndex "0"))
+    (GND
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (IDC
+      (FullPartName "IDC.Normal")
+      (LibraryName
+         "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (PORTRIGHT-R
+      (LibraryName "C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon.dsn")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon.dsn"
+         "BATMON_TB")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon.dsn"
+         "BATMON")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon.dsn"
+         "DIFF_AMP")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon.dsn"
+         "FOLLOWER")
+      (Path "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon.dsn"
+         "INST_AMP")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon.dsn"
+         "FOLLOWER" "FOLLOWER"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 2 3 -1 -1 -8 -31 0 200 0 421"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 104 1740 104 564")
+        (Scroll "-309 0")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\BATMON.DSN")
+      (Schematic "BATMON_TB")
+      (Page "BATMON_TB"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1499 156 616")
+        (Scroll "-225 0")
+        (Zoom "87"))
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 52 1395 52 512")
+        (Scroll "-162 0")
+        (Zoom "100")
+        (Occurrence "/U1"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\BATMON.DSN")
+      (Schematic "BATMON")
+      (Page "BATMON"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 130 1473 130 590")
+        (Scroll "-162 0")
+        (Zoom "100")
+        (Occurrence "/U1/U2"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\BATMON.DSN")
+      (Schematic "DIFF_AMP")
+      (Page "DIFF_AMP"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 156 1499 156 616")
+        (Scroll "-225 0")
+        (Zoom "87")
+        (Occurrence "/U1/U3"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\BATMON.DSN")
+      (Schematic "INST_AMP")
+      (Page "INST_AMP"))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -8 -31 182 1525 182 642")
+        (Scroll "-162 0")
+        (Zoom "100"))
+      (Path
+         "C:\USERS\SGELINAS\DOCUMENTS\GIT SMARTHALO\HARDWARE\SIMULATION\BATMON.DSN")
+      (Schematic "FOLLOWER")
+      (Page "FOLLOWER")))
+  (MPSSessionName "sgelinas")
+  (LastUsedLibraryBrowseDirectory
+     "C:\Cadence\SPB_16.6\tools\capture\library\pspice"))

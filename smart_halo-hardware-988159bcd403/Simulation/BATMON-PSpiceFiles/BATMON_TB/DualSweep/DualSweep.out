@@ -1,0 +1,73 @@
+
+**** 03/11/16 17:00:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-DualSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\dual
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DualSweep.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.DC LIN PARAM VBAT 3 4.3 0.1 
++ LIN PARAM ILOAD -1.0 1.5 0.15 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\BATMON_TB.net" 
+
+
+
+**** INCLUDING BATMON_TB.net ****
+* source BATMON
+R_R1         N00124 0 1M
+R_R2         N00128 0 1M
+V_V1         N00162 0 DC {VBAT} AC {VBATNOISE} 
+I_I2         N00180 0 DC {ILOAD} AC {ILOADNOISE} 
+C_C1         N00180 0 {CLOAD}
+R_U1_R6         N00128 U1_N00517 {IGAIN*R}
+R_U1_R5         N00180 U1_N00517 {R}
+R_U1_R4         N01022 U1_N00493 {IGAIN*R}
+R_U1_R3         U1_N00493 N00162 {R}
+R_U1_R2         0 U1_N00268 {(VGAIN*R)/(1-VGAIN)}
+R_U1_R1         U1_N00268 N00162 {R}
+R_U1_RSENSE         N00162 N00180 {RSENSE}
+E_U1_U1         N00124 0 VALUE {LIMIT(V(U1_N00268,N00124)*1E6,-15V,+15V)}
+E_U1_U2         N00128 0 VALUE {LIMIT(V(U1_N00493,U1_N00517)*1E6,-15V,+15V)}
+V_V2         N01022 0 {VOFF}
+.PARAM  igain=110 cload=15.8u vbatnoise=1vac imin=-1.0adc iload=0.5adc
++  voff=1.65vdc imax=1.5adc vbatmin=3vdc rsense=0.01 r=100k vbatmax=4.3vdc
++  iloadnoise=1aac vgain=0.75 vbat=3.9vdc
+
+**** RESUMING DualSweep.cir ****
+.END
+
+
+          JOB CONCLUDED
+
+**** 03/11/16 17:00:03 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "BATMON_TB-DualSweep"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\batmon-pspicefiles\batmon_tb\dual
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .25
+

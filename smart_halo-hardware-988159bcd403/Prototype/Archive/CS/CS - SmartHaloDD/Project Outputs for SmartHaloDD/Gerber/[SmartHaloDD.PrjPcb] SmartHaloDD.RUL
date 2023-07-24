@@ -1,0 +1,17 @@
+DRC Rules Export File for PCB: C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Prototype\Altium\Projects\SmartHaloDD1\SmartHaloDD1.CSPcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=6.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=6.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Clearance|RuleName=Clearance_ANT|Scope=Board|Minimum=0.00
+RuleKind=Width|RuleName=Width_5V|Scope=Board|Minimum=8.00
+RuleKind=Width|RuleName=Width_3.3V|Scope=Board|Minimum=8.00
+RuleKind=Width|RuleName=Width_AVDD|Scope=Board|Minimum=8.00
+RuleKind=Width|RuleName=Width_GND|Scope=Board|Minimum=8.00
+RuleKind=Width|RuleName=Width_VBAT|Scope=Board|Minimum=8.00
+RuleKind=Width|RuleName=Width_VBZ|Scope=Board|Minimum=8.00
+RuleKind=Width|RuleName=Width_VLED|Scope=Board|Minimum=8.00
+RuleKind=Width|RuleName=Width_ANT|Scope=Board|Minimum=12.00
+RuleKind=Width|RuleName=Width_ANT1|Scope=Board|Minimum=12.00
+RuleKind=Width|RuleName=Width_ANT2|Scope=Board|Minimum=12.00
+RuleKind=Width|RuleName=Width_NetC47_2|Scope=Board|Minimum=12.00

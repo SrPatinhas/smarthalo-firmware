@@ -1,0 +1,255 @@
+
+**** 01/13/16 18:18:24 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PROTOTEST-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\PROTOTEST\trans.
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "trans.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 2.5m 0 25u 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\PROTOTEST.net" 
+
+
+
+**** INCLUDING PROTOTEST.net ****
+* source PIEZOAMP
+R_R1         N09192 N00207  {R} TC=0,0 
+R_R2         N00207 N00228  {R*VGAIN} TC=0,0 
+V_V7         N09192 N09074  
++PULSE {-VIN} {+VIN} 0 1n 1n {0.5/FREQ} {1/FREQ}
+V_V9         N09074 0 2.5Vdc
+V_V11         VDD 0 {VDD}
+V_V12         0 VSS {VDD}
+X_U3         N11419 N00207 VDD VSS N00228 AD8614/AD
+V_V13         N11591 0 2.5Vdc
+R_R3         N11419 0  {R*VGAIN} TC=0,0 
+R_R4         N11560 N11419  {R} TC=0,0 
+X_U4         N11591 N11560 VDD VSS N11560 AD8614/AD
+C_CPIEZO         0 N00228  2.2u  TC=0,0 
+.PARAM  vin=2.5vdc freq=4k r=10k vgain=4.4 vdd=11vdc vcc=5vdc
+
+**** RESUMING trans.cir ****
+.END
+
+**** 01/13/16 18:18:24 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PROTOTEST-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\PROTOTEST\trans.
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.DX         X_U4.DX         
+          IS  100.000000E-18  100.000000E-18 
+          RS    5               5            
+
+
+**** 01/13/16 18:18:24 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PROTOTEST-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\PROTOTEST\trans.
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U3.NIX        X_U3.PIX        X_U3.POUT       X_U3.NOUT       
+               NPN             PNP             PNP             NPN             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF  220             220             100             100            
+          NF    1               1               1               1            
+         VAF  130             130             200             200            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               4               4            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF   25.000000E-15   25.000000E-15    0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.2             2.42         
+           D     .87             .52             .52             .87         
+
+
+               X_U4.NIX        X_U4.PIX        X_U4.POUT       X_U4.NOUT       
+               NPN             PNP             PNP             NPN             
+       LEVEL    1               1               1               1            
+          IS  100.000000E-18  100.000000E-18  100.000000E-18  100.000000E-18 
+          BF  220             220             100             100            
+          NF    1               1               1               1            
+         VAF  130             130             200             200            
+          BR    1               1               1               1            
+          NR    1               1               1               1            
+         ISS    0               0               0               0            
+          RE    0               0               0               0            
+          RC    0               0               4               4            
+         CJE    0               0               0               0            
+         VJE     .75             .75             .75             .75         
+         CJC    0               0               0               0            
+         VJC     .75             .75             .75             .75         
+         MJC     .33             .33             .33             .33         
+        XCJC    1               1               1               1            
+         CJS    0               0               0               0            
+         VJS     .75             .75             .75             .75         
+          KF   25.000000E-15   25.000000E-15    0               0            
+          AF    1               1               1               1            
+          CN    2.42            2.2             2.2             2.42         
+           D     .87             .52             .52             .87         
+
+
+**** 01/13/16 18:18:24 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PROTOTEST-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\PROTOTEST\trans.
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(  VDD)   11.0000  (  VSS)  -11.0000  (N00207)    2.0335 (N00228)   10.9810     
+
+(N09074)    2.5000 (N09192)    0.0000 (N11419)    2.0373 (N11560)    2.5010     
+
+(N11591)    2.5000 (X_U3.3)    2.7616 (X_U3.4)    2.7579 (X_U3.5)  -10.6450     
+
+(X_U3.6)  -10.6310 (X_U3.7)    2.0383 (X_U3.8)   10.3000 (X_U3.9)   10.3000     
+
+(X_U4.3)    3.2247 (X_U4.4)    3.2247 (X_U4.5)  -10.6390 (X_U4.6)  -10.6390     
+
+(X_U4.7)    2.5010 (X_U4.8)   10.3000 (X_U4.9)   10.3000 (X_U3.10)    2.8573    
+
+(X_U3.11)   10.6230                   (X_U3.12)   10.6370                       
+
+(X_U3.13)    1.3126                   (X_U3.14)    1.3088                       
+
+(X_U3.15)    1.2109                   (X_U3.16)  -10.3000                       
+
+(X_U3.17)  -10.3000                   (X_U3.30)  -11.6280                       
+
+(X_U3.40)   -1.3411                   (X_U3.41)   10.1270                       
+
+(X_U3.42)  -21.9150                   (X_U3.43)  -11.4570                       
+
+(X_U3.46)   10.6270                   (X_U3.47)  -10.5000                       
+
+(X_U3.51)  -11.0000                   (X_U3.70)    0.0000                       
+
+(X_U3.71)    0.0000                   (X_U3.72)    0.0000                       
+
+(X_U3.73)    0.0000                   (X_U3.80)    0.0000                       
+
+(X_U3.81)    0.0000                   (X_U3.97)   11.0000                       
+
+(X_U3.98)    0.0000                   (X_U4.10)    3.3220                       
+
+(X_U4.11)   10.6290                   (X_U4.12)   10.6290                       
+
+(X_U4.13)    1.7757                   (X_U4.14)    1.7756                       
+
+(X_U4.15)    1.6756                   (X_U4.16)  -10.3000                       
+
+(X_U4.17)  -10.3000                   (X_U4.30)    -.0066                       
+
+(X_U4.40)   10.2810                   (X_U4.41)   10.2810                       
+
+(X_U4.42)  -10.2940                   (X_U4.43)  -10.2940                       
+
+(X_U4.46)   10.7810                   (X_U4.47)  -10.5000                       
+
+(X_U4.51)  -11.0000                   (X_U4.70)    0.0000                       
+
+(X_U4.71)    0.0000                   (X_U4.72)    0.0000                       
+
+(X_U4.73)    0.0000                   (X_U4.80)    0.0000                       
+
+(X_U4.81)    0.0000                   (X_U4.97)   11.0000                       
+
+(X_U4.98)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V7         2.034E-04
+    V_V9         2.034E-04
+    V_V11       -1.898E-03
+    V_V12       -1.649E-03
+    V_V13       -5.239E-08
+    X_U3.V1      7.538E-12
+    X_U3.V2      7.542E-12
+    X_U3.V3      1.161E-11
+    X_U3.V4      1.161E-11
+    X_U3.VN1     0.000E+00
+    X_U3.V5      3.729E-13
+    X_U3.V6     -2.092E-02
+    X_U4.V1      7.075E-12
+    X_U4.V2      7.075E-12
+    X_U4.V3      1.208E-11
+    X_U4.V4      1.208E-11
+    X_U4.VN1     0.000E+00
+    X_U4.V5      2.189E-13
+    X_U4.V6      2.061E-13
+
+    TOTAL POWER DISSIPATION   4.95E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 01/13/16 18:18:24 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "PROTOTEST-trans"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\PiezoAmp-PSpiceFiles\PROTOTEST\trans.
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .53
+

@@ -1,0 +1,245 @@
+
+**** 03/10/16 15:35:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "DummyLoad2A_TB-DCbias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles\dumm
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DCbias.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+.LIB "../../../electronicload-pspicefiles/electronicload.lib" 
+* From [PSPICE NETLIST] section of C:\Users\sgelinas\cdssetup\OrCAD_PSpice/16.6.0/PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\DummyLoad2A_TB.net" 
+
+
+
+**** INCLUDING DummyLoad2A_TB.net ****
+* source ELECTRONICLOAD
+V_VLOAD         N00113 0 {VLOAD}
+V_VREF         N00109 0 {VREF}
+X_DL1_U1A         N00109 DL1_N00245 N00419 0 DL1_N00100 LM324
+M_DL1_M2         N00113 DL1_N00100 DL1_N00245 DL1_N00245 IRF150
+R_DL1_R1         DL1_N00245 0 {RSENSE}
+V_VREF1         N00419 0 {VCC}
+.PARAM  vload=3.8vdc rgain=1 rsense=6 vref=1vdc vcc=5vdc
+
+**** RESUMING DCbias.cir ****
+.END
+
+**** 03/10/16 15:35:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "DummyLoad2A_TB-DCbias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles\dumm
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_DL1_U1A.dx    X_DL1_U1A.dy    
+          IS  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 03/10/16 15:35:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "DummyLoad2A_TB-DCbias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles\dumm
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_DL1_U1A.qx    
+               PNP             
+       LEVEL    1            
+          IS  800.000000E-18 
+          BF  166.7          
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.2          
+           D     .52         
+
+
+**** 03/10/16 15:35:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "DummyLoad2A_TB-DCbias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles\dumm
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IRF150          
+               NMOS            
+       LEVEL    3            
+           L    2.000000E-06 
+           W     .3          
+         VTO    2.831        
+          KP   20.530000E-06 
+       GAMMA    0            
+         PHI     .6          
+      LAMBDA    0            
+          RD    1.031000E-03 
+          RS    1.624000E-03 
+          RG   13.89         
+         RDS  444.400000E+03 
+          IS  194.000000E-18 
+          JS    0            
+          PB     .8          
+        PBSW     .8          
+         CBD    3.229000E-09 
+          CJ    0            
+        CJSW    0            
+          TT  288.000000E-09 
+        CGSO    9.027000E-09 
+        CGDO    1.679000E-09 
+        CGBO    0            
+         TOX  100.000000E-09 
+          XJ    0            
+       UCRIT   10.000000E+03 
+       DELTA    0            
+         ETA    0            
+      DIOMOD    1            
+         VFB    0            
+        LETA    0            
+        WETA    0            
+          U0    0            
+        TEMP    0            
+         VDD    5            
+       XPART    0            
+
+
+**** 03/10/16 15:35:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "DummyLoad2A_TB-DCbias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles\dumm
+
+
+ ****     Current Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_DL1_U1A.sw2   X_DL1_U1A.sw1   X_DL1_U1A.sw3   X_DL1_U1A.sw4   
+         RON    1               1               1               1            
+        ROFF   10.000000E+06   10.000000E+06   10.000000E+06   10.000000E+06 
+         ION    0              -1.000000E-06   -1.000000E-06    0            
+        IOFF   -1.000000E-06    0               0              -1.000000E-06 
+
+
+**** 03/10/16 15:35:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "DummyLoad2A_TB-DCbias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles\dumm
+
+
+ ****     SMALL SIGNAL BIAS SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00109)    1.0000 (N00113)    3.8000 (N00419)    5.0000 (DL1_N00100)    4.1605 
+
+(DL1_N00245)    1.0002                (X_DL1_U1A.6)-779.8E-06                   
+
+(X_DL1_U1A.7)    4.1655               (X_DL1_U1A.8)    4.1655                   
+
+(X_DL1_U1A.9)    0.0000               (X_DL1_U1A.a)    4.9999                   
+
+(X_DL1_U1A.b)-98.75E-06               (X_DL1_U1A.10)    1.6081                  
+
+(X_DL1_U1A.11)     .0398              (X_DL1_U1A.12)     .0401                  
+
+(X_DL1_U1A.13)    1.5942              (X_DL1_U1A.14)    1.5941                  
+
+(X_DL1_U1A.53)    3.5000              (X_DL1_U1A.54)     .8220                  
+
+(X_DL1_U1A.90)     .0988              (X_DL1_U1A.91)   40.0000                  
+
+(X_DL1_U1A.92)  -40.0000              (X_DL1_U1A.99)    2.5000              
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_VLOAD     -1.667E-01
+    V_VREF       4.533E-08
+    V_VREF1     -5.661E-04
+    X_DL1_U1A.vb  -7.798E-09
+    X_DL1_U1A.vc  -9.875E-05
+    X_DL1_U1A.ve   3.251E-12
+    X_DL1_U1A.vlim   9.875E-05
+    X_DL1_U1A.vlp  -3.990E-11
+    X_DL1_U1A.vln  -4.010E-11
+
+    TOTAL POWER DISSIPATION   6.36E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 03/10/16 15:35:50 ***** PSpice 16.6.0 (October 2012) ***** ID# 0 ********
+
+ ** Profile: "DummyLoad2A_TB-DCbias"  [ C:\Users\sgelinas\Documents\Git SmartHalo\Hardware\Simulation\electronicload-pspicefiles\dumm
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .05
+
