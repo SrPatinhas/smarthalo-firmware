@@ -1,0 +1,897 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "box1",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 2,
+              "Green": 116,
+              "Blue": 1
+            },
+            "Alpha": 255,
+            "StartX": 136,
+            "StartY": 5,
+            "EndX": 136,
+            "EndY": 250,
+            "LineWidth": 6,
+            "LineEndingStyle": "Butt",
+            "Name": "road",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 272,
+            "Type": "Line",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 66,
+              "Green": 66,
+              "Blue": 66
+            },
+            "CenterX": 136,
+            "CenterY": 136,
+            "Radius": 130,
+            "LineWidth": 10,
+            "StartAngle": 0,
+            "EndAngle": 360,
+            "CapPrecision": "Butt",
+            "Alpha": 255,
+            "Name": "navBackgroundCircle",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 272,
+            "Type": "Circle",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 10,
+              "Green": 105,
+              "Blue": 29
+            },
+            "CenterX": 136,
+            "CenterY": 136,
+            "Radius": 130,
+            "LineWidth": 10,
+            "StartAngle": -45,
+            "EndAngle": 45,
+            "CapPrecision": "Round",
+            "Alpha": 255,
+            "Name": "navDirectionCircle",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 272,
+            "Type": "Circle",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId2",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId3",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Wildcard2": {
+              "TextId": "SingleUseId4",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "textClock",
+            "X": 5,
+            "Y": 5,
+            "Width": 45,
+            "Height": 19,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId9",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId10",
+              "UseBuffer": true,
+              "BufferSize": 5
+            },
+            "Name": "textAreaSpeed",
+            "X": 68,
+            "Y": 272,
+            "Width": 136,
+            "Height": 61,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId11",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 66,
+              "Green": 66,
+              "Blue": 66
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId12",
+              "UseBuffer": true,
+              "BufferSize": 6
+            },
+            "Name": "textSpeedUnits",
+            "X": 203,
+            "Y": 313,
+            "Width": 66,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "batterycase.png",
+            "Alpha": 255,
+            "Name": "batteryBackground",
+            "X": 220,
+            "Y": -12,
+            "Width": 60,
+            "Height": 60,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "blinkon.png",
+            "Released": "lighton.png",
+            "Alpha": 255,
+            "Name": "lightModeButton",
+            "X": 8,
+            "Y": 240,
+            "Width": 33,
+            "Height": 22,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 1,
+              "Green": 177,
+              "Blue": 14
+            },
+            "Direction": "Right",
+            "Alpha": 255,
+            "IndicatorPositionX": 2,
+            "IndicatorPositionY": 2,
+            "IndicatorPositionWidth": 20,
+            "IndicatorPositionHeight": 12,
+            "ProgressRangeMin": 0,
+            "ProgressRangeMax": 100,
+            "ProgressRangeSteps": 0,
+            "ProgressRangeStepsMin": 0,
+            "ProgressInitialValue": 100,
+            "Name": "batteryPercentage",
+            "X": 238,
+            "Y": 9,
+            "Width": 20,
+            "Height": 12,
+            "Type": "BoxProgress",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "BorderColor": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "BorderSize": 5,
+            "Alpha": 255,
+            "Name": "boxForAssistance",
+            "X": 236,
+            "Y": 235,
+            "Width": 30,
+            "Height": 30,
+            "Type": "BoxWithBorder",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId13",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId14",
+              "UseBuffer": true,
+              "BufferSize": 2
+            },
+            "Name": "textAssistant",
+            "X": 245,
+            "Y": 238,
+            "Width": 13,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "location.png",
+            "Alpha": 255,
+            "Name": "image1",
+            "X": 121,
+            "Y": 150,
+            "Width": 30,
+            "Height": 30,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId34",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId35",
+              "UseBuffer": true,
+              "BufferSize": 4
+            },
+            "Name": "textBatteryPercent",
+            "X": 239,
+            "Y": 11,
+            "Width": 30,
+            "Height": 13,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "moveToRideScreen",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "rideScreen",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "NavigationScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 4080
+      },
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "background",
+            "X": 0,
+            "Y": 0,
+            "Width": 272,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId15",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId16",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Wildcard2": {
+              "TextId": "SingleUseId17",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "textRideTime",
+            "X": 10,
+            "Y": 10,
+            "Width": 180,
+            "Height": 73,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId18",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 66,
+              "Green": 66,
+              "Blue": 66
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId19",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "textRideTimeSeconds",
+            "X": 190,
+            "Y": 51,
+            "Width": 35,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId20",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId21",
+              "UseBuffer": true,
+              "BufferSize": 6
+            },
+            "Name": "textDistance",
+            "X": 10,
+            "Y": 83,
+            "Width": 136,
+            "Height": 73,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId22",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 66,
+              "Green": 66,
+              "Blue": 66
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId23",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textDistanceLabel",
+            "X": 146,
+            "Y": 124,
+            "Width": 33,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId24",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId25",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textCalories",
+            "X": 11,
+            "Y": 155,
+            "Width": 76,
+            "Height": 73,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId26",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 66,
+              "Green": 66,
+              "Blue": 66
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId27",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textCaloriesUnits",
+            "X": 90,
+            "Y": 196,
+            "Width": 31,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Color": {
+              "Red": 50,
+              "Green": 50,
+              "Blue": 50
+            },
+            "Alpha": 255,
+            "Name": "speedBackground",
+            "X": 0,
+            "Y": 275,
+            "Width": 272,
+            "Height": 80,
+            "Type": "Box",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId28",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId29",
+              "UseBuffer": true,
+              "BufferSize": 5
+            },
+            "Name": "textSpeed",
+            "X": 10,
+            "Y": 275,
+            "Width": 136,
+            "Height": 73,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId30",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 66,
+              "Green": 66,
+              "Blue": 66
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId31",
+              "UseBuffer": false,
+              "BufferSize": 0
+            },
+            "Name": "textSpeedLabel",
+            "X": 146,
+            "Y": 315,
+            "Width": 66,
+            "Height": 25,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Pressed": "__designer\\blue_check_buttons_check_re_mark_inactive.png",
+            "Released": "__designer\\blue_check_buttons_check_re_mark_inactive.png",
+            "Alpha": 255,
+            "Name": "assistButton",
+            "X": 220,
+            "Y": 293,
+            "Width": 44,
+            "Height": 44,
+            "Type": "Button",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId32",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 50,
+              "Green": 50,
+              "Blue": 50
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId33",
+              "UseBuffer": true,
+              "BufferSize": 2
+            },
+            "Name": "textAssist",
+            "X": 230,
+            "Y": 290,
+            "Width": 25,
+            "Height": 49,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "slideToNavigation",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "ButtonKey": 0,
+              "Type": "TriggerPhysicalButtonClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "NavigationScreen",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "AssistButton",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "assistButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "assistButtonClicked",
+              "Type": "ActionCustom"
+            }
+          }
+        ],
+        "Name": "rideScreen",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "SingleUseId1",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId2",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId4",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId5",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId6",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId7",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId8",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId9",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId10",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId11",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId12",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId13",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId14",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId15",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId16",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId17",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId18",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId19",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId20",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId21",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId22",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId24",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId25",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId26",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId27",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId28",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId29",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId30",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId31",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId32",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId33",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId34",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId35",
+        "IsResource": false
+      }
+    ],
+    "Name": "SmartHaloTest",
+    "Resolution": {
+      "Width": 272,
+      "Height": 480
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "NavigationScreen",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/TouchGFX/touchgfx",
+    "UIPath": ".",
+    "ApplicationTemplate": {
+      "Name": "Simulator",
+      "Version": "2.0.0",
+      "Description": "STM32CubeMX Generated Simulator Application Template",
+      "AvailableColorDepths": [
+        24
+      ],
+      "AvailableImageFormats": {
+        "24": {
+          "Opaque": "RGB888",
+          "NonOpaque": "ARGB8888"
+        }
+      },
+      "AvailableResolutions": [
+        {
+          "Width": 480,
+          "Height": 272
+        }
+      ],
+      "PhysicalButtons": [],
+      "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j10",
+      "PostGenerateCommand": "touchgfx update_project --project-file=../EWARM/SmartHaloTest.ewp --gui-group-name=Application/User/TouchGFX/gui --generated-group-name=Application/User/TouchGFX/generated && touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+      "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j10",
+      "RunSimulatorCommand": "build\\bin\\simulator.exe",
+      "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+      "FlashTargetCommand": "make -f ../gcc/Makefile -j8 flash"
+    }
+  },
+  "Version": "4.10.0",
+  "CreatedBy": "4.10.0"
+}
