@@ -1,0 +1,77 @@
+#!/bin/bash
+
+# Transition script to extract and convert all the known assets
+# into separate source files
+
+PERSONALITY_ASSET_LIST="phoneIcon haloIcon connectedIcon connectedIcon2 xIcon smartHaloText bye \
+    instructEn instructFr instructDe instructSp bike firstWords secondWords lowBatIcon lowBatEIcon touchIcon"
+RIDE_ASSET_LIST="destination counterClockwiseIcon clockwiseIcon navIntro callIcon msgIcon thunderIcon"
+FRONTLED_ASSET_LIST="lightOn lightOff"
+ALARM_ASSET_LIST="borderTop borderBottom borderSide engage disengage eyes1 eyes2 eyes3 mouth1 mouth2 mouth3"
+OLEDLIB_ASSET_LIST="pixellari16Structs pixellariFont16 rubik64Structs rubikFont64 rubik52Structs rubikFont52 \
+    rubik43Structs rubikFont43 \
+    distance_carousel_title speed_carousel_title clock_carousel_title time_carousel_title \
+    climb_carousel_title battery_carousel_title weather_carousel_title distance_carousel_data \
+    speed_carousel_data clock_carousel_data time_carousel_data climb_carousel_data \
+    battery_carousel_data weather_carousel_data light_mode_on light_mode_blink light_mode_off \
+    head_home lets_ride open_garage say_goodbye swipeLeft swipeRight shortTap longTap"
+
+ALL="$PERSONALITY_ASSET_LIST $RIDE_ASSET_LIST $FRONTLED_ASSET_LIST $ALARM_ASSET_LIST $OLEDLIB_ASSET_LIST"
+
+rm -f build/PersonalityTask.o
+echo "Rebuilding PersonalityTask.o without optimization"
+make OPT="" build/PersonalityTask.o
+echo "Extracting assets"
+
+for asset in $PERSONALITY_ASSET_LIST
+do
+    scripts/extract-asset $asset build/PersonalityTask.o
+done
+
+for asset in $RIDE_ASSET_LIST
+do
+    scripts/extract-asset $asset build/RideTask.o
+done
+
+for asset in $FRONTLED_ASSET_LIST
+do
+    scripts/extract-asset $asset build/NightLightTask.o
+done
+
+for asset in $ALARM_ASSET_LIST
+do
+    scripts/extract-asset $asset build/AlarmTask.o
+done
+
+for asset in $OLEDLIB_ASSET_LIST
+do
+    scripts/extract-asset $asset build/OLEDLibrary.o
+done
+
+for asset in $ALL
+do
+    scripts/mkasset assets/$asset
+done
+
+echo "Done"
+
+echo "Generating assets.h"
+OUT=Inc/assets.h
+
+echo -e "/* assets.h -- AUTO-GENERATED -- DO NOT EDIT */\n" > $OUT
+
+for asset in $ALL
+do
+    echo "extern const unsigned char $asset[];"
+    echo "extern const unsigned int ${asset}_len;"
+done >> $OUT
+
+OUT=Src/assets.c
+
+echo "Generating assets.c"
+echo -e "/* assets.c -- AUTO-GENERATED -- DO NOT EDIT */\n" > $OUT
+
+for asset in $ALL
+do
+    printf '#include "%s.h"\n' $asset
+done >> $OUT

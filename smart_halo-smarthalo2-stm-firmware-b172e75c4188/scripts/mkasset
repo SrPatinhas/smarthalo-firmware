@@ -1,0 +1,29 @@
+#!/bin/bash
+
+#
+# Simple tool that converts a file (assumed to be binary) into
+# some C code that may be included in firmware
+#
+
+PROG=$(basename $0)
+
+usage(){
+    echo "Usage: $PROG <asset_file>"
+    echo
+    echo "       Converts a binary asset file to C source"
+    exit 1
+}
+
+if [[ -z $1 ]]
+then
+    echo "$PROG: missing asset_file argument"
+    usage
+fi
+
+DIR=$(dirname $1)
+SYMBOL=$(basename $1)
+
+OUTPUT=$SYMBOL.h
+
+
+(cd $DIR && xxd -i $SYMBOL $OUTPUT && sed 's/^unsigned /unsigned const /' $OUTPUT > ${OUTPUT}.new && mv ${OUTPUT}.new $OUTPUT)

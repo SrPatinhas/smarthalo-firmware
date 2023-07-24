@@ -1,0 +1,44 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: jumperio/vlab-gcc-arm:latest
+    steps:
+      - checkout
+      - run:
+          name: build
+          command: make -f SH2Makefile
+      - run:
+          name: Print the Current Time
+          command: date
+  publish:
+    docker:
+      - image: jumperio/vlab-gcc-arm:latest
+    steps:
+      - checkout
+      - run:
+          name: "Install jq"
+          command: |
+            apt-get install -y jq
+            echo "CONSUMER_TOKEN=${API_CONSUMER_TOKEN}" >> scripts/.env
+            echo "USER_EMAIL=${API_CICD_USER}" >> scripts/.env
+            echo "PASS=${API_CICD_USER_PASS}" >> scripts/.env
+      - run:
+          name: build
+          command: make publish -f SH2Makefile
+
+# workflows:
+#   version: 2
+#   build:
+#     jobs:
+#       - build
+#   day_publish:
+#     triggers:
+#       - schedule:
+#           cron: "0 22 * * 1-5"
+#           filters:
+#             branches:
+#               only:
+#                 - dev
+#     jobs:
+#       - publish

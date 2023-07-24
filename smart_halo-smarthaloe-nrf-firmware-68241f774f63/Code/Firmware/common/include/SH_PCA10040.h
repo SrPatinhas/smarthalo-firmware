@@ -1,0 +1,72 @@
+/*
+ * PCA10040.h
+ *
+ *  Created on: Jun 1, 2016
+ *      Author: sgelinas
+ */
+
+#ifndef SRC_PCA10040_H_
+#define SRC_PCA10040_H_
+
+//PIN0-1:		RESERVED XL CRYSTAL
+//PIN2 - 4:		AVAILABLE
+//PIN5 - 8: 	RESERVED INTERFACE MCU UART
+//PIN9 - 12:	AVAILABLE
+//PIN13 - 16: 	RESERVED BUTTONS 1-4
+//PIN17 - 20: 	RESERVED LEDS 1-4
+//PIN21: 		RESERVED RESET
+//PIN22 - 25:	AVAILABLE
+//PIN26 - 27:	RESERVED I2C EXT
+//PIN28 - 31:	AVAILABLE
+
+
+// POWER SUPPLY
+#define EN_VLED					2
+#define EN_2_8V					26
+#define EN_VPIEZO				9 // Missing pin (same as POWER_CYCLE)
+#define MCU_POWER_CYCLE			9
+
+// USB Charger
+#define USB_CHARGING_N_PIN		23
+#define USB_POWERGOOD_N_PIN		25
+#define USB_CHARGE_ISET2_PIN	29
+
+// USB Bridge
+#define	UART_RXD_PIN			8
+#define UART_TXD_PIN			6
+#define UART_RTS_PIN			5
+#define UART_CTS_PIN			7
+#define USB_WAKEUP_N_PIN		22
+#define USB_SLEEP_N_PIN			24
+
+
+// I2C
+#define I2C_SCL_PIN				3
+#define I2C_SDA_PIN				4
+#define I2C_SDB_PIN				28
+
+// CENTRAL LED
+#define CENTRAL_RED_PIN			11
+#define CENTRAL_GREEN_PIN		29
+#define CENTRAL_BLUE_PIN		12
+
+// FRONT LED
+#define	FRONTLED_PIN			27  // LED2
+
+// SOUND
+#define PIEZO_DRIVE_PIN			13	// BUTTON1
+#define PIEZO_VOLUME_PIN		9
+
+// TOUCH
+#define TOUCH_OUT_PIN			20	// BUTTON2
+#define TOUCH_MODE_PIN			15 	// BUTTON3
+
+// BATMON
+#define BATMON_ALARM_PIN		16	// BUTTON4
+
+// ACCELERO/MAGNETO
+#define ACCEL_INT_1_PIN			30
+#define ACCEL_INT_2_PIN			17	// LED1
+#define MAG_INT_PIN				31
+
+#endif /* SRC_PCA10040_H_ */

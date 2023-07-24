@@ -1,0 +1,68 @@
+#!/bin/bash
+
+# A simple tool that extracts some binary data from a .o and
+# writes it out into a new file.
+# 
+# Assumptions:
+# 
+#  1. The original source had an array in the form:
+#
+#       const uint8_t foo[] = { 0x00, ... 0x00 };
+#
+#  2. That source was compiled with the -fdata-sections option,
+#     meaning that the above would appear in the .o as an ELF
+#     section named .rodata.foo
+#     
+#     N.B. Sometimes, when the object is compiled with -Os the
+#     section is not created. Suggest re-compiling that object
+#     without any optimization flags (temporarily, to assist
+#     in the extraction).
+#     
+#  The expected use is to extract existing binary assets that
+#  were previously coded into our firmware
+
+PROG=$(basename $0)
+
+usage(){
+    echo "Usage: $PROG <asset_name> <object_file>"
+    echo
+    echo "       Extracts a symbol from the .rodata section of object_file"
+    exit 1
+}
+
+if [[ $1 == "-h" || $1 == "--help" ]]
+then
+    usage
+fi
+
+if [[ -z $2 ]]
+then
+    echo "$PROG: missing ELF_file argument"
+    usage
+fi
+
+if [[ -z $1 ]]
+then
+    echo "$PROG: missing asset_name argument"
+    usage
+fi
+
+if [[ ! -f $2 ]]
+then
+    echo "$PROG: ELF_file $3 does not seem to exist"
+    usage
+fi
+
+if ! file $2 | grep -q 'ELF 32-bit LSB relocatable'
+then
+    echo "$PROG: $2 does not appear to be an ELF object file"
+    usage
+fi
+
+if [[ ! -d assets ]]
+then
+    echo "$PROG: Warning. There is no assets directory, making one"
+    mkdir -p assets
+fi
+
+arm-none-eabi-objcopy --dump-section ".rodata.$1"="assets/$1" "$2"

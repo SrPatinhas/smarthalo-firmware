@@ -1,0 +1,14 @@
+#target remote localhost:3333
+#monitor reset halt
+
+target remote localhost:2331
+monitor speed 1000
+monitor endian little
+monitor flash breakpoints=1
+monitor flash download=1
+monitor flash device=swd
+
+define xxd
+	dump binary memory /tmp/dump.bin $arg0 $arg0+$arg1
+	shell xxd /tmp/dump.bin
+end

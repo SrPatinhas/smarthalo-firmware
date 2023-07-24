@@ -1,0 +1,125 @@
+#!/bin/bash
+
+# Simple proof of concept script to:
+#
+#   take two ELF file arguments, one bootloader, the other is firmware
+#   convert them both to a single binary file that is ready for flashing
+#   (gaps filled with 0xff, the CRC32 checksum of the firmware embedded, etc)
+
+PROG=$(basename $0)
+
+# Output name for flash image
+IMAGE=flash.bin
+
+# find JLinkExe (add some educated guesses)
+JLINK=`PATH=$PATH:/Applications/SEGGER/JLink:/opt/SEGGER/JLink/ which JLinkExe`
+
+usage(){
+        echo "Usage: $PROG [ -js Jlink_Serial ] <boot loader elf file> <firmware elf file> [ <serial number> ]"
+        echo "       If the device does not have a previously programmed serial number then"
+        echo "       the third argument is required."
+        echo "       <serial number> should be an 8 character string"
+        exit 1
+}
+
+# Crazyness to convert the serial number read off flash in hex back to a string
+# Input is two 32 bit hex numbers (capital letters)
+convert2string(){
+    echo "$1$2" | \
+        sed 's/\([0-9A-F]\{2\}\)\([0-9A-F]\{2\}\)\([0-9A-F]\{2\}\)\([0-9A-F]\{2\}\)\([0-9A-F]\{2\}\)\([0-9A-F]\{2\}\)\([0-9A-F]\{2\}\)\([0-9A-F]\{2\}\)/0x\4 0x\3 0x\2 0x\1 0x\8 0x\7 0x\6 0x\5/' | \
+        awk '{ printf("%c%c%c%c%c%c%c%c\n", $1, $2, $3, $4, $5, $6, $7, $8)}'
+}
+
+if [[ $1 = "-js" ]]
+then
+    JL_SERIAL="-SelectEmuBySN $2"
+    shift; shift
+fi
+
+if [ ! -f "$1" -o ! -f "$2" ]
+then
+        echo "$PROG: requires two ELF file arguments"
+        usage
+fi
+
+if $(file "$1" | grep -q ELF) 
+then
+
+    BL_BASE="$(basename $1 .elf)"
+    BL_BIN="${BL_BASE}.bin"
+    # Make the bootloader binary file
+    arm-none-eabi-objcopy -O binary --gap-fill=0xff --pad-to=0x8006000 "$1" "$BL_BIN"
+else
+    # Assume that the argument is a bin file already
+    BL_BIN="$1"
+fi
+
+if $(file "$2" | grep -q ELF)
+then
+    FW_BASE="$(basename $2 .elf)"
+    FW_BIN="${FW_BASE}.bin"
+
+    # Make the firmware binary file
+    arm-none-eabi-objcopy -O binary --gap-fill=0xff --pad-to=0x8040000 "$2" "$FW_BIN"
+else
+    FW_BIN="$2"
+fi
+
+# Paste them together
+cat "$BL_BIN" "$FW_BIN" > flash.bin
+
+# Calculate the crc32 of the firmware image
+CKSUM=$(crc32 "$FW_BIN")
+
+declare -a SERHEX
+
+# Read existing serial number
+SERHEX=($("$JLINK" $JL_SERIAL -device STM32L451RC -if swd -speed 2000 << EOF | tail -1 | awk '{ print $3; print $4 }'
+mem32 0x8005820 2
+q
+EOF
+))
+
+# If there isn't an existing serial, demand one
+if [ "${SERHEX[0]}" = "FFFFFFFF" ]
+then
+        if [ -z "$3" ]
+        then
+                echo "$PROG: the device does not have a serial number programmed"
+                usage
+        fi
+        SERIAL="$3"
+        if [ ${#SERIAL} -ne 8 ]
+        then
+                echo "$PROG: the serial number should be exactly 8 characters"
+                usage
+        fi
+
+        SERHEX=($(echo -n "$SERIAL" | xxd -e -g 4 | awk '{ print $2; print $3 }'))
+else
+        echo "Existing serial number is: $(convert2string ${SERHEX[*]})"
+fi
+
+# Jlink connect to the device:
+#  - reset
+#  - erase the internal flash
+#  - flash the image
+#  - jam the crc32 into the magic location
+#  - jam the length into the magic location
+#  - jam the 8 bytes of serial number + 4 NULL/pad bytes into the MCB
+#  - reset the device again
+#
+"$JLINK" $JL_SERIAL -device STM32L451RC -if swd -speed 2000 << EOF
+r
+h
+h
+erase
+loadbin $IMAGE 0x8000000
+w4 0x8005804 0x$CKSUM
+w4 0x8005808 0x3A000
+w4 0x8005820 ${SERHEX[0]}
+w4 0x8005824 ${SERHEX[1]}
+w4 0x8005828 0
+r
+exit
+EOF

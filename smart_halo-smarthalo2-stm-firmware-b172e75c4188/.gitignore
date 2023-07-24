@@ -1,0 +1,15 @@
+/Debug/
+*.log
+.cproject_org
+.project_org
+.settings/language.settings.xml
+.code_review_properties
+*.launch
+.vscode
+.cproject
+.project
+SmartHaloV2.elf.launch
+/build*
+/scripts/.env
+/.settings/
+.mxproject

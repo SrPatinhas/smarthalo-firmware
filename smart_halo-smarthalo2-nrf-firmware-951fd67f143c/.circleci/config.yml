@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: jumperio/vlab-gcc-arm:latest
+    steps:
+      - checkout
+      - run:
+          name: "Pull Submodules"
+          command: |
+            git submodule update --init --recursive
+      - run: pip install nrfutil
+      - run: cp Makefile.posix Code/3rd/nrf5_sdk/nRF5_SDK_16.0.0_98a08e2/components/toolchain/gcc/Makefile.posix
+      - run:
+          name: build
+          command: make -C Code/Firmware/shapp
+      - run:
+          name: Print the Current Time
+          command: date

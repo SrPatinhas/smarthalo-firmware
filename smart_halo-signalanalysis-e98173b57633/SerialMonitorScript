@@ -1,0 +1,27 @@
+#!/bin/bash
+#Serial monitor script
+#Sean Beitz, 4 october 2019
+#all rights reserved Smarthalo
+
+
+#ask for filename to record
+
+echo ComPort Monitor Started
+echo Enter filename to record
+
+read FILENAME
+
+echo Recording serial data from /dev/ttyACM0 to $FILENAME
+
+lxterm -e "echo RECORDING SERIAL PORT /dev/ttyACM0 to $FILENAME; echo Record start.;echo Close this window to stop recording.;(stty raw; cat > $FILENAME) < /dev/ttyACM0" &
+#start new terminal and tail -f 
+#lxterm -e "echo tail -f $FILENAME" 
+
+#write s to com port
+echo -ne 's' > /dev/ttyACM0
+
+echo START RECORDING
+
+#start new terminal and tail -f 
+#lxterm -e "echo tail -f $FILENAME" 
+tail -f $FILENAME

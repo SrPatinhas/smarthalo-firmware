@@ -1,0 +1,363 @@
+SmartHalo 2 STM Firmware Changelog
+
+v2.2.5.0 - Jun 7 2021
+
+* fixed overlap of title and metric on the OLED
+* added reason for denied BLE commands
+* notifications and turn signals are now completely independent
+* removed delay in carousel swiping
+
+v2.2.4.0 - May 11 2021
+
+* preventing window watch dog events in sleep/wake cycle
+* fix to broken sound just making tick sounds for future releases
+* configure wake up pins at boot instead of at wake
+* watchdog state updates during halo init at wake
+* window watch dog improvements to watch halo leds closely
+* avoid allowing shutdowns at low current to avoid unseen current from causing a shutdown
+* added window watch dog updates to flash reads and writes in case of timeouts
+* added acknowledge messages to the duplicate UART payloads to unstick the nordic
+
+v2.2.3.0 - Apr 12 2021
+
+* improve touch recalibration to occurred during touch debounce states
+* improve swipes to allow faster swiping
+* fixes to navigation card with notifications and low battery
+* updates to navigation card to use less LEDs
+* expanded swipe areas to 90, swipe distance reduced to 25 and touch sensitivity boosted to 39
+* removed all BLE and file system touch sensor settings to keep all devices on consistent behaviour
+* align carousel clock with quick touch clock in vertical position
+* potential crash fix for roundabouts
+* fixes to the pointer standby animation and wake after idle
+
+v2.2.2.0 - Mar 26 2021
+
+* firmware event log changes to support future work with sentry.io
+* augment firmware event logs to disambiguate reboot events
+* move distance units to the left to avoid mask cutoff
+* added low priority clock which can be overridden by notification and turns
+* fixed notifications being dismissed on the battery carousel card
+* battery shutdown only if the voltage stabilizes, low current draw this could lead us to batteries that are much lower than planned, but only if the user leaves elaborate animations on indefinitely which seems unlikely
+* fix to the night light no longer toggling after disconnect if it was off when disconnecting
+* fix to OLED dimming after going to sleep
+* added elf file upload to publish script
+
+v2.2.1.0 - Mar 23 2021
+
+* fix for large numbers evenly spacing out the first character
+* fix that caused extra large OLED font strings to get completely removed instead of cut off
+* fixes to copy in German, Spanish, English and French on the onboarding the carousel cards
+* swapped out connect instructions for fonts to save space
+* onboarding final page lasts 3 seconds instead of 1
+
+v2.2.0.0 - Mar 22 2021
+
+* added new long tap sound
+* fix to fonts for first character showing while having a negative offset
+* support for hard coded strings in French, German and Spanish
+* move up speedometer, turn signal and goals to accommodate OLED mask
+* onboarding for using touch
+* added quick touch OLED notifications icons
+* added battery icons for state of charge and charging
+* remove click sound from connecting
+* added light mode and navigation mode rockers
+* state of charge second cut with smooth charging experience and more accurate curve
+* font aligntment fixes to make sure the alphabet leaves at least one pixel between all characters
+* fix for pointer being dismissed on the carousel
+* fix for the touch sensor dividing by zero and crashing the firmware
+
+v2.1.9.0 - Mar 1 2021
+
+* modified set date to set localization, now includes language
+* as the crow flies has standby text in English, Spanish, French and German
+* unpaired touch triggered unpaired animation the OLED
+* halo animation for low battery exits upwards like the OLED
+* better crash reports for the window watchdog
+* added ellipsis to end of strings that don't fit on the OLED
+* new API command to change the carousel position
+* distance on the carousel's default colour is now purple
+* fix to charging depleted batteries which were showing over 100% charge for a while
+* added snail to speedometer for low speeds
+* fixed issue with carousel title and metrics overlapping
+* fixed issue with the intro animation overlapping
+* including the ' character on the pixellari font, fix to some street and address bugs
+* long taps now have a different sound than short taps
+* distances are all rounded to 10m increments
+* clock no longer overrides turn signal on the carousel
+* average speed is km/h and mph now
+* state of charge will no longer override carousel while charging
+* move bottom up two pixels and sides in 1 pixel each
+* add gap between metrics and text on the bottom to avoid collision
+* alarm disarmed at low battery to avoid alarm triggering while charging a dead unit
+* night light stays on no matter what if we connect and the night light was already on
+* night light now fixes to the rocker and not showing rocker after disconnect
+* removing the alarm warming and triggering on OLED once it's disarmed
+* fixed handler for DEVICE_STM_DFU_CRC command to correctly return UNNECESSARY
+* alarm now locks front light so night light task will not interfere with the alarm
+* wake accelerometer data is pass the same DSP as smarthalo 1
+* Alarm accelerometer data is passing through the same DSP as smarthalo 1
+* bug fix for alarm triggering due to a firmware crash
+* remove 6 tap halo animation code
+
+v2.1.8.0 - Feb 9 2021
+
+* updated state of charge model for new batteries
+* updated state of charge to count in increments of 10 
+* updated state of charge to better estimate the current from LEDs
+* updated state of charge to better compensate for the current
+* updated touch interface to swipe on the side and taps only in the center
+* improvements to the ghost taps
+* fixes to the sound driver to support short touch sounds
+* fixes to the sound driver to improve feature parity SmartHalo 1
+* core animations now pass by reference
+* bug fix for roundabouts causing a crash
+* msb for the progress on the turn allows the angles to change without reanimating them
+
+v2.1.7.0 - Jan 19 2021
+
+* fixed rocker animations on the OLED
+* night light based on acc interrupts, turns off depending on movement size
+* halo LEDs dim based on photo sensor data
+* set time moved to 4,6 to support unsupported response on the golden firmware
+* fixed the pointer animation to pass the 180 degree without taking the long way around
+* added bit to angle turns that allow the angles to change without reanimating them
+* fixed for unsupported BLE commands out of range, it was just missing commands
+* passing by reference for animations to reduce memory load
+
+v2.1.6.0 - Jan 7 2021
+
+* fixed issue with angle animation not showing properly
+* fixed issue with angle animation blocking other animations on the halo from showing
+* added stack visibility to the shell
+* added nordic disconnect reason to the BLE logging
+* fixed poor adc reading causing the device to prematurely shut down, cause of potential Megabug
+* moved pixels up two on the OLED to accommodate the plastic mask alignment issues
+* throttle carousel update requests while navigating to reduce BLE congestion
+* adding logging for software watchdog
+* added timestamps to the logs
+* added set time command to allow logs to have percise timings
+
+v2.1.5.0 - Nov 24 2020
+
+* refactored animation library for clear BLE and animation structure devision
+* added set date for the shell
+* enable the real time clock (RTC)
+
+v2.1.4.0 - Oct 30 2020
+
+* fixed issue with touch recalibrate to avoid strange stuck stuck on the touch
+* swipes are disabled while disconnected to make alarm tap codes easier
+* refactored external flash readings for settings to avoid potential megabug on read or write fails
+* enabled window watchdog (WWDG) for helping diagnose and catch the Megabugs
+* support for log events via BLE
+* support for logging events on the external flash
+* fixed bug that would lock the carousel while using as the crow flies
+
+v2.1.3.0 - Oct 22 2020
+
+* fixed the touch test to override the OLED for functional tests
+* Shutting down the device at 20% instead of 0% to protect the batteries lifetime
+* fixed the navigation card halo animation on the carousel
+* fixed issue where accelerometer might not wake the device without an UI, potential Megabug fix
+* fixed issue where navigation and goals on the carousel turning on or off changed the carousel position
+
+v2.1.2.0 - Oct 15 2020
+
+* added navigation carousel card halo animation
+* turn by turn animations now override the carousel for navigation card
+
+v2.1.1.0 - Oct 11 2020
+
+* test mode now disabled the OLED for while charging, needed for functional tests
+
+v2.1.0.0 - Oct 3 2020
+
+* removed the night light strobe option
+
+v2.0.19.0 - Sep 20 2020
+
+* fixed software watchdog to correctly handle first ever factory boot (empty flash and no filesystem)
+
+v2.0.18.0 - Sep 25 2020
+
+* fixed alarm and sleep interaction, allowing the device to sleep while the alarm is off or has no progress and to stay awake while the alarm has progress but is not triggered but still in the warning stages
+
+v2.0.17.0 - Sep 14 2020
+
+* fixes to the quad serial peripheral interface (qSPI) to avoid hangs on the external flash, potential megabug fix
+* adding software watch dog to keep the device from hanging, potential Megabug fix
+* software watchdog will allow us to reboot if we hang, but we can configure it to hang indefinitely in the hunt for the Megabugs
+* added pointer animation to distance, duration and calories on the carousel for the halo
+* fixed fractions on the OLED to round properly, no longer shows .100 when it should round up to a while number
+* fixed support for 24 hour clock on the OLED and AM/PM
+* fixed goal carousel card which affected the distance card
+* now dismissing clock on swipe on the halo
+* allowing carousel card updates without payloads
+* clean up accelerometer logic to stop streaming when it's idle again, somehow this was removed, disable accelerometer data for the alarm while connected
+* fixed accelerometer data to still return even if no new data existed from the last check
+
+v2.0.16.0 - Aug 17 2020
+
+* added carousel halo animation for the clock and average speed
+* added support for clock AM/PM and 24 hours
+* fixed the pointer on the halo to preperly represent the angles, it was 7 degrees off
+* refactored power management
+* fixed firmware updates to respond correctly on BLE before rebooting
+* added locking mechanism to the external flash calls
+* added support for managing which carousel cards display from carousel update messages
+* added navigation and goal cards to the carousel
+* allow distance, time, average speed, carbondioxide and calories to display 0 on the carousel
+* added support for compressed OLED assets
+* added support to determine board revision in the firmware
+
+v2.0.15.0 - Jul 28 2020
+
+* added support for STVzo ow battery indicator
+* fixes to power management and idle state, potential Megabug fix
+* fixes to carousel clock OLED data
+* added shell command to fake taps
+* added recalibration of touch when it gets stuck
+* enhancements to swipe to improve responsiveness
+* added support for the carousel while connected and authenicated
+* added swipe animation
+* OLED assets now compile seperately from application files
+
+v2.0.14.0 - July 9 2020
+
+* added support for sleep mode to manage lower power consumption and increased battery life
+* fixes to some sound issues and power management of sound
+* temporary fix to disable touch while animating to OLED to avoid ghost taps from OLED data
+* added animation for sliding rockers on the OLED
+
+v2.0.13.0 -May 20 2020
+
+* fixes to the off commands for speedometer, progress and navigation
+
+v2.0.12.0 - May 15 2020
+
+* fixed for the goal intro halo animation edge case without a progress goal running
+
+v2.0.11.0 - May 15 2020
+
+* fixed the night night status notificaiton to avoid conflict with tap notification which caused the tap notification to get lost
+* added tap icon to the OLED
+* added notifications to the OLED, text, call, storm
+* rewrite progress intro
+* fixed sleep issue while trying to display on the OLED
+* added as the crow flies data on the OLED
+* fixes to the alarm OLED asset visuals
+* added night light state to the OLED
+* added low battery on the OLED
+* added navigation intro on the OLED and halo
+* added battery percentage to the OLED
+
+
+v2.0.10.0 - May 11 2020
+
+* added support for 4 byte distance on navigation to show larger distances
+* reduced power management idle sleep to 5 seconds to save more battery
+
+v2.0.9.0 - May 9 2020
+
+* support for rev 4 boards with better LED current management
+* updates to the alarm OLED assets
+* added first couple boot flags for manufacturing to keep the batteries from draining during production
+* refactored OLED to use an priority system to override different screens and shows low priority screens when higher priority screens are dismissed
+* added enhanced font assets for 44, 52, and 64 Rubiks fonts
+* goal halo updates
+* added roundabout support into the OLED
+* BLE OLED commands use the priority system
+* removed disconnected OLED screen
+* fixed bug now goals will show without text if app doesn't provide any
+* support large distance on the OLED
+
+v2.0.8.0 - Apr 27 2020
+
+* added touch calibration commands to BLE
+* added warning for regenerated cube mx code to update generated code in main
+
+v2.0.7.0 - Apr 24 2020
+
+* fixed nordic initialization to support unresponsive UART
+* fixed bug with speedometer breaking other animations
+* fixed issues with first boot external flash not ready
+
+v2.0.6.0 - Apr 17 2020
+
+* added perecentage and text support for goals on the OLED
+* improvements to the goal halo animation
+* tweaks to the alarm durations
+* fixes to the OLED priority system, it showed low prioriy when high priority ended, but not higher priority when a low priority was already showing
+* big speedometer numbers and removing 0 on the speedometer
+* clearing OLED when disconnecting
+* remove halo animation overlap capabilities
+* simplified logging
+
+v2.0.5.0 - Mar 27 2020
+
+* updated to Pixellari for more characters
+* fixes for the alarm timing and assets on the OLED
+* added first cut for the OLED priority system
+* added ADC error handling
+* fixes for wake for UI, potential Megabugs fix
+* added Rubik 43 and the clock to the OLED
+* added BYE to disconnects and onboarding text to attach the app while disconnected
+* added speedometer to the OLED
+* navigation distance on the OLED, smoothed distance updates
+* changed requirement for firmware updates state of charge to 10% and allow updates while charging regardless
+* added support for distance in meters and feet and Rubik 64 font
+
+v2.0.4.0 - Mar 3 2020
+
+* fixes for forgetting alarm
+* fixes for temperature changes
+* fixes for master brightness
+* enabled touch sensor recalibration
+* fixes for several halo animations around navigation roundabouts, quick turns
+* added intro for speedometer on the halo
+* wake up on the OLED and alarm on the OLED
+* fixes for night light notifications
+* enhancements to power management wake up
+* connection animation proof of concept
+
+v2.0.3.0 - Jan 31 2020
+
+* added initial support for touch calibration via BLE
+* fixes for battery reading to allow the ADC to settle first
+* added night light block to support Germany not allowing blinking
+* Initial golden firmware connection instructions
+* fixes to device firmware update failure case
+* improvements to OLED screen asset and hardware abstraction layer
+
+v2.0.2.0 - Jan 21 2020
+
+* navigation overrides all speedometer
+* fixes to the alarm trigger
+* state of charge mathematical model
+* deny firmware updates at 30% or lower
+* added support for touch sounds
+* added support for forgetting the smarthalo and disabling the alarm, forgetting the pairing and sleeping after 8 hours
+* fixed alarm triggers when plugged in even while connected
+* fix to the name
+* added show state of charge to BLE commands
+* added low battery notifications
+* added roundabout animation
+* added reroute animation
+* added turn by turn animations
+* added demo features for the alarm to the BLE
+* added notifications animation
+* added speedometer animation
+* added turn by turn introduction animation
+
+
+v2.0.1.0 - Dec 24 2019
+
+* added clock animation
+* added basic alarm mechanics and animations
+* filesystem reformat
+* pin connectivity tests for manufacturing
+* fixes for charging
+
+v2.0.0.0 - Nov 6 2019
+
+* first release version with basic feature parity to SmartHalo 1

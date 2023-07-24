@@ -1,0 +1,21 @@
+
+{
+  "Application": {
+    "Name": "smarthaloE-stm-firmware",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "AvailableColorDepths": [ 16 ],
+    "AvailableLCDs":
+    {
+      "16": "LCD16bpp"
+    },
+    "AvailableResolutions" : [
+      {
+        "Width": 480,
+        "Height": 480
+      }
+    ],
+    "PostGenerateTargetCommand" : "touchgfx update_project --project-file=../smarthaloE-stm-firmware.ioc --platform=m7",
+    "Family" : "STM32H7"
+  },
+  "Version": "4.15.0"
+}

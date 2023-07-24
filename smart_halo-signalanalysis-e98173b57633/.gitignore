@@ -1,0 +1,8 @@
+*.o
+*.d
+*_build/
+
+/.project
+
+BatTester/nitrogen/blank/armgcc/more
+BatTester/nitrogen/blank/armgcc/_build

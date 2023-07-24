@@ -1,0 +1,4 @@
+unsigned const char borderSide[] = {
+  0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0x1f
+};
+unsigned const int borderSide_len = 7;

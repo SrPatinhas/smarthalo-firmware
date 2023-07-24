@@ -1,0 +1,10 @@
+# Astyle 3.1 rc file for SmartHalo2 Bootloader
+#
+# Use astyle --project to pick up this file
+#
+# N.B. requires 3.1 or greater (where --project appears)
+#
+--style=linux
+--indent=spaces=4
+--attach-classes
+--attach-inlines
