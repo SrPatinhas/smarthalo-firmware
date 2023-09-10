@@ -7,15 +7,15 @@ HEAPSIZE = 0x0
 MINSTACKSIZE = 0x80
 #######################################
 
-SERIAL_OPT = $(shell scripts/nrf-select.sh)
+# SERIAL_OPT = $(shell scripts/nrf-select.sh)
 
-NAMEVERSION := $(shell ./scripts/version.sh SHAPP .)
-DEFVERSION := $(shell ./scripts/version.sh SHAPP ,)
-HEXVERSION := $(shell ./scripts/version.sh SHAPP HEX)
+# NAMEVERSION := $(shell ./scripts/version.sh SHAPP .)
+# DEFVERSION := $(shell ./scripts/version.sh SHAPP ,)
+# HEXVERSION := $(shell ./scripts/version.sh SHAPP HEX)
 
-#NAMEVERSION := 0.0.0.0
-#DEFVERSION := 0,0,0,0
-#HEXVERSION := 0x00000000
+NAMEVERSION := 0.0.0.0
+DEFVERSION := 0,0,0,0
+HEXVERSION := 0x00000000
 
 PROJECT_NAME := shapp
 OUTPUT_DIRECTORY := _build
@@ -368,18 +368,18 @@ LDFLAGS += -u _printf_float
 
 # Default target - first one defined
 default: $(VERSIONFILE) $(PROJECT_NAME) $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).hex
-	./scripts/devpkg.sh $(PROJECT_NAME) $(NAMEVERSION) $(HEXVERSION)
-	@echo "\n===================================================================="
-	@echo " "
-	@echo "$(PROJECT_NAME) version: $(NAMEVERSION)"
-	@echo " "
-	@echo "Memory Usage Report:"
-#	@arm-none-eabi-size --format=SysV -x $@
-	@arm-none-eabi-size -x $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out
-	@echo " "
-	@SZTEXT=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$1 }'`; SZDATA=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$2 }'`; SZBSS=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$3 }'`; TOTFLASH=`printf 0x%x $$(( $$SZTEXT + $$SZDATA ))`; PERC=$$(( $$TOTFLASH * 100 / $(FLASHSIZE) )); echo "  Flash: $$TOTFLASH / $(FLASHSIZE)    $$PERC %"; TOTRAM=`printf 0x%x $$(( $$SZBSS + $(HEAPSIZE) + $(MINSTACKSIZE) ))`; PERC=$$(( $$TOTRAM * 100 / $(RAMSIZE) )); echo "    RAM: $$TOTRAM / $(RAMSIZE)    $$PERC %"
-	@echo "\n===================================================================="
-	@./scripts/nrf-select.sh > /dev/null  # test for jlinks
+# 	./scripts/devpkg.sh $(PROJECT_NAME) $(NAMEVERSION) $(HEXVERSION)
+# 	@echo "\n===================================================================="
+# 	@echo " "
+# 	@echo "$(PROJECT_NAME) version: $(NAMEVERSION)"
+# 	@echo " "
+# 	@echo "Memory Usage Report:"
+# #	@arm-none-eabi-size --format=SysV -x $@
+# 	@arm-none-eabi-size -x $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out
+# 	@echo " "
+# 	@SZTEXT=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$1 }'`; SZDATA=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$2 }'`; SZBSS=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$3 }'`; TOTFLASH=`printf 0x%x $$(( $$SZTEXT + $$SZDATA ))`; PERC=$$(( $$TOTFLASH * 100 / $(FLASHSIZE) )); echo "  Flash: $$TOTFLASH / $(FLASHSIZE)    $$PERC %"; TOTRAM=`printf 0x%x $$(( $$SZBSS + $(HEAPSIZE) + $(MINSTACKSIZE) ))`; PERC=$$(( $$TOTRAM * 100 / $(RAMSIZE) )); echo "    RAM: $$TOTRAM / $(RAMSIZE)    $$PERC %"
+# 	@echo "\n===================================================================="
+# 	@./scripts/nrf-select.sh > /dev/null  # test for jlinks
 
 # $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).hex: $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).hex
 

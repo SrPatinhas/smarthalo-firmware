@@ -13,7 +13,7 @@ PCB and schematic are in the `hardware` folder. They can be opened with KiCad (u
 ## SmartHalo 2
 
 This product has two chips:
-* nRF52(...?) - for Bluetooth LE communication
+* nRF52832 - for Bluetooth LE communication
 * STM32(L4...?) - for display?
 
 The firmware (and bootloader) for the nRF52 resides in `smarthalo2-nrf-firmware/Code`. It uses nRF5 SDK 16.0.0.

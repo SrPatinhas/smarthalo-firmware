@@ -15,6 +15,9 @@ PRODUCT_ID?=1
 ifeq ($(PRODUCT_ID),1)
 PCBVER?=1
 endif
+ifeq ($(PRODUCT_ID),2)
+PCBVER?=1
+endif
 
 # Get the configuration for this combination, and check that the given PRODUCT_ID and PCBVER are valid.
 include products.mk

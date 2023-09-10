@@ -2,20 +2,18 @@
 # It should be used for building the firmware binaries
 
 # Configure as required here
-CHIP=nrf52840_xxaa
-FAMILY=NRF52840 # Note that this must be NRF52840 if using this chip
-BOARD=pca10056
-SD_TYPE=s140
-SD_VERSION=7.2.0
-SD_FWID=0x0100 # Look in $(SDK_ROOT)/components/softdevice/$(SD_TYPE)/doc/
-SDK_ROOT=/nrf5/nRF5_SDK_17.0.2
+CHIP=nrf52832_xxaa
+FAMILY=NRF52
+SD_TYPE=s132
+SD_VERSION=7.0.1
+SD_FWID=0xCB
+SDK_ROOT=/nrf5/nRF5_SDK_16.0.0
 
 # Directories used to store files
 TEMP_DIR = tmp
 ARTEFACTS_DIR = artefacts
-APP_MK_DIR = app/src/$(BOARD)/$(SD_TYPE)/armgcc
-DTM_MK_DIR = dtm/src/$(BOARD)/blank/armgcc
-BOOT_MK_DIR = boot/secure_bootloader/$(BOARD)_$(SD_TYPE)_ble/armgcc
+APP_MK_DIR = smart_halo-smarthalo2-nrf-firmware-951fd67f143c/Code/Firmware/shapp
+BOOT_MK_DIR = smart_halo-smarthalo2-nrf-firmware-951fd67f143c/Code/Firmware/shbootloader
 
 # Files generated as part of the build process
 APPLICATION = $(APP_MK_DIR)/_build_$(COMBINED_PRODUCT_HARDWARE_VERSION)/$(CHIP).hex
@@ -46,7 +44,6 @@ all:
 	
 	# Build the sub-projects
 	make -j$(NUMJOBS) PASS_LINKER_INPUT_VIA_FILE=0 SDK_ROOT=$(SDK_ROOT) OUTPUT_DIRECTORY=_build_$(COMBINED_PRODUCT_HARDWARE_VERSION) -C $(APP_MK_DIR)
-	make -j$(NUMJOBS) PASS_LINKER_INPUT_VIA_FILE=0 SDK_ROOT=$(SDK_ROOT) OUTPUT_DIRECTORY=_build_$(COMBINED_PRODUCT_HARDWARE_VERSION) -C $(DTM_MK_DIR)
 	make -j$(NUMJOBS) PASS_LINKER_INPUT_VIA_FILE=0 SDK_ROOT=$(SDK_ROOT) OUTPUT_DIRECTORY=_build_$(COMBINED_PRODUCT_HARDWARE_VERSION) COMBINED_PRODUCT_HARDWARE_VERSION=$(COMBINED_PRODUCT_HARDWARE_VERSION) -C $(BOOT_MK_DIR)
 	
 	# Make the artefacts directory if it does not exist

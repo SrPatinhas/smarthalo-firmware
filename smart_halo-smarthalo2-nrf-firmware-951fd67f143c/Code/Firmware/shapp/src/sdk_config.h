@@ -6,6 +6,12 @@
 #ifdef USE_APP_CONFIG
 #include "app_config.h"
 #endif
+
+#define SEGGER_RTT_CONFIG_MAX_NUM_UP_BUFFERS 2
+#define SEGGER_RTT_CONFIG_MAX_NUM_DOWN_BUFFERS 2
+#define SEGGER_RTT_CONFIG_BUFFER_SIZE_UP 1024
+#define SEGGER_RTT_CONFIG_BUFFER_SIZE_DOWN 16
+
 // <h> Application 
 
 #ifndef _PARAMS

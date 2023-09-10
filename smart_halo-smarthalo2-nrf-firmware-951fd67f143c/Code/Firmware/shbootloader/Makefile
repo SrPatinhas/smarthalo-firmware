@@ -7,10 +7,10 @@ HEAPSIZE = 0x0
 MINSTACKSIZE = 0x80
 #######################################
 
-SERIAL_OPT = $(shell ../shapp/scripts/nrf-select.sh)
+# SERIAL_OPT = $(shell ../shapp/scripts/nrf-select.sh)
 
-NAMEVERSION := $(shell ./scripts/version.sh SHBL .)
-HEXVERSION := $(shell ./scripts/version.sh SHBL HEX)
+# NAMEVERSION := $(shell ./scripts/version.sh SHBL .)
+# HEXVERSION := $(shell ./scripts/version.sh SHBL HEX)
 
 PROJECT_NAME     := shbl
 OUTPUT_DIRECTORY := _build
@@ -277,17 +277,17 @@ $(foreach target, $(TARGETS), $(call define_target, $(target)))
 .PHONY: $(TARGETS) default all clean help flash publish package
 # Default target - first one defined
 default: $(PROJECT_NAME)
-	@echo "\n===================================================================="
-	@echo " "
-	@echo "$(PROJECT_NAME) version: $(NAMEVERSION)"
-	@echo " "
-	@echo "Memory Usage Report:"
-#	@arm-none-eabi-size --format=SysV -x $@
-	@arm-none-eabi-size -x $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out
-	@echo " "
-	@SZTEXT=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$1 }'`; SZDATA=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$2 }'`; SZBSS=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$3 }'`; TOTFLASH=`printf 0x%x $$(( $$SZTEXT + $$SZDATA ))`; PERC=$$(( $$TOTFLASH * 100 / $(FLASHSIZE) )); echo "  Flash: $$TOTFLASH / $(FLASHSIZE)    $$PERC %"; TOTRAM=`printf 0x%x $$(( $$SZBSS + $(HEAPSIZE) + $(MINSTACKSIZE) ))`; PERC=$$(( $$TOTRAM * 100 / $(RAMSIZE) )); echo "    RAM: $$TOTRAM / $(RAMSIZE)    $$PERC %"
-	@echo "\n===================================================================="
-	@../shapp/scripts/nrf-select.sh > /dev/null  # test for jlinks
+# 	@echo "\n===================================================================="
+# 	@echo " "
+# 	@echo "$(PROJECT_NAME) version: $(NAMEVERSION)"
+# 	@echo " "
+# 	@echo "Memory Usage Report:"
+# #	@arm-none-eabi-size --format=SysV -x $@
+# 	@arm-none-eabi-size -x $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out
+# 	@echo " "
+# 	@SZTEXT=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$1 }'`; SZDATA=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$2 }'`; SZBSS=`arm-none-eabi-size $(OUTPUT_DIRECTORY)/$(PROJECT_NAME).out | awk 'NR <= 1 { next } { print $$3 }'`; TOTFLASH=`printf 0x%x $$(( $$SZTEXT + $$SZDATA ))`; PERC=$$(( $$TOTFLASH * 100 / $(FLASHSIZE) )); echo "  Flash: $$TOTFLASH / $(FLASHSIZE)    $$PERC %"; TOTRAM=`printf 0x%x $$(( $$SZBSS + $(HEAPSIZE) + $(MINSTACKSIZE) ))`; PERC=$$(( $$TOTRAM * 100 / $(RAMSIZE) )); echo "    RAM: $$TOTRAM / $(RAMSIZE)    $$PERC %"
+# 	@echo "\n===================================================================="
+# 	@../shapp/scripts/nrf-select.sh > /dev/null  # test for jlinks
 
 # Print all targets that can be built
 help:
