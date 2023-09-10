@@ -1,2 +1,5 @@
 # Remove Private files
 *.pem
+
+# .DS_Store created by macOS
+.DS_Store
